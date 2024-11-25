@@ -20,7 +20,7 @@ export const ProjectsSection = () => {
             <h3 className="font-semibold text-lg mb-6 text-gray-800 border-b pb-3">
               {column.title}
             </h3>
-            <div className="space-y-6 overflow-y-auto max-h-[300px] pr-2">
+            <div className="space-y-6 overflow-y-auto max-h-[400px] pr-2">
               {column.projects.map(project => (
                 <ProjectCard key={project.id} project={project} />
               ))}

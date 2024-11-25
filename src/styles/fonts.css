@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'YaleNew';
+  src: url('../assets/fonts/YaleNew-Bold.otf') format('opentype');
+  font-weight: bold;
+}
+
+@font-face {
+    font-family: 'SofiaPro';
+    src: url('../assets/fonts/SofiaPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.font-custom {
+  font-family: 'SofiaPro', Optima, Candara, "Noto Sans", sans-serif;
+} 

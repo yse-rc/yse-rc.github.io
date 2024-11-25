@@ -7,7 +7,7 @@ export const ProjectsSection = () => {
   
   return (
     <div className="bg-white rounded-lg shadow-sm p-6 border-2 border-gray-400">
-      <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3">
+      <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
         Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

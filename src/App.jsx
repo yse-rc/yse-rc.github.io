@@ -1,4 +1,4 @@
-import ProjectBoard from './components/ProjectBoard'
+import ProjectBoard from './components/HomePage'
 import './index.css'
 
 function App() {

@@ -4,7 +4,7 @@ import { Calendar } from './Calendar';
 export const EventsSection = () => {
   return (
     <div className="mt-12 bg-white rounded-lg shadow-sm p-6 border-2 border-purple-400">
-      <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3">
+      <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
         Events
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

@@ -25,13 +25,19 @@ export const Calendar = ({ events }) => {
   return (
     <div className="bg-white rounded-lg p-4 border border-gray-200">
       <div className="flex justify-between items-center mb-4">
-        <button onClick={handlePrevMonth} className="text-purple-600 hover:text-purple-800">
+        <button
+          onClick={handlePrevMonth}
+          className="bg-purple-600 text-white hover:bg-purple-800 rounded-full p-2"
+        >
           &lt;
         </button>
-        <h3 className="text-lg font-semibold">
+        <h3 className="text-lg font-semibold text-black">
           {currentDate.toLocaleString('default', { month: 'long' })} {currentDate.getFullYear()}
         </h3>
-        <button onClick={handleNextMonth} className="text-purple-600 hover:text-purple-800">
+        <button
+          onClick={handleNextMonth}
+          className="bg-purple-600 text-white hover:bg-purple-800 rounded-full p-2"
+        >
           &gt;
         </button>
       </div>

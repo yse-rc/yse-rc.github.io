@@ -3,7 +3,17 @@ import { tasks } from '../../data/tasks';
 import { ProjectCard } from './ProjectCard';
 
 export const ProjectsSection = () => {
-  const [columns] = useState(tasks);
+  // Sort projects within each column by start date
+  const sortedTasks = tasks.map(column => ({
+    ...column,
+    projects: [...column.projects].sort((a, b) => 
+      new Date(b.startDate) - new Date(a.startDate) // newest first
+      // OR for oldest first:
+      // new Date(a.startDate) - new Date(b.startDate)
+    )
+  }));
+
+  const [columns] = useState(sortedTasks);
   
   return (
     <div className="bg-white rounded-lg shadow-sm p-6 border-2 border-gray-400">

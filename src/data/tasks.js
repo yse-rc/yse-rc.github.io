@@ -6,24 +6,31 @@ export const tasks = [
       projects: [
         { 
           id: 1, 
-          title: 'High Performance Computing Resource Monitor',
-          description: 'Real-time monitoring and analytics for Yale HPC clusters supporting environmental research',
-          tech: ['Python', 'React', 'Grafana'],
-          startDate: '2024-03-01'
+          title: 'Cellular segmentation via growth algorthm',
+          description: 'Non-uniform segmentation of 3D structures via classifier and growth algorthm to boundaries.',
+          tech: ['Python', 'Image Segmentation', 'Machine Learning'],
+          startDate: '2024-10-24'
         },
         {
           id: 2,
-          title: 'Environmental Data Catalog',
-          description: 'Unified catalog system for environmental datasets with metadata management',
-          tech: ['PostgreSQL', 'FastAPI', 'Vue.js'],
-          startDate: '2024-03-15'
+          title: 'Longitudinal unstructured data version control',
+          description: 'Longitdunal study data organization, structure, and version control implementation.',
+          tech: ['HPC', 'Parquet', 'DVC', 'Git', 'Dropbox'],
+          startDate: '2024-10-14'
         },
         {
           id: 3,
-          title: 'Forest Carbon Modeling Pipeline',
-          description: 'Automated workflow for processing LiDAR data and calculating forest carbon metrics',
-          tech: ['R', 'Python', 'GDAL'],
-          startDate: '2024-03-20'
+          title: 'Data visualization and analysis',
+          description: 'Development of a data visualization and analysis pipeline for web data, zoom data, and survey data.',
+          tech: ['R', 'Python', 'HPC', 'Git'],
+          startDate: '2024-11-22'
+        },
+        {
+          id: 4,
+          title: 'Google-Solar-API',
+          description: 'Data abstraction and API integration for Google Solar data.',
+          tech: ['Python', 'HPC', 'Google'],
+          startDate: '2024-10-14'
         }
       ]
     },
@@ -34,18 +41,33 @@ export const tasks = [
       projects: [
         {
           id: 4,
-          title: 'Climate Data Pipeline',
-          description: 'Automated processing pipeline for climate model outputs and environmental datasets',
-          tech: ['Python', 'Dask', 'xarray'],
-          startDate: '2024-02-15'
+          title: 'BioClip Fine-Tuning',
+          description: 'Adhoc data incorporation to BioClip for agentic AI of seedling detection.',
+          tech: ['Python', 'HPC', 'CLIP', 'AI', 'Embedding'],
+          startDate: '2024-10-29'
         },
         {
           id: 5,
-          title: 'Biodiversity Database Integration',
-          description: 'Centralizing and standardizing biodiversity data from multiple field stations',
-          tech: ['Python', 'PostgreSQL', 'PostGIS'],
-          startDate: '2024-02-01'
-        }
+          title: 'RAG AI Model Development',
+          description: 'Retrieval Augmented Generation AI model development for >1000 targeted research papers.',
+          tech: ['Python', 'RAG', 'Vector Databases', 'Embedding'],
+          startDate: '2024-09-09'
+        },
+        {
+          id: 8,
+          title: 'YSE-Storage Globus Integration',
+          description: 'Globus Connect Server on YSE-Storage for large file transfers.',
+          tech: ['Storage', 'Globus', 'File Transfer'],
+          startDate: '2024-09-01'
+        },
+        {
+          id: 9,
+          title: 'Unstructured Big Data Conversion',
+          description: 'Converting large unstructured data to structured, compact, and accessibledata for analysis.',
+          tech: ['Storage', 'Globus', 'File Transfer', 'Querying', 'Dask', 'Parquet'],
+          startDate: '2024-11-08'
+        },
+
       ]
     },
     {
@@ -55,18 +77,39 @@ export const tasks = [
       projects: [
         {
           id: 6,
-          title: 'Biodiversity Image Analysis',
-          description: 'Machine learning pipeline for processing and analyzing wildlife camera trap images',
-          tech: ['PyTorch', 'OpenCV', 'TensorFlow'],
-          startDate: '2024-01-20'
+          title: 'Big Data Network Transfering',
+          description: 'Optimize workflow for transfering 10\'s of millions of files across a network.',
+          tech: ['Pigz', 'File Transfer', 'Globus', 'HPC', 'Parallelization'],
+          startDate: '2024-11-10'
         },
         {
           id: 7,
-          title: 'HPC Job Template Generator',
-          description: 'Web tool for creating optimized SLURM job scripts for environmental applications',
-          tech: ['React', 'Node.js', 'Shell'],
-          startDate: '2024-01-10'
-        }
+          title: 'Research Data Management and Version Control',
+          description: 'Implement version control and data management for cross-instituttional research project.',
+          tech: ['DVC', 'Git', 'HPC', 'Dropbox'],
+          startDate: '2024-10-02'
+        },
+        {
+          id: 10,
+          title: 'GitHub migration to Yale Githun Enterprise',
+          description: 'Migration of research group public GitHub private docs/code to YSE-RC GitHub.',
+          tech: ['Git'],
+          startDate: '2024-11-13'
+        },
+        {
+          id: 11,
+          title: 'Optimization of Large Memory Workloads',
+          description: 'Implementation of parallelizaed and memory reduced workflows for large memory workloads.',
+          tech: ['R', 'Parquet', 'Parallelization'],
+          startDate: '2024-11-20'
+        },
+        {
+          id: 12,
+          title: 'Webscraping and Data Extraction',
+          description: 'Webscraping and data extraction with rate-limited avoidance workflow.',
+          tech: ['Python', 'HPC', 'Webscraping'],
+          startDate: '2024-10-22'
+        },
       ]
     }
   ];

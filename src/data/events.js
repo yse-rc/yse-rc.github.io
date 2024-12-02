@@ -53,4 +53,15 @@ export const events = [
       description: '[DSDE] Workshop with author and economist Seth Stephens-Davidowitz on how to use Chat GPT as an aid for data analyses.',
       registrationLink: 'https://dissc.yale.edu/events/ai-series/ai-workshop-seth-stephens-davidowitz'
     }
+    {
+      id: 7,
+      title: 'High-Performance Python',
+      date: '2024-12-14',
+      time: '01:00 PM - 2:30 PM',
+      location: 'In-person',
+      description: '[YCRC] This hands-on workshop will teach you how to profile and optimize Python workflows on computing devices ranging from personal computers to high performance computing clusters.',
+      registrationLink: 'https://nam12.safelinks.protection.outlook.com/?url=http%3A%2F%2Fcl.s10.exct.net%2F%3Fqs%3Dd58f77350367a57ec494d90e46c4ab7467e019f5fb64c8b105893af5a8f3d79fd0d9d51639c98c128d88471b5fe8b8a3bddac04e44463dd1&data=05%7C02%7Cmitchell.horn%40yale.edu%7C72bed54a7ac8450985c408dd0f0617db%7Cdd8cbebb21394df8b4114e3e87abeb5c%7C0%7C0%7C638683241029921302%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=2erM9mozBu2iisebKYxNohEz1BWN6iqxc4FF9jN5EkM%3D&reserved=0'
+    }
   ];
+
+  

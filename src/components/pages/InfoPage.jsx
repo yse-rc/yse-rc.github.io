@@ -29,7 +29,7 @@ export const InfoPage = () => {
               Our Team
             </h2>
             <a 
-              href="https://environment.yale.edu/profile/mitchell-horn"
+              href="https://environment.yale.edu/directory/staff/mitchell-horn"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center text-center hover:opacity-80 transition-opacity"
@@ -56,7 +56,7 @@ export const InfoPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
               {/* Affiliated Person 1 */}
               <a 
-                href="https://environment.yale.edu/profile/annise-dobson" 
+                href="https://environment.yale.edu/directory/staff/annise-dobson" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex flex-col items-center text-center max-w-xs hover:opacity-80 transition-opacity"

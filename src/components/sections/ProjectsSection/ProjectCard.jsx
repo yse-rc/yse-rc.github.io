@@ -4,6 +4,8 @@ import { sendEmail } from '../../../services/email';
 
 export const ProjectCard = ({ project }) => {
   const [showForm, setShowForm] = useState(false);
+  const [showMessage, setShowMessage] = useState(false);
+  const [message, setMessage] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -42,7 +44,8 @@ export const ProjectCard = ({ project }) => {
       const recaptchaResponse = window.grecaptcha?.getResponse();
       
       if (!recaptchaResponse) {
-        alert('Please complete the reCAPTCHA');
+        setMessage('Please complete the reCAPTCHA');
+        setShowMessage(true);
         setIsSubmitting(false);
         return;
       }
@@ -58,10 +61,12 @@ export const ProjectCard = ({ project }) => {
 
       setFormData({ name: '', email: '', message: '' });
       setShowForm(false);
-      alert('Thanks for your interest! We will contact you soon.');
+      setMessage('Thanks for your interest! We will contact you soon.');
+      setShowMessage(true);
     } catch (error) {
       console.error('Failed to send email:', error);
-      alert('Failed to send email. Please try again later.');
+      setMessage('Failed to send email. Please try again later.');
+      setShowMessage(true);
     } finally {
       setIsSubmitting(false);
       window.grecaptcha?.reset();
@@ -89,6 +94,21 @@ export const ProjectCard = ({ project }) => {
       <div className="text-sm text-gray-500 mb-4">
         Started: {new Date(project.startDate).toLocaleDateString()}
       </div>
+
+      {showMessage && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded-lg shadow-xl max-w-sm w-full mx-4">
+            <p className="text-gray-800 mb-4">{message}</p>
+            <button
+              onClick={() => setShowMessage(false)}
+              className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      )}
+
       {showForm ? (
         <form onSubmit={handleSubmit} className="mt-4 space-y-4">
           <input

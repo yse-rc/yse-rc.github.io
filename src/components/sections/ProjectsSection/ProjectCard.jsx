@@ -28,6 +28,17 @@ export const ProjectCard = ({ project }) => {
     }
   }, [showForm]);
 
+  useEffect(() => {
+    if (showMessage) {
+      const timer = setTimeout(() => {
+        setShowMessage(false);
+        setMessage('');
+      }, 5000); // 5 seconds
+
+      return () => clearTimeout(timer);
+    }
+  }, [showMessage]);
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ 
@@ -59,26 +70,24 @@ export const ProjectCard = ({ project }) => {
         'g-recaptcha-response': recaptchaResponse
       });
 
-      setFormData({ name: '', email: '', message: '' });
-      setShowForm(false);
-      setMessage('Thanks for your interest! We will contact you soon.');
-      setShowMessage(true);
+      sessionStorage.setItem('formMessage', 'Thanks for your interest! We will contact you soon.');
+      window.location.reload();
+
     } catch (error) {
       console.error('Failed to send email:', error);
-      setMessage('Failed to send email. Please try again later.');
-      setShowMessage(true);
-    } finally {
-      setIsSubmitting(false);
-      window.grecaptcha?.reset();
+      sessionStorage.setItem('formMessage', 'Failed to send email. Please try again later.');
+      window.location.reload();
     }
   };
 
-  const handleMessageClose = (e) => {
-    e.stopPropagation();
-    setShowMessage(false);
-    setMessage('');
-    window.location.reload();
-  };
+  useEffect(() => {
+    const storedMessage = sessionStorage.getItem('formMessage');
+    if (storedMessage) {
+      setMessage(storedMessage);
+      setShowMessage(true);
+      sessionStorage.removeItem('formMessage'); // Clear the stored message
+    }
+  }, []);
 
   return (
     <div className="bg-white rounded-lg p-5 border border-gray-200">
@@ -103,22 +112,8 @@ export const ProjectCard = ({ project }) => {
       </div>
 
       {showMessage && (
-        <div 
-          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
-          onClick={handleMessageClose}
-        >
-          <div 
-            className="bg-white p-6 rounded-lg shadow-xl max-w-sm w-full mx-4"
-            onClick={e => e.stopPropagation()}
-          >
-            <p className="text-gray-800 mb-4">{message}</p>
-            <button
-              onClick={handleMessageClose}
-              className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-            >
-              OK
-            </button>
-          </div>
+        <div className="fixed top-4 right-4 bg-white p-4 rounded-lg shadow-xl max-w-sm z-50 border-2 border-blue-400">
+          <p className="text-gray-800">{message}</p>
         </div>
       )}
 

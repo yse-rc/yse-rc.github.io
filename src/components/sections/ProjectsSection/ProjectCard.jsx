@@ -77,6 +77,7 @@ export const ProjectCard = ({ project }) => {
     e.stopPropagation();
     setShowMessage(false);
     setMessage('');
+    window.location.reload();
   };
 
   return (

@@ -1,5 +1,5 @@
 import { Header } from '../layout/Header';
-import mitchPic from '../../assets/images/prof-1.png';
+import mitchPic from '../../assets/images/prof-1.jpg';
 import annisePic from '../../assets/images/Dobson_Annise_2024.avif';
 import eliPic from '../../assets/images/Fenichel_Eli_2023.avif';
 

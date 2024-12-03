@@ -1,4 +1,3 @@
-import React from 'react';
 import { Header } from '../layout/Header';
 import mitchPic from '../../assets/images/prof-1.png';
 import annisePic from '../../assets/images/Dobson_Annise_2024.avif';
@@ -88,3 +87,5 @@ export const InfoPage = () => {
     </div>
   );
 };
+
+export default InfoPage; 

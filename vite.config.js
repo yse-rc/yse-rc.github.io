@@ -4,6 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/yse-rc.github.io/',
   css: {
     modules: false,
   },

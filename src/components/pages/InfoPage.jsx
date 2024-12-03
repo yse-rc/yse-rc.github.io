@@ -28,19 +28,24 @@ export const InfoPage = () => {
             <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
               Our Team
             </h2>
-            <div className="flex flex-col items-center">
+            <a 
+              href="https://environment.yale.edu/profile/mitchell-horn"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center text-center hover:opacity-80 transition-opacity"
+            >
               <img
                 src={mitchPic}
                 alt="Team Member"
                 className="w-48 h-48 object-cover rounded-full shadow-lg mb-6 mx-auto"
               />
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  Mitchell J. Horn
+                Mitchell J. Horn
               </h3>
               <h4 className="text-lg text-gray-600 mb-4">
-                  Senior Research Data Analyst
+                Senior Research Data Analyst
               </h4>
-            </div>
+            </a>
           </section>
 
           {/* Affiliated Section */}
@@ -50,7 +55,12 @@ export const InfoPage = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
               {/* Affiliated Person 1 */}
-              <div className="flex flex-col items-center text-center max-w-xs">
+              <a 
+                href="https://environment.yale.edu/profile/annise-dobson" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex flex-col items-center text-center max-w-xs hover:opacity-80 transition-opacity"
+              >
                 <img
                   src={annisePic}
                   alt="Affiliated Member 1"
@@ -62,10 +72,15 @@ export const InfoPage = () => {
                 <h4 className="text-sm text-gray-600">
                 Director of Research Programs; Associate Research Scientist
                 </h4>
-              </div>
+              </a>
 
               {/* Affiliated Person 2 */}
-              <div className="flex flex-col items-center text-center max-w-xs">
+              <a 
+                href="https://environment.yale.edu/profile/eli-fenichel" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex flex-col items-center text-center max-w-xs hover:opacity-80 transition-opacity"
+              >
                 <img
                   src={eliPic}
                   alt="Affiliated Member 2"
@@ -75,11 +90,9 @@ export const InfoPage = () => {
                   Eli Fenichel
                 </h3>
                 <h4 className="text-sm text-gray-600">
-                Knobloch Family Professor of Natural Resource Economics
+                  Knobloch Family Professor of Natural Resource Economics
                 </h4>
-              </div>
-
-              {/* Add more affiliated people as needed */}
+              </a>
             </div>
           </section>
         </div>

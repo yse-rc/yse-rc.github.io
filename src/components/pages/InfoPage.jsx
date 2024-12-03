@@ -16,7 +16,7 @@ export const InfoPage = () => {
           </h2>
           <p className="text-lg text-gray-600">
             YSE Research Computing and Data is dedicated to supporting the Yale School of the Environment's 
-            research community. We provide expert consultation, advanced computing resources, and data 
+            research community. We provide consultation, advanced computing resources, and data 
             management solutions to accelerate scientific discovery and environmental research.
           </p>
         </section>

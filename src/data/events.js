@@ -52,7 +52,7 @@ export const events = [
       location: 'In-person + Zoom',
       description: '[DSDE] Workshop with author and economist Seth Stephens-Davidowitz on how to use Chat GPT as an aid for data analyses.',
       registrationLink: 'https://dissc.yale.edu/events/ai-series/ai-workshop-seth-stephens-davidowitz'
-    }
+    },
     {
       id: 7,
       title: 'High-Performance Python',

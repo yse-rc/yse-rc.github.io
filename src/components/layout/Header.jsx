@@ -4,7 +4,7 @@ import '../../styles/fonts.css';
 export const Header = () => (
   <div className="w-full px-6 py-4 bg-white border-b border-gray-200">
     <div className="flex items-center gap-8 max-w-[2400px] mx-auto">
-      <a href="/" className="hover:text-gray-700">
+      <a href="#" className="hover:text-gray-700">
         <h1 className="text-3xl text-black font-custom font-sofia">
           YSE Research Computing and Data
         </h1>

@@ -61,6 +61,15 @@ export const events = [
       location: 'In-person',
       description: '[YCRC] This hands-on workshop will teach you how to profile and optimize Python workflows on computing devices ranging from personal computers to high performance computing clusters.',
       registrationLink: 'https://nam12.safelinks.protection.outlook.com/?url=http%3A%2F%2Fcl.s10.exct.net%2F%3Fqs%3Dd58f77350367a57ec494d90e46c4ab7467e019f5fb64c8b105893af5a8f3d79fd0d9d51639c98c128d88471b5fe8b8a3bddac04e44463dd1&data=05%7C02%7Cmitchell.horn%40yale.edu%7C72bed54a7ac8450985c408dd0f0617db%7Cdd8cbebb21394df8b4114e3e87abeb5c%7C0%7C0%7C638683241029921302%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=2erM9mozBu2iisebKYxNohEz1BWN6iqxc4FF9jN5EkM%3D&reserved=0'
+    },
+    {
+      id: 8,
+      title: 'Introduction to Tidyverse workshop',
+      date: '2024-12-10',
+      time: '10:00 AM - 12:00 PM',
+      location: 'In-person',
+      description: '[Library] hands-on workshop will introduce the tidyverse meta-package and give a glimpse of how we can use tidyverse.',
+      registrationLink: 'https://click.message.yale.edu/?qs=f1897d8308bf4f5bd58dccd8174af2b9ada0dcb17c6c1221d7268270fc6e4bcb539d8bc00be65326644e79722eb8e3280fc02511a2333beb'
     }
   ];
 

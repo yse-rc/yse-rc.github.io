@@ -91,7 +91,7 @@ export const tasks = [
         },
         {
           id: 10,
-          title: 'GitHub migration to Yale Githun Enterprise',
+          title: 'GitHub migration to Yale GitHub Enterprise',
           description: 'Migration of research group public GitHub private docs/code to YSE-RC GitHub.',
           tech: ['Git'],
           startDate: '2024-11-13'

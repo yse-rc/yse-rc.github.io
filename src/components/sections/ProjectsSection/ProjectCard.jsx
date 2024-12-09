@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MailIcon } from '../../shared/icons/MailIcon';
+import { MailIcon } from '../../shared/icons/MailIcon.jsx';
 import { sendEmail } from '../../../services/email';
 
 export const ProjectCard = ({ project, status, toggleTag, activeTags }) => {
@@ -107,8 +107,8 @@ export const ProjectCard = ({ project, status, toggleTag, activeTags }) => {
   return (
     <div className={`bg-white p-4 rounded-lg shadow-sm border-2 ${borderColor}`}>
       <h4 className="font-semibold text-md mb-2 text-black">{project.title}</h4>
-      <p className="text-gray-600">{project.description}</p>
       <p className="text-gray-500 text-sm mb-2">{new Date(project.startDate).toLocaleDateString()}</p>
+      <p className="text-gray-600">{project.description}</p>
       <div className="mt-2 flex flex-wrap gap-2">
         {project.tech.map(tag => (
           <span

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { sendEmail } from '../../../services/email.js';
 
 export const ProjectForm = ({ onClose }) => {
@@ -7,6 +7,33 @@ export const ProjectForm = ({ onClose }) => {
     email: '',
     description: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showMessage, setShowMessage] = useState(false);
+  const [message, setMessage] = useState('');
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://www.google.com/recaptcha/api.js';
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+      window.grecaptcha?.reset();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (showMessage) {
+      const timer = setTimeout(() => {
+        setShowMessage(false);
+        setMessage('');
+      }, 5000); // 5 seconds
+
+      return () => clearTimeout(timer);
+    }
+  }, [showMessage]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -15,12 +42,37 @@ export const ProjectForm = ({ onClose }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+
     try {
-      await sendEmail(formData);
-      alert('Project submitted successfully!');
+      const recaptchaResponse = window.grecaptcha?.getResponse();
+      
+      if (!recaptchaResponse) {
+        setMessage('Please complete the reCAPTCHA');
+        setShowMessage(true);
+        setIsSubmitting(false);
+        return;
+      }
+
+      const templateParams = {
+        to_name: 'YSE-RC', // Adjust as needed
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.description,
+        'g-recaptcha-response': recaptchaResponse
+      };
+
+      await sendEmail(templateParams);
+
+      setMessage('Project submitted successfully!');
+      setShowMessage(true);
       onClose();
     } catch (error) {
-      alert('Failed to submit project. Please try again.');
+      console.error('Failed to send email:', error);
+      setMessage('Failed to submit project. Please try again.');
+      setShowMessage(true);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -61,7 +113,11 @@ export const ProjectForm = ({ onClose }) => {
               required
             />
           </div>
-          <div className="flex justify-end gap-2">
+          <div 
+            className="g-recaptcha" 
+            data-sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+          ></div>
+          <div className="flex justify-end gap-2 mt-4">
             <button
               type="button"
               onClick={onClose}
@@ -71,12 +127,18 @@ export const ProjectForm = ({ onClose }) => {
             </button>
             <button
               type="submit"
+              disabled={isSubmitting}
               className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-900"
             >
-              Submit
+              {isSubmitting ? 'Submitting...' : 'Submit'}
             </button>
           </div>
         </form>
+        {showMessage && (
+          <div className="mt-4 text-center text-gray-800">
+            {message}
+          </div>
+        )}
       </div>
     </div>
   );

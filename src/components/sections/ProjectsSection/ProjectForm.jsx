@@ -10,6 +10,7 @@ export const ProjectForm = ({ onClose }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
   const [message, setMessage] = useState('');
+  const [recaptchaLoaded, setRecaptchaLoaded] = useState(false);
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -18,11 +19,22 @@ export const ProjectForm = ({ onClose }) => {
     script.defer = true;
     document.head.appendChild(script);
 
-    return () => {
-      document.head.removeChild(script);
-      window.grecaptcha?.reset();
+    script.onload = () => {
+      console.log('reCAPTCHA script loaded');
+      setRecaptchaLoaded(true);
     };
-  }, []);
+
+    return () => {
+      if (recaptchaLoaded && window.grecaptcha && window.grecaptcha.reset) {
+        try {
+          window.grecaptcha.reset();
+        } catch (error) {
+          console.error('Error resetting reCAPTCHA:', error);
+        }
+      }
+      document.head.removeChild(script);
+    };
+  }, [recaptchaLoaded]);
 
   useEffect(() => {
     if (showMessage) {
@@ -45,7 +57,11 @@ export const ProjectForm = ({ onClose }) => {
     setIsSubmitting(true);
 
     try {
-      const recaptchaResponse = window.grecaptcha?.getResponse();
+      if (!window.grecaptcha) {
+        throw new Error('reCAPTCHA not loaded');
+      }
+
+      const recaptchaResponse = window.grecaptcha.getResponse();
       
       if (!recaptchaResponse) {
         setMessage('Please complete the reCAPTCHA');
@@ -66,6 +82,7 @@ export const ProjectForm = ({ onClose }) => {
 
       setMessage('Project submitted successfully!');
       setShowMessage(true);
+      console.log('Form submitted, closing form');
       onClose();
     } catch (error) {
       console.error('Failed to send email:', error);
@@ -120,7 +137,10 @@ export const ProjectForm = ({ onClose }) => {
           <div className="flex justify-end gap-2 mt-4">
             <button
               type="button"
-              onClick={onClose}
+              onClick={() => {
+                console.log('Cancel clicked, closing form');
+                onClose();
+              }}
               className="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-900"
             >
               Cancel

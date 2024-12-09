@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React, { useState } from 'react';
 import { tasks } from '../../../data/tasks';
 import { ProjectCard } from './ProjectCard';
 import { ProjectForm } from './ProjectForm';
@@ -27,6 +27,11 @@ export const ProjectsSection = () => {
     );
   };
 
+  const clearForm = () => {
+    setSearchQuery('');
+    setActiveTags([]);
+  };
+
   const filterProjects = (projects) => {
     return projects.filter(project => {
       const matchesTitle = project.title && project.title.toLowerCase().includes(searchQuery);
@@ -50,13 +55,21 @@ export const ProjectsSection = () => {
         >
           Submit New Project
         </button>
-        <input
-          type="text"
-          placeholder="Search projects..."
-          value={searchQuery}
-          onChange={handleSearchChange}
-          className="border border-gray-300 rounded-lg p-2"
-        />
+        <div className="flex gap-2">
+          <input
+            type="text"
+            placeholder="Search projects..."
+            value={searchQuery}
+            onChange={handleSearchChange}
+            className="border border-gray-800 bg-white text-black px-4 py-2 rounded-lg placeholder-gray-600"
+          />
+          <button
+            onClick={clearForm}
+            className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600"
+          >
+            Clear
+          </button>
+        </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {columns.map(column => {

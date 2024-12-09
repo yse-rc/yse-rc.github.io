@@ -29,7 +29,7 @@ export const EventsSection = () => {
   }, []); // Run only once on mount
 
   return (
-    <div className="mt-12 bg-white rounded-lg shadow-sm p-6 border-2 border-purple-400">
+    <div className="mt-12 bg-white p-6">
       <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
         Events
       </h2>
@@ -42,7 +42,7 @@ export const EventsSection = () => {
           {sortedEvents.map(event => (
             <div
               key={event.id}
-              className={`bg-gray-50 rounded-lg p-5 border border-gray-100 transition-opacity
+              className={`bg-gray-50 rounded-lg p-5 transition-opacity
                 ${event.isPast ? 'opacity-50' : 'opacity-100'}`}
             >
               <h3 className="font-semibold text-lg text-gray-800 mb-2">

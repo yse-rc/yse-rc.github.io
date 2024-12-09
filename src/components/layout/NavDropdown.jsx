@@ -1,19 +1,20 @@
 import { useState } from 'react';
+import externalLinkIcon from '/src/assets/images/external-link.png'; // Import the external link icon
 
-export const NavDropdown = ({ title, options }) => {
+export const NavDropdown = ({ title, options, className }) => {
   const [isOpen, setIsOpen] = useState(false);
   
   return (
-    <div className="relative inline-block">
+    <div className={`relative inline-block ${className}`}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="px-4 py-2 text-black hover:text-gray-700 font-semibold text-sm bg-white whitespace-nowrap"
+        className={`px-4 py-2 text-black hover:text-gray-700 active:text-gray-900 font-semibold text-lg bg-gray-50 rounded-lg border border-transparent hover:border-blue-700 active:border-black ${className}`}
         onBlur={() => setTimeout(() => setIsOpen(false), 200)}
       >
         {title}
       </button>
       {isOpen && (
-        <div className="absolute left-0 mt-1 py-2 min-w-full bg-white rounded-lg shadow-lg z-10">
+        <div className="absolute left-0 mt-1 py-2 min-w-full bg-gray-50 rounded-lg shadow-lg z-10">
           {options.map((option, index) => {
             const isObjectOption = typeof option === 'object';
             const label = isObjectOption ? option.label : option;
@@ -26,10 +27,14 @@ export const NavDropdown = ({ title, options }) => {
                 href={href}
                 target={isExternal ? "_blank" : undefined}
                 rel={isExternal ? "noopener noreferrer" : undefined}
-                className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 bg-white whitespace-nowrap"
+                className="flex items-center justify-between w-full text-left px-4 py-2 text-black hover:underline active:text-gray-900 font-semibold text-lg bg-gray-50 whitespace-nowrap"
                 onClick={() => setIsOpen(false)}
+                style={{ width: '350px' }}
               >
-                {label}
+                <span className="flex-1">{label}</span>
+                {isExternal && (
+                  <img src={externalLinkIcon} alt="External link" className="ml-2 w-4 h-4" />
+                )}
               </a>
             );
           })}

@@ -2,7 +2,7 @@ import { newsItems } from '../../../data/news';
 
 export const NewsSection = () => {
   return (
-    <div className="mt-12 bg-white rounded-lg shadow-sm p-6 border-2 border-blue-400">
+    <div className="mt-12 bg-white">
       <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
         News
       </h2>

@@ -91,7 +91,7 @@ export const EventsSection = () => {
                   >
                     Register
                     <img 
-                      src="/src/assets/images/external-link.png" 
+                      src="/assets/images/external-link.png" 
                       alt="External link" 
                       className="w-4 h-4 filter brightness-0 invert"
                     />

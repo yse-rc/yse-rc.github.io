@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { events } from '../../../data/events';
 import { Calendar } from './Calendar';
+import externalLinkIcon from '/src/assets/images/external-link.png';
 
 export const EventsSection = () => {
   const eventsListRef = useRef(null);
@@ -91,7 +92,7 @@ export const EventsSection = () => {
                   >
                     Register
                     <img 
-                      src="/assets/images/external-link.png" 
+                      src={externalLinkIcon}
                       alt="External link" 
                       className="w-4 h-4 filter brightness-0 invert"
                     />

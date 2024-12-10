@@ -23,17 +23,16 @@ export const EventsSection = () => {
     // Reset on mount
     isDirectVisit.current = !document.referrer.includes(window.location.origin);
     
-    // Only scroll if it's a direct visit
-    if (isDirectVisit.current && nextEventIndex !== -1 && eventsListRef.current) {
+    // Only scroll within the events list container
+    if (nextEventIndex !== -1 && eventsListRef.current) {
       setTimeout(() => {
         const nextEvent = sortedEvents[nextEventIndex];
-        if (eventRefs.current[nextEvent.date]) {
-          eventRefs.current[nextEvent.date].scrollIntoView({ block: 'start' });
+        if (eventRefs.current[nextEvent.date] && eventsListRef.current) {
+          eventsListRef.current.scrollTop = eventRefs.current[nextEvent.date].offsetTop - eventsListRef.current.offsetTop;
         }
       }, 100);
     }
 
-    // Reset hasScrolled on unmount
     return () => {
       hasScrolled.current = false;
     };

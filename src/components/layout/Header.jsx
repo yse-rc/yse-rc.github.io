@@ -5,7 +5,9 @@ import '../../styles/fonts.css';
 export const Header = () => {
   const handleHomeClick = () => {
     window.scrollTo(0, 0);
-    window.history.replaceState(null, '', window.location.pathname);
+    if (window.location.hash) {
+      history.pushState("", document.title, window.location.pathname);
+    }
   };
 
   return (

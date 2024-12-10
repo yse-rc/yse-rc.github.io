@@ -4,6 +4,9 @@ import { Calendar } from './Calendar';
 
 export const EventsSection = () => {
   const eventsListRef = useRef(null);
+  const eventRefs = useRef({});
+  const hasScrolled = useRef(false);
+  const isDirectVisit = useRef(true);
 
   // Sort events and add isPast flag
   const sortedEvents = events
@@ -17,61 +20,80 @@ export const EventsSection = () => {
   const nextEventIndex = sortedEvents.findIndex(event => !event.isPast);
 
   useEffect(() => {
-    if (eventsListRef.current && nextEventIndex !== -1) {
-      // Instead of using scrollIntoView, directly set the scrollTop property
-      const container = eventsListRef.current;
-      const eventElement = container.children[nextEventIndex];
-      
-      if (eventElement) {
-        container.scrollTop = eventElement.offsetTop - container.offsetTop;
-      }
+    // Reset on mount
+    isDirectVisit.current = !document.referrer.includes(window.location.origin);
+    
+    // Only scroll if it's a direct visit
+    if (isDirectVisit.current && nextEventIndex !== -1 && eventsListRef.current) {
+      setTimeout(() => {
+        const nextEvent = sortedEvents[nextEventIndex];
+        if (eventRefs.current[nextEvent.date]) {
+          eventRefs.current[nextEvent.date].scrollIntoView({ block: 'start' });
+        }
+      }, 100);
     }
-  }, []); // Run only once on mount
+
+    // Reset hasScrolled on unmount
+    return () => {
+      hasScrolled.current = false;
+    };
+  }, [nextEventIndex]);
+
+  const handleDateClick = (dateStr) => {
+    const eventElement = eventRefs.current[dateStr];
+    if (eventElement && eventsListRef.current) {
+      eventElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      // Add a brief highlight effect
+      eventElement.classList.add('bg-purple-100');
+      setTimeout(() => {
+        eventElement.classList.remove('bg-purple-100');
+      }, 1500);
+    }
+  };
 
   return (
     <div className="mt-12 bg-white p-6">
       <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
         Events
       </h2>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Events List Column */}
-        <div 
-          ref={eventsListRef}
-          className="overflow-y-auto max-h-[400px] pr-2 space-y-6"
-        >
-          {sortedEvents.map(event => (
-            <div
-              key={event.id}
-              className={`bg-gray-50 rounded-lg p-5 transition-opacity
-                ${event.isPast ? 'opacity-50' : 'opacity-100'}`}
-            >
-              <h3 className="font-semibold text-lg text-gray-800 mb-2">
-                {event.title}
-                {event.isPast && (
-                  <span className="ml-2 text-sm font-normal text-gray-500">
-                    (Past Event)
-                  </span>
-                )}
-              </h3>
-              <div className="text-gray-600 mb-2">
-                <p>{event.date} • {event.time}</p>
-                <p>{event.location}</p>
-              </div>
-              <p className="text-gray-600 mb-4">{event.description}</p>
-              {event.registrationLink && !event.isPast && (
-                <a
-                  href={event.registrationLink}
-                  className="inline-block bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
-                >
-                  Register
-                </a>
-              )}
-            </div>
-          ))}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200" style={{ height: '1000px' }}>
+          <Calendar events={events} onDateClick={handleDateClick} />
         </div>
-        {/* Calendar Column */}
-        <div className="lg:col-span-1">
-          <Calendar events={sortedEvents} />
+        
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200" style={{ height: '1000px' }}>
+          <div ref={eventsListRef} className="overflow-y-auto p-4 space-y-6" style={{ maxHeight: '1000px' }}>
+            {sortedEvents.map((event) => (
+              <div
+                key={event.id}
+                ref={el => eventRefs.current[event.date] = el}
+                className={`bg-gray-50 rounded-lg p-5 transition-all duration-300
+                  ${event.isPast ? 'opacity-50' : 'opacity-100'}`}
+              >
+                <h3 className="font-semibold text-lg text-gray-800 mb-2">
+                  {event.title}
+                  {event.isPast && (
+                    <span className="ml-2 text-sm font-normal text-gray-500">
+                      (Past Event)
+                    </span>
+                  )}
+                </h3>
+                <div className="text-gray-600 mb-2">
+                  <p>{event.date} • {event.time}</p>
+                  <p>{event.location}</p>
+                </div>
+                <p className="text-gray-600 mb-4">{event.description}</p>
+                {event.registrationLink && !event.isPast && (
+                  <a
+                    href={event.registrationLink}
+                    className="inline-block bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
+                  >
+                    Register
+                  </a>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

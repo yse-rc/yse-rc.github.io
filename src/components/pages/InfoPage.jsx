@@ -5,7 +5,7 @@ import eliPic from '../../assets/images/Fenichel_Eli_2023.avif';
 
 export const InfoPage = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pt-24">
       <Header />
       
       <div className="p-6 max-w-[2400px] mx-auto">

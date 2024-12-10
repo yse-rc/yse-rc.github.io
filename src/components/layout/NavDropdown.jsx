@@ -8,10 +8,18 @@ export const NavDropdown = ({ title, options, className }) => {
     <div className={`relative inline-block ${className}`}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`px-4 py-2 text-black hover:text-gray-700 active:text-gray-900 font-semibold text-lg bg-gray-50 rounded-lg border border-transparent hover:border-blue-700 active:border-black ${className}`}
+        className={`px-4 py-2 text-black hover:text-gray-700 active:text-gray-900 font-semibold text-lg bg-gray-50 rounded-lg border border-transparent hover:border-blue-700 active:border-black ${className} flex items-center gap-2`}
         onBlur={() => setTimeout(() => setIsOpen(false), 200)}
       >
         {title}
+        <svg
+          className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+        </svg>
       </button>
       {isOpen && (
         <div className="absolute left-0 mt-1 py-2 min-w-full bg-gray-50 rounded-lg shadow-lg z-10">

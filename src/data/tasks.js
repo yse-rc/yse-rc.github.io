@@ -1,7 +1,7 @@
 export const tasks = [
     {
       id: 'open',
-      title: 'Open',
+      title: 'Requested',
       borderColor: 'border-orange-400',
       projects: [
         { 

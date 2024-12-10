@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 export const ProjectCard = ({ project, status, toggleTag, activeTags }) => {
   let borderColor;
   switch (status) {
-    case 'open':
+    case 'requested':
       borderColor = 'border-orange-500';
       break;
     case 'in progress':

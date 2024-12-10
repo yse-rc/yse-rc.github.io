@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { NavDropdown } from './NavDropdown';
 import '../../styles/fonts.css';
+import externalLinkIcon from '/src/assets/images/external-link.png';
 
 export const Header = () => {
   const handleHomeClick = () => {
@@ -29,6 +30,15 @@ export const Header = () => {
               {label: "YSE IT", href: "https://resources.environment.yale.edu/resources/computing/", external: true}
             ]} 
           />
+          <a 
+            href="https://calendly.com/mitchell-horn-yale/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 text-black hover:text-gray-700 active:text-gray-900 font-semibold text-lg bg-gray-50 border border-transparent rounded-lg hover:border-blue-700 active:border-black inline-flex items-center gap-2"
+          >
+            Let's Meet
+            <img src={externalLinkIcon} alt="External link" className="w-4 h-4" />
+          </a>
           <Link 
             to="/info" 
             onClick={() => window.scrollTo(0, 0)}

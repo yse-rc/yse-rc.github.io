@@ -85,9 +85,16 @@ export const EventsSection = () => {
                 {event.registrationLink && !event.isPast && (
                   <a
                     href={event.registrationLink}
-                    className="inline-block bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
                   >
                     Register
+                    <img 
+                      src="/src/assets/images/external-link.png" 
+                      alt="External link" 
+                      className="w-4 h-4 filter brightness-0 invert"
+                    />
                   </a>
                 )}
               </div>

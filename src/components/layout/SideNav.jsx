@@ -5,21 +5,10 @@ export const SideNav = () => {
   const [activeSection, setActiveSection] = useState('');
   const location = useLocation();
 
-  const handleClick = (e, sectionId) => {
-    e.preventDefault();
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const headerOffset = 100;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-      
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-      window.history.pushState(null, '', `#${sectionId}`);
-    }
-  };
+  useEffect(() => {
+    // Reset active section when location changes
+    setActiveSection('');
+  }, [location.pathname]);
 
   useEffect(() => {
     if (location.pathname !== '/') return;
@@ -45,6 +34,22 @@ export const SideNav = () => {
 
     return () => observer.disconnect();
   }, [location.pathname]);
+
+  const handleClick = (e, sectionId) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerOffset = 100;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      window.history.pushState(null, '', `#${sectionId}`);
+    }
+  };
 
   if (location.pathname !== '/') return null;
 

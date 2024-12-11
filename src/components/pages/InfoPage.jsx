@@ -1,6 +1,7 @@
 import { Header } from '../layout/Header';
 import mitchPic from '../../assets/images/prof-1.jpg';
-
+import { useMediaQuery } from 'react-responsive';
+import { Footer } from '../layout/Footer';
 export const InfoPage = () => {
   return (
     <div className="min-h-screen bg-white pt-24">
@@ -41,6 +42,7 @@ export const InfoPage = () => {
           </a>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };

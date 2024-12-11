@@ -4,6 +4,7 @@ import { ProjectsSection } from '../sections/ProjectsSection/ProjectsSection';
 import { NewsSection } from '../sections/NewsSection/NewsSection';
 import { EventsSection } from '../sections/EventsSection/EventsSection';
 import { useMediaQuery } from 'react-responsive';
+import { Footer } from '../layout/Footer';
 
 const ProjectBoard = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -24,6 +25,7 @@ const ProjectBoard = () => {
           <NewsSection />
         </section>
       </div>
+      <Footer />
     </div>
   );
 };

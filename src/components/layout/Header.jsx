@@ -61,7 +61,7 @@ export const Header = () => {
             href="https://calendly.com/mitchell-horn-yale/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full md:w-auto px-4 py-2 text-black hover:text-gray-700 active:text-gray-900 font-semibold text-lg bg-gray-50 border border-transparent rounded-lg hover:border-blue-700 active:border-black inline-flex items-center justify-center gap-2"
+            className="w-full md:w-auto px-4 py-2 text-black hover:text-gray-700 active:text-gray-900 font-normal text-lg bg-gray-50 border border-transparent rounded-lg hover:border-blue-700 active:border-black inline-flex items-center justify-center gap-2"
             onClick={() => setIsMenuOpen(false)}
           >
             Let's Meet
@@ -73,7 +73,7 @@ export const Header = () => {
               window.scrollTo(0, 0);
               setIsMenuOpen(false);
             }}
-            className="w-full md:w-auto px-4 py-2 text-black hover:text-gray-700 active:text-gray-900 font-semibold text-lg bg-gray-50 border border-transparent rounded-lg hover:border-blue-700 active:border-black text-center"
+            className="w-full md:w-auto px-4 py-2 text-black hover:text-gray-700 active:text-gray-900 font-normal text-lg bg-gray-50 border border-transparent rounded-lg hover:border-blue-700 active:border-black text-center"
           >
             Info
           </Link>

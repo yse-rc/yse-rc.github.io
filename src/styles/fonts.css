@@ -1,10 +1,4 @@
 @font-face {
-  font-family: 'YaleNew';
-  src: url('../assets/fonts/YaleNew-Bold.otf') format('opentype');
-  font-weight: bold;
-}
-
-@font-face {
   font-family: 'YaleNew-Roman';
   src: url('https://libweb.library.yale.edu/fonts/YaleNew/YaleNew-Roman.woff2') format('woff2'),
        url('https://libweb.library.yale.edu/fonts/YaleNew/YaleNew-Roman.woff') format('woff');

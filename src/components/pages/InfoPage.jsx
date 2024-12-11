@@ -9,7 +9,7 @@ export const InfoPage = () => {
       
       <div className="p-6 max-w-[2400px] mx-auto">
         {/* Mission Statement Section */}
-        <section className="bg-white rounded-lg shadow-sm p-8 mb-8">
+        <section className="mt-12 bg-white p-6">
           <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
             Mission Statement
           </h2>
@@ -21,7 +21,7 @@ export const InfoPage = () => {
         </section>
 
         {/* About Mitch Section */}
-        <section className="bg-white rounded-lg shadow-sm p-4 mb-8">
+        <section className="mt-12 bg-white p-6">
           <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
             About Mitch
           </h2>

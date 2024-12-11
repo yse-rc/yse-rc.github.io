@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import externalLinkIcon from '/src/assets/images/external-link.png'; // Import the external link icon
+import externalLinkIcon from '/src/assets/images/external-link.png';
 
 export const NavDropdown = ({ title, options, className }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,9 +39,13 @@ export const NavDropdown = ({ title, options, className }) => {
                 onClick={() => setIsOpen(false)}
                 style={{ width: '350px' }}
               >
-                <span className="flex-1">{label}</span>
+                <span className="flex-1 pr-2">{label}</span>
                 {isExternal && (
-                  <img src={externalLinkIcon} alt="External link" className="ml-2 w-4 h-4" />
+                  <img 
+                    src={externalLinkIcon} 
+                    alt="External link" 
+                    className="w-4 h-4 flex-shrink-0 mt-1"
+                  />
                 )}
               </a>
             );

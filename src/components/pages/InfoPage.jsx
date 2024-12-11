@@ -56,6 +56,7 @@ export const InfoPage = () => {
           </div>
         </section>
       </div>
+      <div className="footer-divider"></div>
       <Footer />
     </div>
   );

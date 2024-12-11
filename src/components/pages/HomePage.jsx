@@ -25,6 +25,7 @@ const ProjectBoard = () => {
           <NewsSection />
         </section>
       </div>
+      <div className="footer-divider"></div>
       <Footer />
     </div>
   );

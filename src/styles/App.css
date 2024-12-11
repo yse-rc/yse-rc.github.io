@@ -38,3 +38,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.footer-divider {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+}

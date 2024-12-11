@@ -3,14 +3,17 @@ import { SideNav } from '../layout/SideNav';
 import { ProjectsSection } from '../sections/ProjectsSection/ProjectsSection';
 import { NewsSection } from '../sections/NewsSection/NewsSection';
 import { EventsSection } from '../sections/EventsSection/EventsSection';
+import { useMediaQuery } from 'react-responsive';
 
 const ProjectBoard = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
   return (
     <div className="min-h-screen bg-white pt-20">
       <Header />
-      <SideNav />
+      {!isMobile && <SideNav />}
       
-      <div className="p-6 pl-60 max-w-[2400px] mx-auto space-y-12">
+      <div className={`p-6 ${!isMobile ? 'pl-60' : 'px-4'} mx-auto space-y-12`}>
         <section id="projects">
           <ProjectsSection />
         </section>

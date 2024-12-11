@@ -56,13 +56,13 @@ export const EventsSection = () => {
       <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
         Events
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-white rounded-lg shadow-sm border border-gray-200" style={{ height: '1000px' }}>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200">
           <Calendar events={events} onDateClick={handleDateClick} />
         </div>
         
-        <div className="bg-white rounded-lg shadow-sm border border-gray-200" style={{ height: '1000px' }}>
-          <div ref={eventsListRef} className="overflow-y-auto p-4 space-y-6" style={{ maxHeight: '1000px' }}>
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200">
+          <div ref={eventsListRef} className="overflow-y-auto p-4 space-y-6" style={{ maxHeight: '80vh' }}>
             {sortedEvents.map((event) => (
               <div
                 key={event.id}
@@ -88,13 +88,13 @@ export const EventsSection = () => {
                     href={event.registrationLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
+                    className="inline-flex items-center gap-2 bg-purple-600 text-white px-4 py-2 rounded-lg transition-colors hover:bg-white hover:text-purple-600 border border-purple-600 group"
                   >
                     Register
                     <img 
                       src={externalLinkIcon}
                       alt="External link" 
-                      className="w-4 h-4 filter brightness-0 invert"
+                      className="w-4 h-4 filter brightness-0 invert group-hover:invert-0 group-hover:brightness-100"
                     />
                   </a>
                 )}

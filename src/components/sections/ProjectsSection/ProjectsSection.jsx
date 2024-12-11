@@ -48,14 +48,14 @@ export const ProjectsSection = () => {
       <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
         Projects
       </h2>
-      <div className="flex justify-between mb-4">
+      <div className="flex flex-col sm:flex-row justify-between mb-4 gap-4">
         <button
           onClick={() => setIsFormOpen(true)}
           className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
         >
           Request Help on a Project
         </button>
-        <div className="flex gap-2">
+        <div className="flex flex-col sm:flex-row gap-2">
           <input
             type="text"
             placeholder="Search projects..."
@@ -72,24 +72,21 @@ export const ProjectsSection = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {columns.map(column => {
-          return (
-            <div
-              key={column.id}
-              className={`rounded-lg p-6 bg-gray-50 flex flex-col border-2`}
-              style={{ fontFamily: '"Avenir Next", "Segoe UI", system-ui, sans-serif', height: '1000px' }}
-            >
-              <h3 className="font-semibold text-lg mb-6 text-gray-800 border-b pb-3">
-                {column.title}
-              </h3>
-              <div className="space-y-6 overflow-y-auto" style={{ maxHeight: '1000px' }}>
-                {filterProjects(column.projects).map(project => (
-                  <ProjectCard key={project.id} project={project} status={column.title.toLowerCase()} toggleTag={toggleTag} activeTags={activeTags} />
-                ))}
-              </div>
+        {columns.map(column => (
+          <div
+            key={column.id}
+            className="rounded-lg p-6 bg-gray-50 flex flex-col border-2"
+          >
+            <h3 className="font-semibold text-lg mb-6 text-gray-800 border-b pb-3">
+              {column.title}
+            </h3>
+            <div className="space-y-6 overflow-y-auto max-h-[60vh]">
+              {filterProjects(column.projects).map(project => (
+                <ProjectCard key={project.id} project={project} status={column.title.toLowerCase()} toggleTag={toggleTag} activeTags={activeTags} />
+              ))}
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
       {isFormOpen && <ProjectForm onClose={() => setIsFormOpen(false)} />}
     </div>

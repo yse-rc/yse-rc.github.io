@@ -67,16 +67,6 @@ export const Header = () => {
             Let's Meet
             <img src={externalLinkIcon} alt="External link" className="w-4 h-4" />
           </a>
-          <Link 
-            to="/info" 
-            onClick={() => {
-              window.scrollTo(0, 0);
-              setIsMenuOpen(false);
-            }}
-            className="w-full md:w-auto px-4 py-2 text-black hover:text-gray-700 active:text-gray-900 font-normal text-lg bg-gray-50 border border-transparent rounded-lg hover:border-blue-700 active:border-black text-center"
-          >
-            Info
-          </Link>
         </div>
       </div>
     </div>

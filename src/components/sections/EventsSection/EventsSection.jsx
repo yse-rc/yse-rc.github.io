@@ -79,10 +79,27 @@ export const EventsSection = () => {
                   )}
                 </h3>
                 <div className="text-gray-600 mb-2">
-                  <p>{event.date} • {event.time}</p>
-                  <p>{event.location}</p>
+                  <p>
+                    <span className="inline-flex items-center gap-1">
+                      <svg className="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 4h10M5 11h14M5 19h14M5 15h14M5 7h14" />
+                      </svg>
+                      {event.date} • {event.time}
+                    </span>
+                  </p>
+                  <p>
+                    <span className="inline-flex items-center gap-1">
+                      <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 2C8.686 2 6 4.686 6 8c0 5.25 6 12 6 12s6-6.75 6-12c0-3.314-2.686-6-6-6z" />
+                      </svg>
+                      {event.location}
+                    </span>
+                  </p>
                 </div>
-                <p className="text-gray-600 mb-4">{event.description}</p>
+                <p className="text-gray-600 mb-4">
+                  <span className="font-bold text-purple-600">{event.description.split(']')[0]}]</span>
+                  {event.description.slice(event.description.indexOf(']') + 1)}
+                </p>
                 {event.registrationLink && !event.isPast && (
                   <a
                     href={event.registrationLink}

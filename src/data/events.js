@@ -70,6 +70,15 @@ export const events = [
       location: 'In-person',
       description: '[Library] hands-on workshop will introduce the tidyverse meta-package and give a glimpse of how we can use tidyverse.',
       registrationLink: 'https://click.message.yale.edu/?qs=f1897d8308bf4f5bd58dccd8174af2b9ada0dcb17c6c1221d7268270fc6e4bcb539d8bc00be65326644e79722eb8e3280fc02511a2333beb'
+    },
+    {
+      id: 9,
+      title: 'AI Promptathon',
+      date: '2025-02-01',
+      time: '10:00 AM - 02:00 PM',
+      location: 'In-person + Zoom',
+      description: '[FDS] build AI literacy, enhance collaboration, and foster community engagement around AI.',
+      registrationLink: 'https://fds.yale.edu/events/ai-promptathon-2025/'
     }
   ];
 

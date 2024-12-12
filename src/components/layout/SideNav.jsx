@@ -1,18 +1,15 @@
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 export const SideNav = () => {
   const [activeSection, setActiveSection] = useState('');
   const location = useLocation();
 
   useEffect(() => {
-    // Reset active section when location changes
     setActiveSection('');
   }, [location.pathname]);
 
   useEffect(() => {
-    if (location.pathname !== '/') return;
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -51,12 +48,26 @@ export const SideNav = () => {
     }
   };
 
-  if (location.pathname !== '/') return null;
-
   const sections = [
-    { id: 'projects', label: 'Projects' },
-    { id: 'events', label: 'Events' },
-    { id: 'news', label: 'News' }
+    { 
+      id: 'home',
+      label: 'Home',
+      path: '/',
+      children: location.pathname === '/' ? [
+        { id: 'projects', label: 'Projects' },
+        { id: 'events', label: 'Events' },
+        { id: 'news', label: 'News' }
+      ] : []
+    },
+    { 
+      id: 'info',
+      label: 'Info',
+      path: '/info',
+      children: location.pathname === '/info' ? [
+        { id: 'mission', label: 'Mission' },
+        { id: 'about', label: 'About Me' }
+      ] : []
+    }
   ];
 
   return (
@@ -64,20 +75,37 @@ export const SideNav = () => {
       <ul className="space-y-2">
         {sections.map((section) => (
           <li key={section.id}>
-            <a
-              href={`#${section.id}`}
-              onClick={(e) => handleClick(e, section.id)}
-              className={`block px-4 py-2 rounded-lg transition-colors ${
-                activeSection === section.id
-                  ? 'bg-blue-100 text-blue-700'
-                  : 'text-gray-600 hover:bg-gray-100'
+            <Link
+              to={section.path}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className={`block px-4 py-2 text-gray-500 font-semibold hover:text-gray-700 ${
+                location.pathname === section.path ? 'text-blue-700' : ''
               }`}
             >
               {section.label}
-            </a>
+            </Link>
+            {section.children.length > 0 && (
+              <ul className="pl-4 space-y-1">
+                {section.children.map((child) => (
+                  <li key={child.id}>
+                    <a
+                      href={`#${child.id}`}
+                      onClick={(e) => handleClick(e, child.id)}
+                      className={`block px-4 py-2 rounded-lg transition-colors ${
+                        activeSection === child.id
+                          ? 'bg-blue-100 text-blue-700'
+                          : 'text-gray-600 hover:bg-gray-100'
+                      }`}
+                    >
+                      {child.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
           </li>
         ))}
       </ul>
     </nav>
   );
-}; 
+} 

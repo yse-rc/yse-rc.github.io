@@ -1,17 +1,21 @@
 import { Header } from '../layout/Header';
+import { SideNav } from '../layout/SideNav';
+import { useMediaQuery } from 'react-responsive';
 import mitchPic from '../../assets/images/prof-1.jpg';
 import { Footer } from '../layout/Footer';
 
 export const InfoPage = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
   return (
-    <div className="min-h-screen bg-white pt-24">
+    <div className="min-h-screen bg-white pt-24 flex-col">
       <Header />
-      
-      <div className="p-6 max-w-[2400px] mx-auto">
-        {/* Mission Statement Section */}
-        <section className="mt-12 bg-white p-6">
+      {!isMobile && <SideNav />}
+      <div className={`flex-1 p-6 ${!isMobile ? 'pl-60' : 'px-4'} mx-auto`}>
+        {/* Mission Section */}
+        <section id="mission" className="bg-white p-6">
           <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
-            Mission Statement
+            Mission
           </h2>
           <p className="text-lg text-gray-600">
             YSE Research Computing and Data is dedicated to supporting the Yale School of the Environment's 
@@ -20,10 +24,10 @@ export const InfoPage = () => {
           </p>
         </section>
 
-        {/* About Mitch Section */}
-        <section className="mt-12 bg-white p-6">
+        {/* About Me Section */}
+        <section id="about" className="mt-12 bg-white p-6">
           <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
-            About Mitch
+            About Me
           </h2>
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="flex flex-col items-center text-center">

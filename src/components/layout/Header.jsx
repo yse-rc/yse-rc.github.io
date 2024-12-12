@@ -48,14 +48,15 @@ export const Header = () => {
         <div className={`${isMenuOpen ? 'flex' : 'hidden'} md:flex flex-col md:flex-row gap-4 md:gap-6 items-center text-lg mt-4 md:mt-0`} 
              style={{ fontFamily: 'YaleNew-Roman' }}>
           <NavDropdown 
-            className="text-lg w-full md:w-auto text-center" 
+            className="text-lg w-full md:w-auto text-center relative" 
             title="Docs" 
             options={[
               {label: "Yale Center for Research Computing", href:"https://docs.ycrc.yale.edu/", external: true}, 
               {label: "Yale Center for Geospatial Solutions", href: "https://geospatial.yale.edu/", external: true}, 
-              {label: "Yale Data Intensive Social Science Center", href: "https://dissc.yale.edu/", external: true}, 
+              {label: "Yale Data-Intensive Social Science", href: "https://dissc.yale.edu/", external: true}, 
               {label: "YSE IT", href: "https://resources.environment.yale.edu/resources/computing/", external: true}
             ]} 
+            style={{ overflow: 'visible', position: 'absolute', zIndex: 1000 }}
           />
           <a 
             href="https://calendly.com/mitchell-horn-yale/30min"

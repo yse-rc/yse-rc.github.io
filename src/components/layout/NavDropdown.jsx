@@ -22,7 +22,7 @@ export const NavDropdown = ({ title, options, className }) => {
         </svg>
       </button>
       {isOpen && (
-        <div className="absolute left-0 right-0 md:left-auto md:right-auto mt-1 py-2 bg-gray-50 rounded-lg shadow-lg z-10">
+        <div className="absolute right-0 md:left-auto mt-1 py-2 bg-gray-50 rounded-lg shadow-lg z-10">
           {options.map((option, index) => {
             const isObjectOption = typeof option === 'object';
             const label = isObjectOption ? option.label : option;
@@ -39,12 +39,12 @@ export const NavDropdown = ({ title, options, className }) => {
                 onClick={() => setIsOpen(false)}
                 style={{ width: '350px' }}
               >
-                <span className="flex-1 pr-2">{label}</span>
+                <span className="flex-1">{label}</span>
                 {isExternal && (
                   <img 
                     src={externalLinkIcon} 
                     alt="External link" 
-                    className="w-4 h-4 flex-shrink-0 mt-1"
+                    className="w-4 h-4"
                   />
                 )}
               </a>

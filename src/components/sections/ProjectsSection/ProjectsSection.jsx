@@ -80,7 +80,7 @@ export const ProjectsSection = () => {
             <h3 className="font-semibold text-lg mb-6 text-gray-800 border-b pb-3">
               {column.title}
             </h3>
-            <div className="space-y-6 overflow-y-auto max-h-[60vh]">
+            <div className="space-y-6 overflow-y-auto max-h-[100vh]">
               {filterProjects(column.projects).map(project => (
                 <ProjectCard key={project.id} project={project} status={column.title.toLowerCase()} toggleTag={toggleTag} activeTags={activeTags} />
               ))}

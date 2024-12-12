@@ -56,7 +56,7 @@ export const events = [
     {
       id: 7,
       title: 'High-Performance Python',
-      date: '2024-12-14',
+      date: '2024-12-12',
       time: '01:00 PM - 2:30 PM',
       location: 'In-person',
       description: '[YCRC] This hands-on workshop will teach you how to profile and optimize Python workflows on computing devices ranging from personal computers to high performance computing clusters.',
@@ -79,7 +79,70 @@ export const events = [
       location: 'In-person + Zoom',
       description: '[FDS] build AI literacy, enhance collaboration, and foster community engagement around AI.',
       registrationLink: 'https://fds.yale.edu/events/ai-promptathon-2025/'
-    }
+    },
+    {
+      id: 10,
+      title: 'Information Session on HPC and Al/Clarity',
+      date: '2025-01-27',
+      time: '03:00 PM - 04:00 PM',
+      location: 'In-person [LEPH 115]',
+      description: '[DSDE] come for coffee, cookies, and discussion on HPC and Al/Clarity platforms at Yale.',
+      registrationLink: 'https://ysph.yale.edu/yale-school-of-public-health-event-calendar/'
+    },
+    {
+      id: 11,
+      title: 'Environmental Health Sciences Seminar',
+      date: '2025-01-25',
+      time: '12:00 PM - 12:50 PM',
+      location: 'In-person [LEPH 101]',
+      description: '[YSPH] Improving Consumer Product Exposure Science to Address Exposure Inequities.',
+      registrationLink: 'https://ysph.yale.edu/event/environmental-health-sciences-seminar-tba/'
+    },
+    {
+      id: 12,
+      title: 'Climate Change and Health Seminar',
+      date: '2025-02-03',
+      time: '12:00 PM - 12:50 PM',
+      location: 'In-person [LEPH 115]',
+      description: '[YSPH] Dr. Jennifer Marlon - Topic TBA',
+      registrationLink: 'https://ysph.yale.edu/event/cch-seminar-jennifermarlon/'
+    },
+    {
+      id: 13,
+      title: 'Climate Change and Health Seminar',
+      date: '2025-01-27',
+      time: '12:00 PM - 12:50 PM',
+      location: 'In-person [LEPH 115]',
+      description: '[YSPH] Dr. Neha Pathak - Topic TBA',
+      registrationLink: 'https://ysph.yale.edu/event/cch-seminar-nehapathak/'
+    },
+    {
+      id: 14,
+      title: 'Data Workshop: Subsampling',
+      date: '2025-02-03',
+      time: '03:00 PM - 04:00 PM',
+      location: 'In-person [LEPH 115]',
+      description: '[DSDE] workshop by Dr. Thomas Lumey, University of Auckland, NZ on choosing good subsamples and measuring new variables',
+      registrationLink: 'https://ysph.yale.edu/yale-school-of-public-health-event-calendar/'
+    },
+    {
+      id: 15,
+      title: 'Data Workshop: Big Data',
+      date: '2025-02-04',
+      time: '03:00 PM - 04:00 PM',
+      location: 'In-person [LEPH 115]',
+      description: '[DSDE] workshop by Dr. Thomas Lumey, University of Auckland, NZ on analyzing large datasets in R.',
+      registrationLink: 'https://ysph.yale.edu/yale-school-of-public-health-event-calendar/'
+    },
+    {
+      id: 16,
+      title: 'Data Visualization with ggplot and Tableau',
+      date: '2025-03-27',
+      time: '03:00 PM - 04:00 PM',
+      location: 'In-person [LEPH 115]',
+      description: '[DSDE] come for coffee, cookies, and discussion on data visualization with ggplot and Tableau.',
+      registrationLink: 'https://ysph.yale.edu/yale-school-of-public-health-event-calendar/'
+    },
   ];
 
   

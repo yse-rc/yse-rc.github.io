@@ -5,10 +5,11 @@ export const Calendar = ({ events, onDateClick }) => {
   const today = new Date();
 
   const eventDates = useMemo(() => {
-    return events.reduce((acc, event) => {
-      acc[event.date] = true;
-      return acc;
-    }, {});
+    const counts = {};
+    events.forEach(event => {
+      counts[event.date] = (counts[event.date] || 0) + 1;
+    });
+    return counts;
   }, [events]);
 
   const firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
@@ -55,7 +56,8 @@ export const Calendar = ({ events, onDateClick }) => {
         ))}
         {days.map(day => {
           const dateStr = `${currentDate.getFullYear()}-${String(currentDate.getMonth() + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-          const hasEvent = eventDates[dateStr];
+          const eventCount = eventDates[dateStr] || 0;
+          const hasEvents = eventCount > 0;
           const isToday = 
             day === today.getDate() && 
             currentDate.getMonth() === today.getMonth() && 
@@ -64,13 +66,22 @@ export const Calendar = ({ events, onDateClick }) => {
           return (
             <div
               key={day}
-              onClick={() => hasEvent && onDateClick(dateStr)}
+              onClick={() => hasEvents && onDateClick(dateStr)}
               className={`aspect-square flex flex-col items-center justify-center text-lg rounded-lg relative
-                ${hasEvent ? 'bg-purple-100 text-purple-700 font-semibold cursor-pointer hover:bg-purple-200' : 'text-black'}
+                ${hasEvents ? 'bg-purple-100 text-purple-700 font-semibold cursor-pointer hover:bg-purple-200' : 'text-black'}
                 ${isToday ? 'ring-2 ring-blue-500' : ''}`}
             >
               {day}
-              {hasEvent && <span className="w-2 h-2 bg-purple-500 rounded-full mt-1"></span>}
+              {hasEvents && (
+                <div className="flex gap-1 mt-1">
+                  {[...Array(Math.min(eventCount, 3))].map((_, i) => (
+                    <span key={i} className="w-2 h-2 bg-purple-500 rounded-full" />
+                  ))}
+                  {eventCount > 3 && (
+                    <span className="text-xs text-purple-700">+{eventCount - 3}</span>
+                  )}
+                </div>
+              )}
               {isToday && <span className="absolute top-1 right-1 w-2 h-2 bg-blue-500 rounded-full"></span>}
             </div>
           );

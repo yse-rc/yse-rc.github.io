@@ -24,12 +24,26 @@ export const EventsSection = () => {
     // Reset on mount
     isDirectVisit.current = !document.referrer.includes(window.location.origin);
     
-    // Only scroll within the events list container
-    if (nextEventIndex !== -1 && eventsListRef.current) {
+    // Find today's events first, if none exist, use next upcoming event
+    const today = new Date().toISOString().split('T')[0];
+    const todayEvents = sortedEvents.filter(event => event.date === today);
+    
+    if (todayEvents.length > 0 && eventsListRef.current) {
+      setTimeout(() => {
+        const firstTodayEvent = todayEvents[0];
+        const eventElement = eventRefs.current[firstTodayEvent.id];
+        if (eventElement && eventsListRef.current) {
+          const topPos = eventElement.offsetTop - eventsListRef.current.offsetTop;
+          eventsListRef.current.scrollTop = topPos;
+        }
+      }, 100);
+    } else if (nextEventIndex !== -1 && eventsListRef.current) {
       setTimeout(() => {
         const nextEvent = sortedEvents[nextEventIndex];
-        if (eventRefs.current[nextEvent.date] && eventsListRef.current) {
-          eventsListRef.current.scrollTop = eventRefs.current[nextEvent.date].offsetTop - eventsListRef.current.offsetTop;
+        const eventElement = eventRefs.current[nextEvent.id];
+        if (eventElement && eventsListRef.current) {
+          const topPos = eventElement.offsetTop - eventsListRef.current.offsetTop;
+          eventsListRef.current.scrollTop = topPos;
         }
       }, 100);
     }
@@ -37,17 +51,28 @@ export const EventsSection = () => {
     return () => {
       hasScrolled.current = false;
     };
-  }, [nextEventIndex]);
+  }, [nextEventIndex, sortedEvents]);
 
   const handleDateClick = (dateStr) => {
-    const eventElement = eventRefs.current[dateStr];
-    if (eventElement && eventsListRef.current) {
-      eventElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      // Add a brief highlight effect
-      eventElement.classList.add('bg-purple-100');
-      setTimeout(() => {
-        eventElement.classList.remove('bg-purple-100');
-      }, 1500);
+    const dateEvents = sortedEvents.filter(event => event.date === dateStr);
+    if (dateEvents.length > 0 && eventsListRef.current) {
+      const firstEvent = dateEvents[0];
+      const eventElement = eventRefs.current[firstEvent.id];
+      if (eventElement) {
+        const topPos = eventElement.offsetTop - eventsListRef.current.offsetTop;
+        eventsListRef.current.scrollTop = topPos;
+        
+        // Highlight all events for this date
+        dateEvents.forEach(event => {
+          const el = eventRefs.current[event.id];
+          if (el) {
+            el.classList.add('bg-purple-100');
+            setTimeout(() => {
+              el.classList.remove('bg-purple-100');
+            }, 3500);
+          }
+        });
+      }
     }
   };
 
@@ -62,11 +87,11 @@ export const EventsSection = () => {
         </div>
         
         <div className="bg-white rounded-lg shadow-sm border border-gray-200">
-          <div ref={eventsListRef} className="overflow-y-auto p-4 space-y-6" style={{ maxHeight: '80vh' }}>
+          <div ref={eventsListRef} className="overflow-y-auto p-4 space-y-6 max-h-[80vh]">
             {sortedEvents.map((event) => (
               <div
                 key={event.id}
-                ref={el => eventRefs.current[event.date] = el}
+                ref={el => eventRefs.current[event.id] = el}
                 className={`bg-gray-50 rounded-lg p-5 transition-all duration-300
                   ${event.isPast ? 'opacity-50' : 'opacity-100'}`}
               >

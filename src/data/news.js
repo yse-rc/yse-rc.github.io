@@ -2,7 +2,7 @@ export const newsItems = [
     {
       id: 3,
       title: 'Bouchet HPC Cluster Beta Testing at MGHPCC',
-      description: 'The YCRC's first installation at MGHPCC, Bouchet (4,000 direct-liquid-cooled cores), is available for beta testing through December. Currently seeking users with tightly coupled, parallel workloads. General purpose and GPU nodes will be available in early 2025.',
+      description: 'The YCRC\'s first installation at MGHPCC, Bouchet (4,000 direct-liquid-cooled cores), is available for beta testing through December. Currently seeking users with tightly coupled, parallel workloads. General purpose and GPU nodes will be available in early 2025.',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLScjJYSkpyu-UqGH09Tgp2HS3xQ0NFjLOdg6_pRAMDKr4uiU0w/viewform',
       linkText: 'Request beta access to Bouchet',
       date: '2025-01-08'

@@ -12,13 +12,6 @@ export const tasks = [
           startDate: '2024-10-24'
         },
         {
-          id: 2,
-          title: 'Longitudinal unstructured data version control',
-          description: 'Longitdunal study data organization, structure, and version control implementation.',
-          tech: ['HPC', 'Parquet', 'DVC', 'Git', 'Dropbox'],
-          startDate: '2024-10-14'
-        },
-        {
           id: 3,
           title: 'Data visualization and analysis',
           description: 'Development of a data visualization and analysis pipeline for web data, zoom data, and survey data.',
@@ -31,7 +24,7 @@ export const tasks = [
           description: 'Data abstraction and API integration for Google Solar data.',
           tech: ['Python', 'HPC', 'Google'],
           startDate: '2024-10-14'
-        }
+        },
       ]
     },
     {
@@ -40,18 +33,18 @@ export const tasks = [
       borderColor: 'border-yellow-400',
       projects: [
         {
+          id: 13,
+          title: 'Census Data Fusion and Downscaling',
+          description: 'Development of statistical data integration methods for fusing and downscaling diverse census datasets.',
+          tech: ['R', 'Data Fusion', 'Statistical Modeling', 'Census Data'],
+          startDate: '2024-12-19'
+        },
+        {
           id: 4,
           title: 'BioClip Fine-Tuning',
           description: 'Adhoc data incorporation to BioClip for agentic AI of seedling detection.',
           tech: ['Python', 'HPC', 'CLIP', 'AI', 'Embedding'],
           startDate: '2024-10-29'
-        },
-        {
-          id: 5,
-          title: 'RAG AI Model Development',
-          description: 'Retrieval Augmented Generation AI model development for >1000 targeted research papers.',
-          tech: ['Python', 'RAG', 'Vector Databases', 'Embedding'],
-          startDate: '2024-09-09'
         },
         {
           id: 8,
@@ -61,13 +54,12 @@ export const tasks = [
           startDate: '2024-09-01'
         },
         {
-          id: 9,
-          title: 'Unstructured Big Data Conversion',
-          description: 'Converting large unstructured data to structured, compact, and accessibledata for analysis.',
-          tech: ['Storage', 'Globus', 'File Transfer', 'Querying', 'Dask', 'Parquet'],
-          startDate: '2024-11-08'
+          id: 2,
+          title: 'Longitudinal unstructured data version control',
+          description: 'Longitdunal study data organization, structure, and version control implementation.',
+          tech: ['HPC', 'Parquet', 'DVC', 'Git', 'Dropbox'],
+          startDate: '2024-10-14'
         },
-
       ]
     },
     {
@@ -109,6 +101,20 @@ export const tasks = [
           description: 'Webscraping and data extraction with rate-limited avoidance workflow.',
           tech: ['Python', 'HPC', 'Webscraping'],
           startDate: '2024-10-22'
+        },
+        {
+          id: 9,
+          title: 'Unstructured Big Data Conversion',
+          description: 'Converting large unstructured data to structured, compact, and accessibledata for analysis.',
+          tech: ['Storage', 'Globus', 'File Transfer', 'Querying', 'Dask', 'Parquet'],
+          startDate: '2024-11-08'
+        },
+        {
+          id: 5,
+          title: 'RAG AI Model Development',
+          description: 'Retrieval Augmented Generation AI model development for >1000 targeted research papers.',
+          tech: ['Python', 'RAG', 'Vector Databases', 'Embedding'],
+          startDate: '2024-09-09'
         },
       ]
     }

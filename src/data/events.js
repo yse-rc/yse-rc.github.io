@@ -305,6 +305,60 @@ export const events = [
       description: '[Library] Introduction to Yale Dataverse features, capabilities, and service model for research data sharing and archiving. Refreshments provided.',
       registrationLink: 'https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize?client_id=c9a559d2-7aab-4f13-a6ed-e7e9c52aec87&redirect_uri=https%3A%2F%2Fforms.office.com%2Flanding&state=eyJ2ZXJzaW9uIjoxLCJkYXRhIjp7IklkZW50aXR5UHJvdmlkZXIiOiJBVFNnT21Fa0lCemFzeGp5cDBWUXBSdk9QMFgyZEtFWXExMkJJT1N0dzBjUHk4ai1kaF8zUGxrYUJDTWM2c1NjQV9iUHhVcm9vUjdXM1NKbm5uU1BqblEiLCIucmVkaXJlY3QiOiJodHRwczovL2Zvcm1zLm9mZmljZS5jb20vcGFnZXMvcmVzcG9uc2VwYWdlLmFzcHg_aWQ9dTc2TTNUa2gtRTIwRVU0LWg2dnJYREtiQXNoNmpGeENyMVQ5TkpYVHNoUlVSRXRTTnpkU1UwWkxPRFpNU2s1WVdrZFhRMDFMUVU0M1ZpNHUmcm91dGU9c2hvcnR1cmwmc2lkPWI2MTkyZWY3LWUzYjQtNDUzNS04N2MwLTQxMWU3YjdhM2UwZSIsIi54c3JmIjoiQWVkRzRDcmRkdHhVWG9LQVNCdnVycXp0RXZWOVZkTFdjWmRLSGg4TmY0TDF5eldjYXBIaDZheUJwWDE3cXhTSkl4RWUtLUNZeS00cTVFZ2E4bUhNZjdrWVc5b0I1U1RLbkJlejc3c2pITTBCTTBnckttbTdyZzNwZVIwSGZjMUFHUSIsIk9wZW5JZENvbm5lY3QuQ29kZS5SZWRpcmVjdFVyaSI6IkFSMzRaWjg5OU5WSmVqcU1xbDNQdElycEZqQnB4U0pKYmFIU3hydW5FMGxRUjhlQkgzOWNiczZCbHoyRE1KdlYxZGJnUHlTUUgzUEY1WWFTdmJJRkliMXR0YmRaYjdxcEtoQnZabU1RTU1CeHZLMWRNMVAzWGlkT2JfSVBKWkR0N0EifX0&response_type=code%20id_token&scope=openid%20profile&response_mode=form_post&nonce=638724733416003226.YjQ0MWEzYzktNTJjZS00ZWFjLWI4ZTktODY0MmFjOTVmNmUxMTJhMGQxNGItY2RjMC00MDJmLTgwZWUtMWMwZTA4ZTljNTkw&msafed=0&x-client-SKU=ID_NET9_0&x-client-ver=8.0.1.0'
     },
+    {
+      id: 35,
+      title: 'On Not Re-inventing the Wheel: An Overview of Research on the Relationship Between Digital Technologies and the Environment',
+      date: '2025-01-24',
+      time: '12:00 PM - 1:00 PM',
+      location: 'In-person [380 Edwards] + Zoom',
+      description: '[CIE] Dr. Lorenz Hilty provides an overview of decades of research on digital technologies and environmental impact. Lunch provided for in-person attendees.',
+      registrationLink: 'https://yaleconnect.yale.edu/cie/rsvp_boot?id=2286911'
+    },
+    {
+      id: 36,
+      title: 'Digital Economy and the Environment Talk',
+      date: '2025-03-28',
+      time: '12:00 PM - 1:00 PM',
+      location: 'In-person [380 Edwards] + Zoom',
+      description: '[CIE] Dr. Lauren Bridges discusses the intersection of digital economy and environmental impact.',
+      registrationLink: 'https://cie.research.yale.edu/events/digital-economy-and-environment'
+    },
+    {
+      id: 37,
+      title: 'Using LLMs/AI for Greenwashing Detection in Corporate Climate Policy',
+      date: '2025-04-07',
+      time: '12:00 PM - 1:00 PM',
+      location: 'In-person [380 Edwards] + Zoom',
+      description: '[CIE] Dr. Angel Hsu explores how AI and language models can be used to detect greenwashing in corporate climate policies.',
+      registrationLink: 'https://cie.research.yale.edu/events/digital-economy-and-environment'
+    },
+    {
+      id: 38,
+      title: 'The Climate and Energy Implications of Crypto-Assets',
+      date: '2025-04-10',
+      time: '12:00 PM - 1:00 PM',
+      location: 'In-person [380 Edwards] + Zoom',
+      description: '[CIE] Dr. Costa Samaras discusses the environmental impact of cryptocurrency and digital assets.',
+      registrationLink: 'https://cie.research.yale.edu/events/digital-economy-and-environment'
+    },
+    {
+      id: 39,
+      title: 'The Importance of High-Resolution Land Cover Mapping',
+      date: '2025-01-28',
+      time: '10:30 AM - 11:30 AM',
+      location: 'In-person [Hixon Center] + Zoom',
+      description: '[Data-Driven Urban Forestry] Dr. Paige Brochu (UVM Spatial Analysis Lab) discusses geospatial analysis applications for understanding environmental health impacts and community resilience through high-resolution mapping.',
+      registrationLink: 'https://yale.zoom.us/webinar/register/WN_3r8OrgXIRI6jL9DE5meM0g#/registration'
+    },
+    {
+      id: 40,
+      title: 'Urban Forest Inequity',
+      date: '2025-02-18',
+      time: '10:30 AM - 11:30 AM',
+      location: 'In-person [Hixon Center] + Zoom',
+      description: '[Data-Driven Urban Forestry] Dr. Dexter Locke (USDA Forest Service) explores urban ecosystems and forest management through data science and transdisciplinary approaches.',
+      registrationLink: 'https://hixon.yale.edu/event/urban-forest-inequity'
+    }
   ];
 
   

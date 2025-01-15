@@ -33,6 +33,13 @@ export const tasks = [
       borderColor: 'border-yellow-400',
       projects: [
         {
+          id: 14,
+          title: 'NSF Data Management Plan Templates',
+          description: 'Development of YSE-specific boilerplate templates and guidance for NSF Data Management Plans, including data sharing, preservation, and access protocols.',
+          tech: ['Documentation', 'Data Management', 'Research Computing', 'NSF'],
+          startDate: '2025-01-15'
+        },
+        {
           id: 13,
           title: 'Census Data Fusion and Downscaling',
           description: 'Development of statistical data integration methods for fusing and downscaling diverse census datasets.',

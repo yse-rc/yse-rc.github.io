@@ -87,7 +87,7 @@ export const events = [
       time: '03:00 PM - 04:00 PM',
       location: 'In-person [LEPH 115]',
       description: '[DSDE] come for coffee, cookies, and discussion on HPC and Al/Clarity platforms at Yale.',
-      registrationLink: 'https://ysph.yale.edu/yale-school-of-public-health-event-calendar/'
+      registrationLink: 'https://ysph.yale.edu/event/coffee-cookie-and-coding-workshop-3-information-session-on-hpc-and-aiclarity-platforms/'
     },
     {
       id: 11,

@@ -92,7 +92,7 @@ export const events = [
     {
       id: 11,
       title: 'Environmental Health Sciences Seminar',
-      date: '2025-01-25',
+      date: '2025-01-29',
       time: '12:00 PM - 12:50 PM',
       location: 'In-person [LEPH 101]',
       description: '[YSPH] Improving Consumer Product Exposure Science to Address Exposure Inequities.',

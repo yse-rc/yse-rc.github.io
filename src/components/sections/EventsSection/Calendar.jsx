@@ -68,7 +68,9 @@ export const Calendar = ({ events, onDateClick }) => {
               key={day}
               onClick={() => hasEvents && onDateClick(dateStr)}
               className={`aspect-square flex flex-col items-center justify-center text-lg rounded-lg relative
-                ${hasEvents ? 'bg-purple-100 text-purple-700 font-semibold cursor-pointer hover:bg-purple-200' : 'text-black'}
+                ${hasEvents 
+                  ? 'bg-purple-100 text-purple-700 font-semibold cursor-pointer hover:bg-purple-200' 
+                  : 'bg-gray-50 text-gray-700'}
                 ${isToday ? 'ring-2 ring-blue-500' : ''}`}
             >
               {day}

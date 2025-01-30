@@ -358,6 +358,24 @@ export const events = [
       location: 'In-person [Hixon Center] + Zoom',
       description: '[Data-Driven Urban Forestry] Dr. Dexter Locke (USDA Forest Service) explores urban ecosystems and forest management through data science and transdisciplinary approaches.',
       registrationLink: 'https://hixon.yale.edu/event/urban-forest-inequity'
+    },
+    {
+      id: 41,
+      title: 'Digital Health Equity: Local Empowerment, Global Alignment Conference 2025',
+      date: '2025-03-04',
+      time: '9:00 AM - 5:00 PM',
+      location: 'In-person [Kline Tower]',
+      description: '[YSPH, FDS] Two-day conference focusing on digital health solutions, privacy approaches, AI in India, and equity-focused entrepreneurship in digital health. Features keynote speakers, panel discussions, lightning talks, and networking reception at Peabody Museum.',
+      registrationLink: 'https://web.cvent.com/event/49ad153c-ffbb-4d97-85a5-8af2089a510c/summary?tm=NLcV4f8Oq1UJHNTfn0ZmWCdl5zyn6-eQKElAHPw4VsE'
+    },
+    {
+      id: 42,
+      title: 'Columbia-NYU-Yale Housing Day',
+      date: '2025-02-21',
+      time: '11:00 AM - 5:00 PM',
+      location: 'In-person [Yale Department of Economics, Room B120]',
+      description: '[DISSC] One-day conference featuring speakers from Yale, Columbia, and NYU discussing housing economics, including topics on affordable housing, location choice, neighborhood dynamics, and rental markets.',
+      registrationLink: 'https://dissc.yale.edu/events/partner-events/columbia-nyu-yale-housing-day'
     }
   ];
 

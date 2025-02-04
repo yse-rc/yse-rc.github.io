@@ -358,6 +358,69 @@ export const events = [
       location: 'In-person [Hixon Center] + Zoom',
       description: '[Data-Driven Urban Forestry] Dr. Dexter Locke (USDA Forest Service) explores urban ecosystems and forest management through data science and transdisciplinary approaches.',
       registrationLink: 'https://hixon.yale.edu/event/urban-forest-inequity'
+    },
+    {
+      id: 41,
+      title: 'Red Flags in Green Promises: Can LLMs Detect Greenwashing in Corporate Climate Claims?',
+      date: '2025-02-07',
+      time: '12:00 PM - 1:00 PM',
+      location: 'In-person [380 Edwards] + Zoom',
+      description: '[CIE] Dr. Angel Hsu explores the development of climate-specific LLMs and their effectiveness in assessing corporate climate actions and detecting greenwashing.',
+      registrationLink: 'https://yaleconnect.yale.edu/cie/rsvp_boot?id=2291932'
+    },
+    {
+      id: 42,
+      title: 'Designing and Tailoring Implementation Strategies',
+      date: '2025-02-07',
+      time: '12:00 PM - 1:00 PM',
+      location: '135 College Street, Suite 200, Room 202 + Zoom',
+      description: '[CMIPS] Implementation Mapping approach covering needs assessment, outcomes definition, strategy selection, protocol development, and success evaluation.',
+      registrationLink: 'https://yale.zoom.us/j/93345316883?from=addon'
+    },
+    {
+      id: 43,
+      title: 'Gaining "Clarity" on the AI Landscape at Yale',
+      date: '2025-02-11',
+      time: '1:00 PM - 2:00 PM',
+      location: 'In-person [SHM L 111]',
+      description: '[Library] Overview of Yale\'s AI strategy and Clarity tool, including key terms, access information, and potential applications.',
+      registrationLink: 'https://schedule.yale.edu/event/14089914'
+    },
+    {
+      id: 44,
+      title: 'AI Prompt-a-Thon',
+      date: '2025-02-20',
+      time: '1:00 PM - 2:30 PM',
+      location: 'In-person [SHM L E28/E29]',
+      description: '[Library] Interactive workshop on AI prompting techniques using Yale\'s AI tools. No experience required.',
+      registrationLink: 'https://schedule.yale.edu/event/14090085'
+    },
+    {
+      id: 45,
+      title: 'Gaining "Clarity" on the AI Landscape at Yale',
+      date: '2025-02-25',
+      time: '10:00 AM - 11:00 AM',
+      location: 'In-person [SHM L 111]',
+      description: '[Library] Overview of Yale\'s AI strategy and Clarity tool, including key terms, access information, and potential applications.',
+      registrationLink: 'https://schedule.yale.edu/event/14089960'
+    },
+    {
+      id: 46,
+      title: 'Getting Started with Data Analysis & Visualization: Introduction to Python',
+      date: '2025-02-27',
+      time: '10:00 AM - 12:00 PM',
+      location: 'In-person [SHM L 111]',
+      description: '[Library] Hands-on introduction to Python programming fundamentals, data analysis, and visualization for beginners.',
+      registrationLink: 'https://schedule.yale.edu/event/14060050'
+    },
+    {
+      id: 47,
+      title: 'Efficient documentation and report of data analysis with Quarto in RStudio',
+      date: '2025-02-12',
+      time: '9:30 AM - 11:00 AM',
+      location: 'In-person [C-103, SHM]',
+      description: '[Library] Learn to use Quarto for organizing code, output, and research documentation with Dr. Sameet Mehta.',
+      registrationLink: 'https://schedule.yale.edu/event/14086546'
     }
   ];
 

@@ -33,6 +33,20 @@ export const tasks = [
       borderColor: 'border-yellow-400',
       projects: [
         {
+          id: 15,
+          title: 'Private Static Fill-Form to Google Sheets Site',
+          description: 'Development and persistance of a private (CAS) static fill-form that reads and writes to google sheets.',
+          tech: ['JavaScript', 'React', 'Survey', 'Automation', 'GitHub Pages', 'Authentication'],
+          startDate: '2025-02-03'
+        },
+        {
+          id: 16,
+          title: 'Python ML Code Optimization',
+          description: 'Profiling and optimizing python code using jit (just-in-time) dataframes and parallelization of nested looping.',
+          tech: ['Python', 'OpenMP', 'Numba', 'Parallelization', 'HPC', 'ML'],
+          startDate: '2025-01-31'
+        },
+        {
           id: 14,
           title: 'NSF Data Management Plan Templates',
           description: 'Development of YSE-specific boilerplate templates and guidance for NSF Data Management Plans, including data sharing, preservation, and access protocols.',
@@ -41,8 +55,8 @@ export const tasks = [
         },
         {
           id: 13,
-          title: 'Census Data Fusion and Downscaling',
-          description: 'Development of statistical data integration methods for fusing and downscaling diverse census datasets.',
+          title: 'Census Data Fusion',
+          description: 'Development of statistical data integration methods for fusing diverse census datasets.',
           tech: ['R', 'Data Fusion', 'Statistical Modeling', 'Census Data'],
           startDate: '2024-12-19'
         },
@@ -74,6 +88,27 @@ export const tasks = [
       title: 'Completed',
       borderColor: 'border-green-400',
       projects: [
+        {
+          id: 17,
+          title: 'Consultation for Remote Data Storage',
+          description: 'Review of data capture, storage, and migration process. Advising on Yale systems and performance based on validation and frequency.',
+          tech: ['HPC', 'File Storage', 'Cloud Computing', 'Remote Capture', 'I/O'],
+          startDate: '2025-01-30'
+        },
+        {
+          id: 18,
+          title: 'Consultation for Remote Computing',
+          description: 'Configuring on-campus workstation for remote SSH, remote VNC, and updates.',
+          tech: ['Remote Computing', 'File Access', 'SSH', 'Bash'],
+          startDate: '2025-01-16'
+        },
+        {
+          id: 19,
+          title: 'Consultation for OCR',
+          description: 'Overview on state-of-the-art OCR, handwritten recognition, fine-tuning, and API access for batch usage.',
+          tech: ['OCR', 'AI', 'API', 'Software', 'Consult'],
+          startDate: '2025-02-03'
+        },
         {
           id: 6,
           title: 'Big Data Network Transfering',

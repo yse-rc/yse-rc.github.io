@@ -1,5 +1,13 @@
 export const newsItems = [
     {
+      id: 4,
+      title: 'Update on data.gov Datasets',
+      description: 'Reports indicate that 2,000+ datasets have disappeared from data.gov. While some data may still exist on individual agency websites, many resources are potentially lost, relocated, or hidden. Multiple independent archival groups are actively tracking changes & backing up at-risk datasets, like the EOT Archives. If you are concerned about missing data or need assistance locating it, please reach out to me.',
+      link: 'https://web.archive.org/collection-search/EndOfTerm2024PreElectionCrawls',
+      linkText: 'Comprehensive crawl and aggregate of U.S. government websites',
+      date: '2025-02-04'
+    },
+    {
       id: 3,
       title: 'Bouchet HPC Cluster Beta Testing at MGHPCC',
       description: 'The YCRC\'s first installation at MGHPCC, Bouchet (4,000 direct-liquid-cooled cores), is available for beta testing through December. Currently seeking users with tightly coupled, parallel workloads. General purpose and GPU nodes will be available in early 2025.',

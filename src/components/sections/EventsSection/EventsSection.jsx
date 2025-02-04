@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { events } from '../../../data/events';
 import { Calendar } from './Calendar';
 import externalLinkIcon from '/src/assets/images/external-link.png';
@@ -19,6 +19,9 @@ export const EventsSection = () => {
     .sort((a, b) => a.dateObj - b.dateObj);
 
   const nextEventIndex = sortedEvents.findIndex(event => !event.isPast);
+
+  // Add state for selected date
+  const [selectedDate, setSelectedDate] = useState(null);
 
   useEffect(() => {
     // Reset on mount
@@ -54,6 +57,7 @@ export const EventsSection = () => {
   }, [nextEventIndex, sortedEvents]);
 
   const handleDateClick = (dateStr) => {
+    setSelectedDate(dateStr);
     const dateEvents = sortedEvents.filter(event => event.date === dateStr);
     if (dateEvents.length > 0 && eventsListRef.current) {
       const firstEvent = dateEvents[0];
@@ -76,6 +80,16 @@ export const EventsSection = () => {
     }
   };
 
+  const handleEventClick = (event) => {
+    setSelectedDate(event.date);
+    // Scroll the events list
+    const eventElement = eventRefs.current[event.id];
+    if (eventElement && eventsListRef.current) {
+      const topPos = eventElement.offsetTop - eventsListRef.current.offsetTop;
+      eventsListRef.current.scrollTop = topPos;
+    }
+  };
+
   return (
     <div className="mt-12 bg-white p-6">
       <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
@@ -83,7 +97,11 @@ export const EventsSection = () => {
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="bg-white rounded-lg shadow-sm border border-gray-200">
-          <Calendar events={events} onDateClick={handleDateClick} />
+          <Calendar 
+            events={events} 
+            onDateClick={handleDateClick}
+            selectedDate={selectedDate} 
+          />
         </div>
         
         <div className="bg-white rounded-lg shadow-sm border border-gray-200">
@@ -92,8 +110,10 @@ export const EventsSection = () => {
               <div
                 key={event.id}
                 ref={el => eventRefs.current[event.id] = el}
-                className={`bg-gray-50 rounded-lg p-5 transition-all duration-300
-                  ${event.isPast ? 'opacity-50' : 'opacity-100'}`}
+                onClick={() => handleEventClick(event)}
+                className={`bg-gray-50 rounded-lg p-5 transition-all duration-300 cursor-pointer hover:bg-purple-50
+                  ${event.isPast ? 'opacity-50' : 'opacity-100'}
+                  ${event.date === selectedDate ? 'bg-purple-100' : ''}`}
               >
                 <h3 className="font-semibold text-lg text-gray-800 mb-2">
                   {event.title}

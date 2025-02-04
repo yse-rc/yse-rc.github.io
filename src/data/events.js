@@ -87,12 +87,12 @@ export const events = [
       time: '03:00 PM - 04:00 PM',
       location: 'In-person [LEPH 115]',
       description: '[DSDE] come for coffee, cookies, and discussion on HPC and Al/Clarity platforms at Yale.',
-      registrationLink: 'https://ysph.yale.edu/yale-school-of-public-health-event-calendar/'
+      registrationLink: 'https://ysph.yale.edu/event/coffee-cookie-and-coding-workshop-3-information-session-on-hpc-and-aiclarity-platforms/'
     },
     {
       id: 11,
       title: 'Environmental Health Sciences Seminar',
-      date: '2025-01-25',
+      date: '2025-01-29',
       time: '12:00 PM - 12:50 PM',
       location: 'In-person [LEPH 101]',
       description: '[YSPH] Improving Consumer Product Exposure Science to Address Exposure Inequities.',

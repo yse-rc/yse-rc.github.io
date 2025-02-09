@@ -379,7 +379,6 @@ export const events = [
     },
     {
       id: 43,
-<<<<<<< HEAD
       title: 'Gaining "Clarity" on the AI Landscape at Yale',
       date: '2025-02-11',
       time: '1:00 PM - 2:00 PM',
@@ -422,7 +421,9 @@ export const events = [
       location: 'In-person [C-103, SHM]',
       description: '[Library] Learn to use Quarto for organizing code, output, and research documentation with Dr. Sameet Mehta.',
       registrationLink: 'https://schedule.yale.edu/event/14086546'
-=======
+    },
+    {
+      id: 48,
       title: 'Columbia-NYU-Yale Housing Day',
       date: '2025-02-21',
       time: '11:00 AM - 5:00 PM',
@@ -431,7 +432,7 @@ export const events = [
       registrationLink: 'https://dissc.yale.edu/events/partner-events/columbia-nyu-yale-housing-day'
     },
     {
-      id: 44,
+      id: 49,
       title: 'Skip a Thousand Words: Data Visualization Principles for DH',
       date: '2025-02-13',
       time: '1:00 PM - 2:00 PM',
@@ -440,7 +441,7 @@ export const events = [
       registrationLink: 'https://yaleconnect.yale.edu/dhlab/rsvp_boot?id=2292037'
     },
     {
-      id: 45,
+      id: 50,
       title: 'AI Information Session: Teaching and Learning',
       date: '2025-02-28',
       time: '12:00 PM - 1:00 PM',
@@ -449,7 +450,7 @@ export const events = [
       registrationLink: 'https://yaleconnect.yale.edu/rsvp?id=2291117'
     },
     {
-      id: 46,
+      id: 51,
       title: 'AI Course Revision Pilot Grant - Feb. Info Session',
       date: '2025-02-12',
       time: '11:00 AM - 12:00 PM',
@@ -458,7 +459,7 @@ export const events = [
       registrationLink: 'https://yaleconnect.yale.edu/PoorvuFacultyPrograms/rsvp_boot?id=2288660'
     },
     {
-      id: 47,
+      id: 52,
       title: 'Monthly Library Coding Meetup: NetsBlox',
       date: '2025-02-19',
       time: '11:00 AM - 12:00 PM',
@@ -467,7 +468,7 @@ export const events = [
       registrationLink: 'https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fforms.office.com%2Fr%2F238kJa0Ed4&data=05%7C02%7Candrew.leonard%40yale.edu%7Cfe44ce47a41a4307c7ea08dd46c80200%7Cdd8cbebb21394df8b4114e3e87abeb5c%7C0%7C0%7C638744547015846647%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=M0i4rW2%2FvhcNN1aorwy39OmSDtTghdcxlR7oM36pKWM%3D&reserved=0'
     },
     {
-      id: 48,
+      id: 53,
       title: 'Responsible AI in Global Business 2025 - Day 1',
       date: '2025-04-02',
       time: '9:00 AM - 5:00 PM',
@@ -476,7 +477,7 @@ export const events = [
       registrationLink: 'https://ereg.som.yale.edu/Responsible-AI-in-Global-Business-2025-Yale-Student-Faculty-Staff'
     },
     {
-      id: 49,
+      id: 54,
       title: 'Responsible AI in Global Business 2025 - Day 2',
       date: '2025-04-03',
       time: '9:00 AM - 5:00 PM',
@@ -492,7 +493,6 @@ export const events = [
       location: 'In-person [Yale Divinity School]',
       description: '[YDS] Two-day conference bringing together theologians, ethicists and philosophers to examine how AI transforms selfhood, agency, relationships and society. Features keynote talks and themed panels.',
       registrationLink: 'https://divinity.yale.edu/continuing-education/ai-and-ends-humanity'
->>>>>>> 4243d1e (New events added for feb/march/april)
     }
   ];
 

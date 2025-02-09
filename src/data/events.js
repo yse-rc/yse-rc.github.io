@@ -379,6 +379,7 @@ export const events = [
     },
     {
       id: 43,
+<<<<<<< HEAD
       title: 'Gaining "Clarity" on the AI Landscape at Yale',
       date: '2025-02-11',
       time: '1:00 PM - 2:00 PM',
@@ -421,6 +422,77 @@ export const events = [
       location: 'In-person [C-103, SHM]',
       description: '[Library] Learn to use Quarto for organizing code, output, and research documentation with Dr. Sameet Mehta.',
       registrationLink: 'https://schedule.yale.edu/event/14086546'
+=======
+      title: 'Columbia-NYU-Yale Housing Day',
+      date: '2025-02-21',
+      time: '11:00 AM - 5:00 PM',
+      location: 'In-person [Yale Department of Economics, Room B120]',
+      description: '[DISSC] One-day conference featuring speakers from Yale, Columbia, and NYU discussing housing economics, including topics on affordable housing, location choice, neighborhood dynamics, and rental markets.',
+      registrationLink: 'https://dissc.yale.edu/events/partner-events/columbia-nyu-yale-housing-day'
+    },
+    {
+      id: 44,
+      title: 'Skip a Thousand Words: Data Visualization Principles for DH',
+      date: '2025-02-13',
+      time: '1:00 PM - 2:00 PM',
+      location: 'Zoom',
+      description: '[DHLab] Taught by DH Developer Gavi Levy Haskell, this workshop will expose you to principles and techniques for making compelling data visualizations that effectively convey your work to viewers. No programming experience required.',
+      registrationLink: 'https://yaleconnect.yale.edu/dhlab/rsvp_boot?id=2292037'
+    },
+    {
+      id: 45,
+      title: 'AI Information Session: Teaching and Learning',
+      date: '2025-02-28',
+      time: '12:00 PM - 1:00 PM',
+      location: 'Zoom',
+      description: '[Educational Technology] Learn about Yale AI offerings including Clarity Platform, Microsoft Copilot Enterprise, and Zoom AI Companion. Discussion of functionality, teaching use cases, and future developments.',
+      registrationLink: 'https://yaleconnect.yale.edu/rsvp?id=2291117'
+    },
+    {
+      id: 46,
+      title: 'AI Course Revision Pilot Grant - Feb. Info Session',
+      date: '2025-02-12',
+      time: '11:00 AM - 12:00 PM',
+      location: 'Zoom',
+      description: '[Poorvu] Overview of the AI Course Revision Grant Program supporting Yale instructors in equipping students with AI knowledge across disciplines. Recommended for competitive proposals. Submission deadline March 7.',
+      registrationLink: 'https://yaleconnect.yale.edu/PoorvuFacultyPrograms/rsvp_boot?id=2288660'
+    },
+    {
+      id: 47,
+      title: 'Monthly Library Coding Meetup: NetsBlox',
+      date: '2025-02-19',
+      time: '11:00 AM - 12:00 PM',
+      location: 'In-person [344 Winchester, Room B149]',
+      description: '[Library] Monthly meetup featuring NetsBlox visual programming language. Open to faculty and staff of all experience levels. Light snacks provided.',
+      registrationLink: 'https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fforms.office.com%2Fr%2F238kJa0Ed4&data=05%7C02%7Candrew.leonard%40yale.edu%7Cfe44ce47a41a4307c7ea08dd46c80200%7Cdd8cbebb21394df8b4114e3e87abeb5c%7C0%7C0%7C638744547015846647%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=M0i4rW2%2FvhcNN1aorwy39OmSDtTghdcxlR7oM36pKWM%3D&reserved=0'
+    },
+    {
+      id: 48,
+      title: 'Responsible AI in Global Business 2025 - Day 1',
+      date: '2025-04-02',
+      time: '9:00 AM - 5:00 PM',
+      location: 'In-person [Yale School of Management]',
+      description: '[YSOM] Day 1 of two-day conference uniting business, academic, and government leaders to explore responsible AI development and adoption. Features keynotes and panels on technology, management, and societal impact.',
+      registrationLink: 'https://ereg.som.yale.edu/Responsible-AI-in-Global-Business-2025-Yale-Student-Faculty-Staff'
+    },
+    {
+      id: 49,
+      title: 'Responsible AI in Global Business 2025 - Day 2',
+      date: '2025-04-03',
+      time: '9:00 AM - 5:00 PM',
+      location: 'In-person [Yale School of Management]',
+      description: '[YSOM] Day 2 of two-day conference continuing discussions on responsible AI development. Features sessions on policy, regulation, and building trust in an AI-driven economy.',
+      registrationLink: 'https://ereg.som.yale.edu/Responsible-AI-in-Global-Business-2025-Yale-Student-Faculty-Staff'
+    },
+    {
+      id: 50,
+      title: 'AI and the Ends of Humanity: Thinking Theologically After ChatGPT',
+      date: '2025-04-10',
+      time: '9:00 AM - 5:00 PM',
+      location: 'In-person [Yale Divinity School]',
+      description: '[YDS] Two-day conference bringing together theologians, ethicists and philosophers to examine how AI transforms selfhood, agency, relationships and society. Features keynote talks and themed panels.',
+      registrationLink: 'https://divinity.yale.edu/continuing-education/ai-and-ends-humanity'
+>>>>>>> 4243d1e (New events added for feb/march/april)
     }
   ];
 

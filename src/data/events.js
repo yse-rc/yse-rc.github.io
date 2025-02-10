@@ -493,6 +493,15 @@ export const events = [
       location: 'In-person [Yale Divinity School]',
       description: '[YDS] Two-day conference bringing together theologians, ethicists and philosophers to examine how AI transforms selfhood, agency, relationships and society. Features keynote talks and themed panels.',
       registrationLink: 'https://divinity.yale.edu/continuing-education/ai-and-ends-humanity'
+    },
+    {
+      id: 55,
+      title: 'Getting Started with R Shiny: Build and Deploy Interactive Web Apps',
+      date: '2025-02-17',
+      time: '03:00 PM - 04:00 PM',
+      location: 'In-person [LEPH 424] + Zoom',
+      description: '[DSDE] Learn to build and deploy interactive web applications using R Shiny with Howard Baik.',
+      registrationLink: 'https://tinyurl.com/dsdeworkshop4'
     }
   ];
 

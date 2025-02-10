@@ -510,7 +510,7 @@ export const events = [
       time: '1:00 PM - 4:00 PM',
       location: 'In-person [YCRC]',
       description: '[YCRC] Introduction to HPC resources at Yale covering basic concepts: accessing clusters, Linux/bash commands, running jobs, file management, and troubleshooting workflows.',
-      registrationLink: 'https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fforms.gle%2FswkxnTGRvvn18Zsp6'
+      registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdkeBJ8523uN8Qht8mr0-1aDYP0ApOB8Ef2Clnb0ohUViYVFg/closedform'
     },
     {
       id: 57,
@@ -519,7 +519,7 @@ export const events = [
       time: '9:00 AM - 12:00 PM',
       location: 'In-person [YCRC]',
       description: '[YCRC] Introduction to HPC resources at Yale covering basic concepts: accessing clusters, Linux/bash commands, running jobs, file management, and troubleshooting workflows.',
-      registrationLink: 'https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fforms.gle%2FQjpaCswJjKHprKV4A'
+      registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfLJo0nkerbtec6c1DlmrKrboSikPdDgOwLAKUxnwVkgzWSDQ/viewform'
     },
     {
       id: 58,
@@ -528,7 +528,7 @@ export const events = [
       time: '11:00 AM - 5:00 PM',
       location: 'In-person [YCRC]',
       description: '[PSC] Hands-on introduction to OpenMP programming for C and Fortran programmers. Learn to write scalable codes using OpenMP. Requires ACCESS ID.',
-      registrationLink: 'https://nam12.safelinks.protection.outlook.com/?url=http%3A%2F%2Fcl.s10.exct.net%2F%3Fqs%3D7cc6b886a5e1a5cc36c5cd3813055ba7fff21fda6a2c8fb3716cf180ed45088ca1c1cb3c7899029d3f1e93227f4675eeb26e77e91ba8b491'
+      registrationLink: 'https://www.psc.edu/resources/training/hpc-workshop-shared-memory-programming-using-openmp-workshop-february-2025/'
     },
     {
       id: 59,

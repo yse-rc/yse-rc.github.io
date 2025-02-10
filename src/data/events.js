@@ -502,6 +502,51 @@ export const events = [
       location: 'In-person [LEPH 424] + Zoom',
       description: '[DSDE] Learn to build and deploy interactive web applications using R Shiny with Howard Baik.',
       registrationLink: 'https://tinyurl.com/dsdeworkshop4'
+    },
+    {
+      id: 56,
+      title: 'Introduction to HPC Hands-On Workshop',
+      date: '2025-02-13',
+      time: '1:00 PM - 4:00 PM',
+      location: 'In-person [YCRC]',
+      description: '[YCRC] Introduction to HPC resources at Yale covering basic concepts: accessing clusters, Linux/bash commands, running jobs, file management, and troubleshooting workflows.',
+      registrationLink: 'https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fforms.gle%2FswkxnTGRvvn18Zsp6'
+    },
+    {
+      id: 57,
+      title: 'Introduction to HPC Hands-On Workshop',
+      date: '2025-02-20',
+      time: '9:00 AM - 12:00 PM',
+      location: 'In-person [YCRC]',
+      description: '[YCRC] Introduction to HPC resources at Yale covering basic concepts: accessing clusters, Linux/bash commands, running jobs, file management, and troubleshooting workflows.',
+      registrationLink: 'https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fforms.gle%2FQjpaCswJjKHprKV4A'
+    },
+    {
+      id: 58,
+      title: 'Shared Memory Programming Using OpenMP',
+      date: '2025-02-19',
+      time: '11:00 AM - 5:00 PM',
+      location: 'In-person [YCRC]',
+      description: '[PSC] Hands-on introduction to OpenMP programming for C and Fortran programmers. Learn to write scalable codes using OpenMP. Requires ACCESS ID.',
+      registrationLink: 'https://nam12.safelinks.protection.outlook.com/?url=http%3A%2F%2Fcl.s10.exct.net%2F%3Fqs%3D7cc6b886a5e1a5cc36c5cd3813055ba7fff21fda6a2c8fb3716cf180ed45088ca1c1cb3c7899029d3f1e93227f4675eeb26e77e91ba8b491'
+    },
+    {
+      id: 59,
+      title: 'Intermediate HPC Hands-On Workshop',
+      date: '2025-02-27',
+      time: '1:00 PM - 3:00 PM',
+      location: 'In-person [YCRC]',
+      description: '[YCRC] Advanced HPC concepts: job performance analysis, job arrays, large dataset management. Prerequisites: basic knowledge of Yale HPC clusters.',
+      registrationLink: 'http://docs.google.com/forms/d/e/1FAIpQLSddPV_o9jr0cARmAsh17nh5ex50NznMs1BQDW2hsC1GW4zi0Q/viewform?usp=header'
+    },
+    {
+      id: 60,
+      title: 'Intermediate HPC Hands-On Workshop',
+      date: '2025-03-27',
+      time: '2:00 PM - 4:00 PM',
+      location: 'In-person [YCRC]',
+      description: '[YCRC] Advanced HPC concepts: job performance analysis, job arrays, large dataset management. Prerequisites: basic knowledge of Yale HPC clusters.',
+      registrationLink: 'https://docs.google.com/forms/d/1PC3YXQhgubdonlUj6k-z_3HQRgnJu_6fl_zdT7lhSHc/edit'
     }
   ];
 

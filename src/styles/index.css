@@ -87,3 +87,9 @@ button:focus-visible {
 .overflow-y-auto::-webkit-scrollbar-thumb:hover {
   background: #666;
 }
+
+.pattern-bg {
+  background-image: url('/news-border.png');
+  background-repeat: repeat;
+  background-blend-mode: overlay;
+}

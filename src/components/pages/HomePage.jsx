@@ -11,22 +11,22 @@ const ProjectBoard = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
   return (
-    <div className="min-h-screen bg-white pt-20">
+    <div className="min-h-screen pattern-bg pt-20">
       <Header />
       {!isMobile && <SideNav />}
       
       <div className={`p-6 ${!isMobile ? 'pl-60' : 'px-4'} mx-auto space-y-12`}>
-        <section id="news" className="bg-white rounded-lg shadow-md border border-gray-200">
+        <section id="news">
           <div className="p-6">
             <NewsSection />
           </div>
         </section>
-        <section id="projects" className="bg-white rounded-lg shadow-md border border-gray-200">
+        <section id="projects">
           <div className="p-6">
             <ProjectsSection />
           </div>
         </section>
-        <section id="events" className="bg-white rounded-lg shadow-md border border-gray-200">
+        <section id="events">
           <div className="p-6">
             <EventsSection />
           </div>

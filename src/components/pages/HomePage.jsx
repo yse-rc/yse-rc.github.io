@@ -7,6 +7,7 @@ import { useMediaQuery } from 'react-responsive';
 import { Footer } from '../layout/Footer';
 
 const ProjectBoard = () => {
+  console.log("HomePage (ProjectBoard) component function executed.");
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
   return (
@@ -15,14 +16,20 @@ const ProjectBoard = () => {
       {!isMobile && <SideNav />}
       
       <div className={`p-6 ${!isMobile ? 'pl-60' : 'px-4'} mx-auto space-y-12`}>
-        <section id="projects">
-          <ProjectsSection />
+        <section id="news" className="bg-white rounded-lg shadow-md border border-gray-200">
+          <div className="p-6">
+            <NewsSection />
+          </div>
         </section>
-        <section id="events">
-          <EventsSection />
+        <section id="projects" className="bg-white rounded-lg shadow-md border border-gray-200">
+          <div className="p-6">
+            <ProjectsSection />
+          </div>
         </section>
-        <section id="news">
-          <NewsSection />
+        <section id="events" className="bg-white rounded-lg shadow-md border border-gray-200">
+          <div className="p-6">
+            <EventsSection />
+          </div>
         </section>
       </div>
       <div className="footer-divider"></div>

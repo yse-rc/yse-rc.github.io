@@ -2,11 +2,11 @@ import { newsItems } from '../../../data/news';
 
 export const NewsSection = () => {
   return (
-    <div className="mt-12 bg-white">
+    <div className="bg-white p-6">
       <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
         News
       </h2>
-      <div className="overflow-y-auto pr-2 space-y-6 max-h-[100vh]">
+      <div className="overflow-y-auto pr-2 space-y-6 max-h-[60vh]">
         {newsItems.map(item => {
           if (item.type === 'video') {
             return (

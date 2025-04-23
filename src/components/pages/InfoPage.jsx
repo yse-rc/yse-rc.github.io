@@ -8,7 +8,7 @@ export const InfoPage = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
   return (
-    <div className="min-h-screen bg-white pt-24 flex flex-col">
+    <div className="min-h-screen pattern-bg pt-24 flex flex-col">
       <Header />
       <div className="flex flex-1">
         {!isMobile && <SideNav />}
@@ -62,7 +62,6 @@ export const InfoPage = () => {
           </section>
         </div>
       </div>
-      <div className="footer-divider"></div>
       <Footer />
     </div>
   );

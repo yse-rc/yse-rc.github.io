@@ -89,7 +89,10 @@ button:focus-visible {
 }
 
 .pattern-bg {
-  background-image: url('/news-border.png');
+  background-image: url('/topographic-map-pattern.svg');
   background-repeat: repeat;
   background-blend-mode: overlay;
+  background-color: #7C9082;
+  background-position: 0 0;
+  background-attachment: fixed;
 }

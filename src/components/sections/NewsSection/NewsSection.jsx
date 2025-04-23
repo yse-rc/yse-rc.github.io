@@ -6,7 +6,7 @@ export const NewsSection = () => {
       <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
         News
       </h2>
-      <div className="overflow-y-auto pr-2 space-y-6 max-h-[60vh]">
+      <div className="overflow-y-auto pr-2 space-y-6 max-h-[80vh]">
         {newsItems.map(item => {
           if (item.type === 'video') {
             return (

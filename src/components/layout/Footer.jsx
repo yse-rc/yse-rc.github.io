@@ -7,7 +7,7 @@ export const Footer = () => {
   const [isYseHovered, setIsYseHovered] = useState(false);
 
   return (
-    <div className="bg-gray-50 border-t border-gray-300 flex justify-between items-center p-4">
+    <div className="pattern-bg border-t border-transparent flex justify-between items-center p-4">
       <div className="flex gap-4">
         <a
           href="https://github.com/yse-rc/yse-rc.github.io"
@@ -23,7 +23,7 @@ export const Footer = () => {
               'translateY(0) scale(1) rotate(0deg)'
           }}
         >
-          <img src={githubIcon} alt="GitHub" className="w-10 h-10 md:w-8 md:h-8" />
+          <img src={githubIcon} alt="GitHub" className="w-10 h-10 md:w-10 md:h-10" />
         </a>
         <a
           href="https://environment.yale.edu/research"
@@ -38,11 +38,11 @@ export const Footer = () => {
               'translateY(0) scale(1) rotate(0deg)'
           }}
         >
-          <img src={yseIcon} alt="YSE Research" className="w-8 h-8" />
+          <img src={yseIcon} alt="YSE Research" className="w-10 h-10" />
         </a>
       </div>
-      <div className="text-gray-600 text-sm">
-        <a href="https://www.yale.edu" target="_blank" rel="noopener noreferrer" className="hover:underline">
+      <div className="text-white text-sm bg-blue-900/100 px-4 py-2 rounded">
+        <a href="https://www.yale.edu" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-200 hover:underline">
           © 2024 Yale University
         </a>
         . All rights reserved.

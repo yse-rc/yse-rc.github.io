@@ -26,16 +26,18 @@ export const NewsSection = () => {
                     </p>
                   )}
                   <div className="flex justify-center w-full mb-4">
-                    <iframe
-                      src={item.src}
-                      width={item.width || "640"}
-                      height={item.height || "360"}
-                      frameBorder={item.frameBorder || "0"}
-                      scrolling={item.scrolling || "no"}
-                      allowFullScreen={item.allowFullScreen !== false}
-                      title={item.iframeTitle}
-                      className="max-w-full"
-                    ></iframe>
+                    {item.src ? (
+                      <iframe
+                        src={item.src}
+                        width={item.width || "640"}
+                        height={item.height || "360"}
+                        frameBorder={item.frameBorder || "0"}
+                        scrolling={item.scrolling || "no"}
+                        allowFullScreen={item.allowFullScreen !== false}
+                        title={item.iframeTitle}
+                        className="max-w-full rounded-lg shadow-lg"
+                      ></iframe>
+                    ) : null}
                   </div>
                   {item.link && (
                     <a

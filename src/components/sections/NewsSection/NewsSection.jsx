@@ -27,16 +27,16 @@ export const NewsSection = () => {
                   )}
                   <div className="flex justify-center w-full mb-4">
                     {item.src ? (
-                      <iframe
+                      <video
                         src={item.src}
                         width={item.width || "640"}
                         height={item.height || "360"}
-                        frameBorder={item.frameBorder || "0"}
-                        scrolling={item.scrolling || "no"}
-                        allowFullScreen={item.allowFullScreen !== false}
-                        title={item.iframeTitle}
+                        controls
                         className="max-w-full rounded-lg shadow-lg"
-                      ></iframe>
+                        title={item.iframeTitle}
+                      >
+                        Your browser does not support the video tag.
+                      </video>
                     ) : null}
                   </div>
                   {item.link && (

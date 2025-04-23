@@ -486,7 +486,7 @@ export const events = [
       registrationLink: 'https://ereg.som.yale.edu/Responsible-AI-in-Global-Business-2025-Yale-Student-Faculty-Staff'
     },
     {
-      id: 50,
+      id: 57,
       title: 'AI and the Ends of Humanity: Thinking Theologically After ChatGPT',
       date: '2025-04-10',
       time: '9:00 AM - 5:00 PM',
@@ -511,15 +511,6 @@ export const events = [
       location: 'In-person [YCRC]',
       description: '[YCRC] Introduction to HPC resources at Yale covering basic concepts: accessing clusters, Linux/bash commands, running jobs, file management, and troubleshooting workflows.',
       registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdkeBJ8523uN8Qht8mr0-1aDYP0ApOB8Ef2Clnb0ohUViYVFg/closedform'
-    },
-    {
-      id: 57,
-      title: 'Introduction to HPC Hands-On Workshop',
-      date: '2025-02-20',
-      time: '9:00 AM - 12:00 PM',
-      location: 'In-person [YCRC]',
-      description: '[YCRC] Introduction to HPC resources at Yale covering basic concepts: accessing clusters, Linux/bash commands, running jobs, file management, and troubleshooting workflows.',
-      registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfLJo0nkerbtec6c1DlmrKrboSikPdDgOwLAKUxnwVkgzWSDQ/viewform'
     },
     {
       id: 58,

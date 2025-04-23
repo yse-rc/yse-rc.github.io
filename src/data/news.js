@@ -1,5 +1,21 @@
 export const newsItems = [
     {
+      id: 5,
+      type: 'video',
+      title: 'National Artificial Intelligence Research Resource Pilot',
+      description: '2-minute video about the NAIRR Pilot program and how to get free AI computing from government-supported and non-governmental partners.',
+      link: 'https://nairrpilot.org/',
+      linkText: 'NAIRR Pilot Homepage',
+      src: 'https://yaleedu-my.sharepoint.com/personal/mitchell_horn_yale_edu/_layouts/15/embed.aspx?UniqueId=b2e11ce9-18ca-4758-8176-dcb942fc46c1&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create',
+      width: '640',
+      height: '360',
+      frameBorder: '0',
+      scrolling: 'no',
+      allowFullScreen: true,
+      iframeTitle: 'Horn_Mitchell-NAIRR-esv2-23p-bg-0p.mp4',
+      date: '2025-04-20'
+    },
+    {
       id: 4,
       title: 'Update on data.gov Datasets',
       description: 'Reports indicate that 2,000+ datasets have disappeared from data.gov. While some data may still exist on individual agency websites, many resources are potentially lost, relocated, or hidden. Multiple independent archival groups are actively tracking changes & backing up at-risk datasets, like the EOT Archives. If you are concerned about missing data or need assistance locating it, please reach out to me.',

@@ -4,6 +4,7 @@ import { InfoPage } from './components/pages/InfoPage'
 import './styles/index.css'
 
 function App() {
+  console.log("App component function executed.");
   return (
     <Router>
       <div>

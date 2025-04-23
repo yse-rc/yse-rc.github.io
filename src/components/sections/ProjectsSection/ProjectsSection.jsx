@@ -57,6 +57,7 @@ export const ProjectsSection = () => {
         </button>
         <div className="flex flex-col sm:flex-row gap-2">
           <input
+            id="project-search"
             type="text"
             placeholder="Search projects..."
             value={searchQuery}

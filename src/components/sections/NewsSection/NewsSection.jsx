@@ -25,16 +25,33 @@ export const NewsSection = () => {
                       {item.description}
                     </p>
                   )}
-                  <div className="flex justify-center w-full mb-4">
+                  <div className="w-full mb-4">
                     {item.src ? (
-                      <div style={{ padding: '56.25% 0 0 0', position: 'relative', width: '100%' }}>
-                        <iframe
-                          src={item.src}
-                          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                          frameBorder={item.frameBorder}
-                          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                          title={item.iframeTitle}
-                        />
+                      <div style={{
+                        width: '80%',       
+                        maxWidth: '640px',
+                        margin: '0 auto'
+                      }}>
+                        <div style={{
+                          position: 'relative',
+                          paddingTop: '56.25%', // 16:9 Ratio
+                          height: 0,
+                          overflow: 'hidden'
+                        }}>
+                          <iframe
+                            src={item.src}
+                            style={{
+                              position: 'absolute',
+                              top: 0,
+                              left: 0,
+                              width: '100%',
+                              height: '100%'
+                            }}
+                            frameBorder={item.frameBorder || 0}
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                            title={item.iframeTitle}
+                          />
+                        </div>
                       </div>
                     ) : null}
                   </div>

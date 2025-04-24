@@ -6,13 +6,13 @@ export const newsItems = [
       description: '2-minute video about the NAIRR Pilot program and how to get free AI computing from government-supported and non-governmental partners.',
       link: 'https://nairrpilot.org/',
       linkText: 'NAIRR Pilot Homepage',
-      src: 'https://www.dropbox.com/scl/fi/jnntotuyzqv9gsbsv4o7y/Horn_Mitchell-NAIRR.mp4?rlkey=q2hbymcmtu6tsgce340o0h9lg&e=1&st=5tt6ifcv&dl=1',
-      width: '640',
-      height: '360',
+      src: 'https://player.vimeo.com/video/1078104320?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479',
+      width: '100%',
+      height: '100%',
       frameBorder: '0',
       scrolling: 'no',
       allowFullScreen: true,
-      iframeTitle: 'Horn_Mitchell-NAIRR.mp4',
+      iframeTitle: 'Horn_Mitchell-NAIRR',
       date: '2025-04-20'
     },
     {

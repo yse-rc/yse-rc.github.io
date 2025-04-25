@@ -1,13 +1,15 @@
 import { newsItems } from '../../../data/news';
 
 export const NewsSection = () => {
+  // Sort news by date descending (newest first)
+  const sortedNews = [...newsItems].sort((a, b) => new Date(b.date) - new Date(a.date));
   return (
     <div className="bg-white p-6 rounded-lg shadow-md">
       <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
         News
       </h2>
       <div className="overflow-y-auto pr-2 space-y-6 max-h-[80vh]">
-        {newsItems.map(item => {
+        {sortedNews.map(item => {
           if (item.type === 'video') {
             return (
               <div

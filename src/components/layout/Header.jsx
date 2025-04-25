@@ -72,7 +72,7 @@ export const Header = () => {
               {label: "Yale Biomedical Informatics & Computing", href: "https://medicine.yale.edu/ybic/", external: true},
               {label: "YSE IT", href: "https://resources.environment.yale.edu/resources/computing/", external: true}
             ]} 
-          />
+          />ls
           <a 
             href="https://calendly.com/mitchell-horn-yale/30min"
             target="_blank"

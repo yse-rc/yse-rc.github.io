@@ -13,7 +13,7 @@ export const newsItems = [
       scrolling: 'no',
       allowFullScreen: true,
       iframeTitle: 'Horn_Mitchell-NAIRR',
-      date: '2025-04-20'
+      date: '2025-04-25'
     },
     {
       id: 4,
@@ -51,9 +51,9 @@ export const newsItems = [
       id: 6,
       type: 'video',
       title: 'How should we do Linear Regression?',
-      description: 'Non-pretentious, informal recap by Prof. Richard Samworth (Cambridge). Covers optimal convex loss for regression, robust efficiency, and practical insights.',
+      description: 'Non-pretentious, informal recap by Prof. Richard Samworth (Cambridge) hosted by Yale FDS. Covers optimal convex loss for regression, robust efficiency, and practical insights.',
       link: 'https://yale.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=95b75ca5-0342-489a-a622-b27a0169757c',
-      linkText: 'Watch the video',
+      linkText: 'Watch the video (Yale SSO required)',
       date: '2025-04-25'
     },
     {

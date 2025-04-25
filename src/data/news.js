@@ -46,5 +46,30 @@ export const newsItems = [
       link: 'https://docs.ycrc.yale.edu/clusters-at-yale/job-scheduling/priority-tier/',
       linkText: 'Learn more about the new priority tier',
       date: '2024-11-22'
+    },
+    {
+      id: 6,
+      type: 'video',
+      title: 'How should we do Linear Regression?',
+      description: 'Non-pretentious, informal recap by Prof. Richard Samworth (Cambridge). Covers optimal convex loss for regression, robust efficiency, and practical insights.',
+      link: 'https://yale.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=95b75ca5-0342-489a-a622-b27a0169757c',
+      linkText: 'Watch the video',
+      date: '2025-04-25'
+    },
+    {
+      id: 7,
+      title: 'Overleaf Premium Now Free via Yale',
+      description: 'Yale now offers free Overleaf premium accounts. Sign up or upgrade with your Yale credentials to access advanced collaborative LaTeX features.',
+      link: 'https://www.overleaf.com/edu/yale#overview',
+      linkText: 'Get Overleaf Premium',
+      date: '2025-04-04'
+    },
+    {
+      id: 8,
+      title: 'MarketScan Data Access for Yale Researchers',
+      description: 'Yale researchers can now access MarketScan Research Databases (2014–2023): 10B+ records, 68M+ patients, covering claims, labs, and dental. Requires Yale PI and data use agreement. Supported by YBIC, Medical Library, and YCCI.',
+      link: 'https://datamed.library.medicine.yale.edu/marketscan',
+      linkText: 'Access MarketScan',
+      date: '2025-03-03'
     }
   ];

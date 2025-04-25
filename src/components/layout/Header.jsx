@@ -69,6 +69,7 @@ export const Header = () => {
               {label: "Yale Center for Research Computing", href:"https://docs.ycrc.yale.edu/", external: true}, 
               {label: "Yale Center for Geospatial Solutions", href: "https://geospatial.yale.edu/", external: true}, 
               {label: "Yale Data-Intensive Social Science", href: "https://dissc.yale.edu/", external: true}, 
+              {label: "Yale Biomedical Informatics & Computing", href: "https://medicine.yale.edu/ybic/", external: true},
               {label: "YSE IT", href: "https://resources.environment.yale.edu/resources/computing/", external: true}
             ]} 
           />

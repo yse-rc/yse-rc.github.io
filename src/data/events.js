@@ -538,6 +538,69 @@ export const events = [
       location: 'In-person [YCRC]',
       description: '[YCRC] Advanced HPC concepts: job performance analysis, job arrays, large dataset management. Prerequisites: basic knowledge of Yale HPC clusters.',
       registrationLink: 'https://docs.google.com/forms/d/1PC3YXQhgubdonlUj6k-z_3HQRgnJu_6fl_zdT7lhSHc/edit'
+    },
+    {
+      id: 61,
+      title: 'YBIC Workshop Series: Developing LLMs for Medical Applications',
+      date: '2025-04-29',
+      time: 'Multi-session',
+      location: '101 College Street',
+      description: '[YBIC] Exclusive hands-on AI workshop on Yale\'s Computational Health Performance (CHP) infrastructure, focusing on LLMs for medical applications. Includes CHP intro, environment setup, services, LLM fine-tuning, and guided app development.',
+      registrationLink: 'https://medicine.yale.edu/ybic/about/events/?utm_source=beatrix_newsletter&utm_medium=email&utm_campaign=Department_of_Biomedical_Informatics_%2526_Data_Science_04-25-25#event-ybic-workshop-series-ai'
+    },
+    {
+      id: 62,
+      title: 'AI for Natural Climate Solutions - Yale Climate Day I"',
+      date: '2025-05-08',
+      time: '2:00 PM - 5:00 PM',
+      location: 'Burke Auditorium, Kroon Hall',
+      description: '[YCNCC] Yale Climate Day, part of the two-day symposium on climate and natural carbon capture. Hosted by Yale Center for Natural Carbon Capture.',
+      registrationLink: 'https://naturalcarboncapture.yale.edu/event/yale-climate-day-ycncc-spring-symposium'
+    },
+    {
+      id: 67,
+      title: 'AI for Natural Climate Solutions - Yale Climate Day II',
+      date: '2025-05-09',
+      time: '9:00 AM - 5:00 PM',
+      location: 'Burke Auditorium, Kroon Hall',
+      description: '[YCNCC] Spring 2025 Symposium, continuing the two-day event on climate and natural carbon capture. Hosted by Yale Center for Natural Carbon Capture.',
+      registrationLink: 'https://naturalcarboncapture.yale.edu/event/yale-climate-day-ycncc-spring-symposium'
+    },
+    {
+      id: 63,
+      title: 'Getting Started with Git & GitHub Part 2',
+      date: '2025-04-28',
+      time: '2:00 PM - 3:00 PM',
+      location: 'In-person [LEPH 102] + Zoom',
+      description: '[DSDE] Coffee, Cookie, and Coding workshop series. Hands-on Git & GitHub for version control, solo and group workflows. Prereq: Part 1 completed.',
+      registrationLink: 'https://yale.zoom.us/meeting/register/VPC46Nw1Sn2ugdTMdwaKlA#/registration'
+    },
+    {
+      id: 64,
+      title: 'Predictability of Human Mobility Across Borders',
+      date: '2025-04-28',
+      time: '12:00 PM - 1:15 PM',
+      location: 'Evans Hall, Room 2230, Nooyi Classroom',
+      description: '[SOM] Filiz Garip (Princeton) discusses migration predictability using Mexican Migration Project data. Lunch at 11:30 AM. Yale community only.',
+      registrationLink: 'https://www.filizgarip.com'
+    },
+    {
+      id: 65,
+      title: 'Introduction to AI/ML on HPC Clusters',
+      date: '2025-05-08',
+      time: '9:30 AM - 11:30 AM',
+      location: 'In-person [17 Hillhouse Ave, Room 101]',
+      description: '[YCRC] Practical intro to running AI/ML, neural networks, and LLMs on Yale HPC clusters. Covers ML/LLM basics, local LLMs, and SLURM best practices. For HPC beginners.',
+      registrationLink: 'https://forms.gle/A8hG9vQgfzzmfheGA'
+    },
+    {
+      id: 68,
+      title: 'Envisioning AI at Yale: An Interdisciplinary Symposium',
+      date: '2025-05-09',
+      time: '8:30 AM - 5:00 PM (reception to follow)',
+      location: 'Kline Tower',
+      description: 'Discipline-spanning event inspired by the Yale Task Force on AI. Brings together faculty, staff, students, and guests to promote innovation, thought leadership, and interdisciplinary collaboration in AI through research, scholarship, and art.',
+      registrationLink: 'https://web.cvent.com/event/4b9d5d33-9d25-44cb-892a-af1c5c5b48b6/summary'
     }
   ];
 

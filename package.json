@@ -6,11 +6,11 @@
   "type": "module",
   "scripts": {
     "dev": "NODE_NO_WARNINGS=1 vite",
-    "build": "vite build",
+    "build": "vite build && cp dist/index.html dist/404.html",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "vite build && gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "start": "vite preview"
   },
   "dependencies": {

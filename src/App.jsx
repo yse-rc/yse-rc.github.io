@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ProjectBoard from './components/pages/HomePage'
 import { InfoPage } from './components/pages/InfoPage'
+import GovDataPage from './components/pages/GovDataPage'
 import './styles/index.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ProjectBoard />} />
           <Route path="/info" element={<InfoPage />} />
+          <Route path="/govdata" element={<GovDataPage />} />
         </Routes>
       </div>
     </Router>

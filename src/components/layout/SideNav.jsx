@@ -67,6 +67,16 @@ export const SideNav = () => {
         { id: 'mission', label: 'Mission' },
         { id: 'about', label: 'About Me' }
       ] : []
+    },
+    {
+      id: 'govdata',
+      label: 'Federal Data',
+      path: '/govdata',
+      children: location.pathname.startsWith('/govdata') ? [
+        { id: 'rescue-workflow', label: 'Workflow' },
+        { id: 'data-rescue-tracker', label: 'Tracker' },
+        { id: 'additional-resources', label: 'Resources' }
+      ] : []
     }
   ];
 

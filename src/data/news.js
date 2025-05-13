@@ -54,7 +54,7 @@ export const newsItems = [
       description: 'Non-pretentious, informal recap by Prof. Richard Samworth (Cambridge) hosted by Yale FDS. Covers optimal convex loss for regression, robust efficiency, and practical insights.',
       link: 'https://yale.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=95b75ca5-0342-489a-a622-b27a0169757c',
       linkText: 'Watch the video (Yale SSO required)',
-      date: '2025-04-25'
+      date: '2025-04-20'
     },
     {
       id: 7,

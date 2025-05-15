@@ -71,5 +71,29 @@ export const newsItems = [
       link: 'https://datamed.library.medicine.yale.edu/marketscan',
       linkText: 'Access MarketScan',
       date: '2025-03-03'
+    },
+    {
+      id: 9,
+      title: 'New! Yale Remote Sensing Accelerator – Apply by May 18',
+      description: 'The Yale Center for Geospatial Solutions and Yale Library are excited to launch the Yale Remote Sensing Accelerator, a new week-long program coming June 9—13, 2025. This week-long program offers direct instruction and hands-on experience in processing satellite imagery.\\n\\nLead Instructor: Jill Kelly, PhD\\nDates: June 9—13, 2025\\nTime: 9:30 AM—5:00 PM EDT\\nLocation: Hybrid—Marx Library Classroom (C27) & via Zoom\\n\\nPre-Requisites: Participants must have basic familiarity with Windows file operations. Use of ArcGIS Pro will be taught in the first two days of the course. *Participants who successfully complete the program will receive a certificate.\\n\\nApplication Deadline: Sunday, May 18\\nFor more details and to apply, visit the Application Form below.\\n\\nMissed the deadline? Sign up for our interest list to be notified about the future Yale Remote Sensing Accelerator.\\n\\nFor inquiries, contact: geospatialhelp@yale.edu',
+      link: 'https://click.message.yale.edu/?qs=1e86b4cce464fdf092197c6ce02ca7e7e4bd74c64837a0e65f30f1f5ad23b6a9d7f0dc648e59f262d1b17cd3c636e34a459804f5e94604f48ddec8a6a40d1310',
+      linkText: 'Application Form',
+      date: '2025-05-13'
+    },
+    {
+      id: 10,
+      title: 'Update: Navigating and Rescuing Federal Environmental Data',
+      description: 'We have published a new resource to help you locate, navigate, and rescue federal datasets. This page provides guidance, context, and links to at-risk or relocated data sources. If you are searching for a specific dataset or need assistance, please visit our new page below and contact us at yse-rc@yale.edu for support.',
+      link: 'https://yse-rc.github.io/govdata',
+      linkText: 'Federal Data Rescue Resource',
+      date: '2025-05-14'
+    },
+    {
+      id: 11,
+      title: 'Copyright Considerations for AI Projects: Yale Library Guidance',
+      description: 'If you are using AI tools for research or content creation, be aware of important copyright, licensing, and ethical considerations. Yale Library provides guidance on intellectual property, fair use, and the use of licensed resources with AI. Review their recommendations and resources to ensure your project is compliant and responsible.',
+      link: 'https://guides.library.yale.edu/libraryAI',
+      linkText: 'Yale Library: AI Guidance and Copyright',
+      date: '2025-05-07'
     }
-  ];
+];

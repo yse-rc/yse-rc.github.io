@@ -81,7 +81,7 @@ export const SideNav = () => {
   ];
 
   return (
-    <nav className="fixed left-6 top-32 w-48 bg-white rounded-lg shadow-sm p-4 border border-gray-200">
+    <nav className="fixed left-6 top-32 w-48 bg-white rounded-lg shadow-sm p-4 border border-gray-200 z-40">
       <ul className="space-y-2">
         {sections.map((section) => (
           <li key={section.id}>

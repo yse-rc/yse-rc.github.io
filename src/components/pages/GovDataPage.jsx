@@ -1,19 +1,13 @@
-import { Header } from '../layout/Header';
-import { SideNav } from '../layout/SideNav';
-import { useMediaQuery } from 'react-responsive';
 import { Footer } from '../layout/Footer';
 import GovDataRescueWorkflow from '../sections/GovDataWorkflow/GovDataRescueWorkflow';
 import DataRescueResources from '../sections/GovDataWorkflow/DataRescueResources';
+import PageTransition from '../layout/PageTransition';
 
 const GovDataPage = () => {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-
   return (
-    <div className="min-h-screen pattern-bg pt-24 flex flex-col">
-      <Header />
-      <div className="flex flex-1">
-        {!isMobile && <SideNav />}
-        <div className={`flex-1 p-6 ${!isMobile ? 'pl-60' : 'px-4'} mx-auto`}>
+    <PageTransition>
+      <div className="min-h-full flex flex-col">
+        <div className="flex-1 p-6 px-4 mx-auto">
           {/* Rescue Workflow Section */}
           <section id="rescue-workflow" className="mb-12">
             <GovDataRescueWorkflow />
@@ -60,9 +54,9 @@ const GovDataPage = () => {
           </section>
 
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </PageTransition>
   );
 };
 

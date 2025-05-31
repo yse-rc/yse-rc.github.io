@@ -13,29 +13,31 @@ const PageTransition = ({ children }) => {
     return <>{children}</>;
   }
 
-  // Variants for the page container
+  // Variants for the page container - horizontal book-like transition
   const pageVariants = {
     initial: {
-      y: '100%',
+      x: '100%', // Start from the right (off-screen)
+      opacity: 0,
     },
     in: {
-      y: 0,
+      x: 0, // Slide to center position
+      opacity: 1,
     },
     out: {
-      y: '-50%', // Your desired slide distance
+      x: '-100%', // Slide out to the left
       opacity: 0,
-      scale: 0.95,
     },
   };
 
-  // Main transition settings
+  // Main transition settings - slightly faster for the book-like effect
   const pageTransition = {
     type: 'tween',
-    ease: [0.43, 0.13, 0.23, 0.96],
-    duration: 0.75,
+    ease: [0.43, 0.13, 0.23, 0.96], // Custom easing for smooth book-like feel
+    duration: 0.6, // Slightly faster than the original vertical transition
   };
 
   const sideNavWidth = '15rem'; // Equivalent to pl-60 (240px)
+  const headerHeight = '80px'; // Match the header height from App.jsx
 
   return (
     <motion.div
@@ -59,14 +61,15 @@ const PageTransition = ({ children }) => {
       }}
       style={{
         position: isAnimating ? 'fixed' : 'static',
-        top: isAnimating ? -currentScrollY : undefined,
+        top: isAnimating ? headerHeight : undefined, // Start from header height, not full viewport
         left: isAnimating && !isMobile ? sideNavWidth : 0,
         width: isAnimating && !isMobile ? `calc(100% - ${sideNavWidth})` : '100%',
-        height: 'auto',
-        minHeight: '100vh',
+        height: isAnimating ? `calc(100vh - ${headerHeight})` : 'auto', // Constrain to content area height
+        minHeight: isAnimating ? 'unset' : '100vh', // Remove minHeight during animation
         background: 'transparent',
         transformOrigin: 'center center',
         zIndex: isAnimating ? 20 : 'auto',
+        overflow: isAnimating ? 'hidden' : 'visible', // Prevent content from spilling during animation
       }}
     >
       {children}
@@ -77,6 +80,19 @@ const PageTransition = ({ children }) => {
 export default PageTransition;
 
 /*
+HORIZONTAL BOOK-LIKE PAGE TRANSITION:
+- Changed from vertical (y) to horizontal (x) animations
+- New pages slide in from the right (x: '100%' -> x: 0)
+- Old pages slide out to the left (x: 0 -> x: '-100%')
+- Reduced duration slightly (0.6s) for a more responsive book-like feel
+- Maintains all existing functionality for sidebar/header persistence
+
+CONSTRAINED ANIMATION AREA:
+- Animation now starts from headerHeight (80px) instead of full viewport top
+- Height is constrained to calc(100vh - 80px) during animation to match content area
+- Removes minHeight during animation to prevent jarring full-viewport effects
+- Added overflow hidden during animation to keep content within bounds
+
 FIXING OVERLAP WITH SIDEBAR/HEADER:
 - The `SideNav` was given `z-40`.
 - The `Header` already has `z-50`.
@@ -89,6 +105,6 @@ preventing it from visually sliding over the SideNav.
 It should also naturally be below the Header due to z-index hierarchy.
 
 Scroll jump attempt (from previous iteration, refined):
-- `position: 'fixed'` and `top: -currentScrollY` are used during animation.
+- `position: 'fixed'` and `top: headerHeight` are used during animation.
 - New pages are scrolled to top on animation complete.
 */ 

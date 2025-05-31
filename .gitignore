@@ -11,8 +11,8 @@
 # production
 /build
 /dist/.js
-/dist/assets/.js
-/dist/assets/.css
+/dist/assets/*.js
+/dist/assets/*.css
 
 # misc
 .DS_Store

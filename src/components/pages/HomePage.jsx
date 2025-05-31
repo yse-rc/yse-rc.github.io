@@ -9,19 +9,19 @@ const ProjectBoard = () => {
 
   return (
     <PageTransition>
-      <div className="min-h-full">
-        <div className={`p-6 px-4 mx-auto space-y-12 w-full`}>
+      <div className="min-h-full flex flex-col">
+        <div className="flex-1 p-6 px-4 mx-auto">
           <section id="news">
             <div className="p-6">
               <NewsSection />
             </div>
           </section>
-          <section id="projects">
+          <section id="projects" className="mt-12">
             <div className="p-6">
               <ProjectsSection />
             </div>
           </section>
-          <section id="events">
+          <section id="events" className="mt-12">
             <div className="p-6">
               <EventsSection />
             </div>

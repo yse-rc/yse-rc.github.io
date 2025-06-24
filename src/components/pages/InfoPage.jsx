@@ -1,4 +1,5 @@
 import mitchPic from '../../assets/images/prof-1.jpg';
+import stanPic from '../../assets/images/stan.jpg';
 import { Footer } from '../layout/Footer';
 import PageTransition from '../layout/PageTransition';
 
@@ -30,6 +31,7 @@ export const InfoPage = () => {
                 <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
                   About Me
                 </h2>
+                
                 <div className="flex flex-col md:flex-row gap-8 items-center">
                   <div className="flex flex-col items-center text-center">
                     <a 
@@ -59,6 +61,46 @@ export const InfoPage = () => {
                     />
                   </div>
                 </div>
+
+                <div className="flex flex-col md:flex-row gap-8 items-center">
+                  <div className="flex flex-col items-center text-center">
+                    <a 
+                      href="https://environment.yale.edu/directory/student/stanley-tan"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:opacity-80 transition-opacity"
+                    >
+                      <img
+                        src={stanPic}
+                        alt="Team Member"
+                        className="w-48 h-48 object-cover rounded-full shadow-lg mb-6"
+                      />
+                      <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                        Stanley Tan
+                      </h3>
+                      <h4 className="text-lg text-gray-600 mb-4">
+                        Student Research Computing and Data Assistant
+                      </h4>
+                    </a>
+                  </div>
+                  
+                <div>
+                  <iframe
+                    width="600"
+                    height="400"
+                    src="https://www.mindmeister.com/maps/public_map_shell/3736780309/stanley-tan?width=600&height=400&z=0.5&no_share=1&no_logo=1"
+                    style={{ overflow: 'hidden', marginBottom: '5px' }}
+                    title="Stanley Tan Mind Map"
+                    >
+                    Your browser is not able to display frames. Please visit
+                    <a href="https://www.mindmeister.com/3736780309/stanley-tan" target="_blank" rel="noopener noreferrer">
+                      Stanley Tan
+                    </a> on MindMeister.
+                  </iframe>
+                </div>
+
+                </div>
+
               </div>
             </div>
           </section>

@@ -95,5 +95,13 @@ export const newsItems = [
       link: 'https://guides.library.yale.edu/libraryAI',
       linkText: 'Yale Library: AI Guidance and Copyright',
       date: '2025-05-07'
+    },
+    {
+      id: 12,
+      title: 'Bouchet HPC is now available to all Yale Researchers',
+      description: 'The Bouchet HPC cluster is now available for all Yale researchers. Bouchet contains direct-liquid-cooled cores as well as NVIDIA A5000Ada GPUs. Accounts on Bouchet can be requested now and information sessions on transitioning from Grace and McCleary to Bouchet will be held later this summer. Dates will be announced by YCRC soon!',
+      link: 'https://docs.ycrc.yale.edu/clusters/bouchet/',
+      linkText: 'Bouchet HPC Information and Application Page',
+      date: '2025-07-03'
     }
 ];

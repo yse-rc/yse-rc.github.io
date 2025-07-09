@@ -79,7 +79,7 @@ export const InfoPage = () => {
                         Stanley Tan
                       </h3>
                       <h4 className="text-lg text-gray-600 mb-4">
-                        Student Research Computing and Data Assistant
+                        Student Assistant
                       </h4>
                     </a>
                   </div>
@@ -88,7 +88,7 @@ export const InfoPage = () => {
                   <iframe
                     width="600"
                     height="400"
-                    src="https://www.mindmeister.com/maps/public_map_shell/3736780309/stanley-tan?width=600&height=400&z=0.5&no_share=1&no_logo=1"
+                    src="https://www.mindmeister.com/maps/public_map_shell/3736780309/stanley-tan?width=600&height=400&z=auto&live_update=1&no_share=1&no_logo=1"
                     style={{ overflow: 'hidden', marginBottom: '5px' }}
                     title="Stanley Tan Mind Map"
                     >

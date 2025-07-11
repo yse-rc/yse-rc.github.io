@@ -85,7 +85,7 @@ export const InfoPage = () => {
                     </a>
                   </div>
                   
-                <div>
+                <div className="flex-1">
                   <img
                           src={stanPic2}
                           alt="Stanley Bio Graph"

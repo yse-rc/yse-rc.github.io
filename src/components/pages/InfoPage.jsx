@@ -89,7 +89,7 @@ export const InfoPage = () => {
                   <img
                           src={stanPic2}
                           alt="Stanley Bio Graph"
-                          className="w-[80%] h-auto object-contain mb-6"
+                          className="w-[80%] h-auto object-contain mb-6 ml-auto"
 
 
                         />

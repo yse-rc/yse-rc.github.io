@@ -79,7 +79,7 @@ export const InfoPage = () => {
                       <h3 className="text-xl font-semibold text-gray-800 mb-2">
                         Stanley Tan
                       </h3>
-                      <h4 className="text-lg text-gray-600 mb-4">
+                      <h4 className="text-lg text-gray-600 ml-4">
                         Student Assistant
                       </h4>
                     </a>

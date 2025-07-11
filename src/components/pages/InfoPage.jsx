@@ -1,5 +1,6 @@
 import mitchPic from '../../assets/images/prof-1.jpg';
 import stanPic from '../../assets/images/stan.jpg';
+import stanPic2 from '../../assets/images/stan2.png';
 import { Footer } from '../layout/Footer';
 import PageTransition from '../layout/PageTransition';
 
@@ -85,18 +86,12 @@ export const InfoPage = () => {
                   </div>
                   
                 <div>
-                  <iframe
-                    width="600"
-                    height="400"
-                    src="https://www.mindmeister.com/maps/public_map_shell/3736780309/stanley-tan?width=600&height=400&z=auto&live_update=1&no_share=1&no_logo=1"
-                    style={{ overflow: 'hidden', marginBottom: '5px' }}
-                    title="Stanley Tan Mind Map"
-                    >
-                    Your browser is not able to display frames. Please visit
-                    <a href="https://www.mindmeister.com/3736780309/stanley-tan" target="_blank" rel="noopener noreferrer">
-                      Stanley Tan
-                    </a> on MindMeister.
-                  </iframe>
+                  <img
+                          src={stanPic2}
+                          alt="Stanley Bio Graph"
+                          className="w-full h-auto object-contain mb-6"
+
+                        />
                 </div>
 
                 </div>

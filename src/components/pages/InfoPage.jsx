@@ -1,8 +1,9 @@
-import mitchPic from '../../assets/images/prof-1.jpg';
+import mitchPic from '../../assets/images/prof_mitch-800.png';
 import stanPic from '../../assets/images/stan.jpg';
 import stanPic2 from '../../assets/images/stan2.png';
 import { Footer } from '../layout/Footer';
 import PageTransition from '../layout/PageTransition';
+import { ZoomableImage } from '../shared/ZoomableImage';
 
 export const InfoPage = () => {
   return (
@@ -25,76 +26,82 @@ export const InfoPage = () => {
             </div>
           </section>
 
-          {/* About Me Section */}
-          <section id="about" className="mt-12">
+          {/* People */}
+          <section id="people" className="mt-12">
             <div className="p-6">
               <div className="bg-white p-6 rounded shadow">
                 <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3 text-center">
-                  About Me
+                  People
                 </h2>
                 
-                <div className="flex flex-col md:flex-row gap-8 items-center">
-                  <div className="flex flex-col items-center text-center">
-                    <a 
-                      href="https://environment.yale.edu/directory/staff/mitchell-horn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:opacity-80 transition-opacity"
-                    >
-                      <img
-                        src={mitchPic}
-                        alt="Team Member"
-                        className="w-48 h-48 object-cover rounded-full shadow-lg mb-6"
+                <div className="max-w-6xl mx-auto">
+                  {/* Mitchell Horn */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center border-b border-gray-200 pb-12 mb-12">
+                    <div className="flex flex-col items-center text-center md:pr-8">
+                      <a 
+                        href="https://environment.yale.edu/directory/staff/mitchell-horn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:opacity-80 transition-opacity"
+                      >
+                        <div className="w-56 h-56 mb-6 mx-auto">
+                          <img
+                            src={mitchPic}
+                            alt="Team Member"
+                            className="w-full h-full object-cover rounded-full shadow-lg"
+                          />
+                        </div>
+                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                          Mitchell J. Horn
+                        </h3>
+                        <h4 className="text-lg text-gray-600 mb-4">
+                          Senior Research Data Analyst
+                        </h4>
+                      </a>
+                    </div>
+                    <div className="flex-1">
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: `<iframe src='https://flo.uri.sh/visualisation/20745838/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:400px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/20745838/?utm_source=embed&utm_campaign=visualisation/20745838' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>`
+                        }}
                       />
-                      <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                        Mitchell J. Horn
-                      </h3>
-                      <h4 className="text-lg text-gray-600 mb-4">
-                        Senior Research Data Analyst
-                      </h4>
-                    </a>
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: `<iframe src='https://flo.uri.sh/visualisation/20745838/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:800px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/20745838/?utm_source=embed&utm_campaign=visualisation/20745838' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>`
-                      }}
-                    />
-                  </div>
-                </div>
 
-                <div className="flex flex-col md:flex-row gap-8 items-center">
-                  <div className="flex flex-col items-center text-center">
-                    <a 
-                      href="https://environment.yale.edu/directory/student/stanley-tan"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:opacity-80 transition-opacity"
-                    >
-                      <img
-                        src={stanPic}
-                        alt="Team Member"
-                        className="w-48 h-48 object-cover rounded-full shadow-lg mb-6"
-                      />
-                      <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                        Stanley Tan
-                      </h3>
-                      <h4 className="text-lg text-gray-600 mb-4">
-                        Student Assistant
-                      </h4>
-                    </a>
-                  </div>
-                  
-                <div className="flex-1">
-                  <img
+                  {/* Stanley Tan */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div className="flex flex-col items-center text-center md:pr-8">
+                      <a 
+                        href="https://environment.yale.edu/directory/student/stanley-tan"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:opacity-80 transition-opacity"
+                      >
+                        <div className="w-56 h-56 mb-6 mx-auto">
+                          <img
+                            src={stanPic}
+                            alt="Team Member"
+                            className="w-full h-full object-cover rounded-full shadow-lg"
+                          />
+                        </div>
+                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                          Stanley Tan
+                        </h3>
+                        <h4 className="text-lg text-gray-600 mb-4">
+                          Student Assistant
+                        </h4>
+                      </a>
+                    </div>
+                    <div className="flex-1">
+                      <div style={{ height: '400px' }} className="w-full">
+                        <ZoomableImage
                           src={stanPic2}
                           alt="Stanley Bio Graph"
-                          className="w-[80%] h-auto object-contain mb-6 ml-4"
-
-
+                          className="w-full h-full"
                         />
-                </div>
-
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
               </div>

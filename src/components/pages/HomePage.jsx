@@ -1,4 +1,3 @@
-import { ProjectsSection } from '../sections/ProjectsSection/ProjectsSection';
 import { NewsSection } from '../sections/NewsSection/NewsSection';
 import { EventsSection } from '../sections/EventsSection/EventsSection';
 import { Footer } from '../layout/Footer';
@@ -14,11 +13,6 @@ const ProjectBoard = () => {
           <section id="news">
             <div className="p-6">
               <NewsSection />
-            </div>
-          </section>
-          <section id="projects" className="mt-12">
-            <div className="p-6">
-              <ProjectsSection />
             </div>
           </section>
           <section id="events" className="mt-12">

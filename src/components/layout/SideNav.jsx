@@ -55,7 +55,6 @@ export const SideNav = () => {
       path: '/',
       children: location.pathname === '/' ? [
         { id: 'news', label: 'News' },
-        { id: 'projects', label: 'Projects' },
         { id: 'events', label: 'Events' }
       ] : []
     },
@@ -65,7 +64,7 @@ export const SideNav = () => {
       path: '/info',
       children: location.pathname === '/info' ? [
         { id: 'mission', label: 'Mission' },
-        { id: 'about', label: 'About Me' }
+        { id: 'about', label: 'People' }
       ] : []
     },
     {

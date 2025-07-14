@@ -97,3 +97,8 @@ button:focus-visible {
   background-position: 0 0;
   background-attachment: fixed;
 }
+
+/* Hide Flourish credit */
+.flourish-credit {
+  display: none;
+}

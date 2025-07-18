@@ -16,6 +16,7 @@
 
 # misc
 .DS_Store
+*Zone.Identifier
 .env
 .env.local
 .env.development.local

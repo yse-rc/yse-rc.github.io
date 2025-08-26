@@ -103,5 +103,21 @@ export const newsItems = [
       link: 'https://docs.ycrc.yale.edu/clusters/bouchet/',
       linkText: 'Bouchet HPC Information and Application Page',
       date: '2025-07-03'
+    },
+        {
+      id: 13,
+      title: 'Hopper is now available to all Yale Researchers',
+      description: 'A new research computing platform, Hopper, is now available for analysis of large-scale, high-risk data. It has an initial 60 compute nodes and more than 200 GPUs. Hopper enables advanced simulations, large-scale data analysis, and secure use of large language models for cutting-edge research.',
+      link: 'https://docs.ycrc.yale.edu/clusters/hopper/',
+      linkText: 'Hopper HPC Information and Application Page',
+      date: '2025-08-26'
+    },
+            {
+      id: 14,
+      title: 'SpinUpPlus is now available to all Yale Researchers',
+      description: 'SpinupPlus, an extension of Yale’s Spinup service, powered by Amazon Web Services’ (AWS) cloud-based computing platform. SpinUpPlus allows researchers to quickly launch secure, virtual servers and infrastructure for data analysis, web applications, and other research computing needs while ensuring institutional compliance and scalability. It offers a secure, scalable, and managed environment tailored for human subjects research that involves sensitive data, including Protected Health Information (PHI).',
+      link: 'https://medicine.yale.edu/ybic/computational-resources/yale/',
+      linkText: 'Hopper HPC Information and Access Page',
+      date: '2025-08-26'
     }
 ];

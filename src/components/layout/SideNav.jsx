@@ -127,43 +127,35 @@ export const SideNav = () => {
       path: '/knowledge',
       children: location.pathname.startsWith('/knowledge') ? [
         { 
-          id: 'ai-resources',
+          id: 'ai',
           label: 'AI',
-          path: '/knowledge/ai-tools-yale',
+          path: '/knowledge/ai',
           nestedChildren: [
-            { id: 'ai-overview', label: 'Overview', path: '/knowledge/ai-tools-yale' },
-            { id: 'ai-generative', label: 'Generative AI', path: '/knowledge/ai-tools-yale/generative' },
-            { id: 'ai-data-analysis', label: 'Data Analysis', path: '/knowledge/ai-tools-yale/analysis' }
+            { id: 'ai-tools-yale', label: 'AI Tools @ Yale', path: '/knowledge/ai/ai-tools-yale' }
           ]
         },
         { 
-          id: 'data-engineering',
+          id: 'data',
           label: 'Data',
-          path: '/knowledge/data-storage',
+          path: '/knowledge/data',
           nestedChildren: [
-            { id: 'data-overview', label: 'Overview', path: '/knowledge/data-storage' },
-            { id: 'data-databases', label: 'Databases', path: '/knowledge/data-storage/databases' },
-            { id: 'data-pipelines', label: 'Pipelines', path: '/knowledge/data-storage/pipelines' }
+            { id: 'data-storage', label: 'Data Storage', path: '/knowledge/data/data-storage' }
           ]
         },
         { 
-          id: 'professional-dev',
+          id: 'prof-dev',
           label: 'Prof Dev',
-          path: '/knowledge/trainings',
+          path: '/knowledge/prof-dev',
           nestedChildren: [
-            { id: 'training-overview', label: 'Overview', path: '/knowledge/trainings' },
-            { id: 'training-workshops', label: 'Workshops', path: '/knowledge/trainings/workshops' },
-            { id: 'training-certifications', label: 'Certifications', path: '/knowledge/trainings/certifications' }
+            { id: 'trainings', label: 'Trainings', path: '/knowledge/prof-dev/trainings' }
           ]
         },
         { 
           id: 'yale-computing',
           label: 'Yale Computing',
-          path: '/knowledge/ycrc-clusters',
+          path: '/knowledge/yale-computing',
           nestedChildren: [
-            { id: 'ycrc-overview', label: 'Overview', path: '/knowledge/ycrc-clusters' },
-            { id: 'ycrc-grace', label: 'Grace Cluster', path: '/knowledge/ycrc-clusters/grace' },
-            { id: 'ycrc-farnam', label: 'Farnam Cluster', path: '/knowledge/ycrc-clusters/farnam' }
+            { id: 'ycrc-clusters', label: 'YCRC Clusters', path: '/knowledge/yale-computing/ycrc-clusters' }
           ]
         }
       ] : []

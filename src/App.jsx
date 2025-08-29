@@ -7,6 +7,19 @@ import GovDataPage from './components/pages/GovDataPage'
 import { KnowledgeBase } from './components/pages/KnowledgeBase'
 import { Header } from './components/layout/Header'
 import { SideNav } from './components/layout/SideNav'
+// Knowledge Base sub-pages
+import AIToolsYale from './components/pages/knowledge/AIToolsYale'
+import AIGenerative from './components/pages/knowledge/AIGenerative'
+import AIDataAnalysis from './components/pages/knowledge/AIDataAnalysis'
+import DataStorage from './components/pages/knowledge/DataStorage'
+import DataDatabases from './components/pages/knowledge/DataDatabases'
+import DataPipelines from './components/pages/knowledge/DataPipelines'
+import Trainings from './components/pages/knowledge/Trainings'
+import TrainingWorkshops from './components/pages/knowledge/TrainingWorkshops'
+import TrainingCertifications from './components/pages/knowledge/TrainingCertifications'
+import YCRCClusters from './components/pages/knowledge/YCRCClusters'
+import YCRCGrace from './components/pages/knowledge/YCRCGrace'
+import YCRCFarnam from './components/pages/knowledge/YCRCFarnam'
 import './styles/index.css'
 
 function AnimatedRoutes() {
@@ -23,6 +36,22 @@ function AnimatedRoutes() {
           <Route path="/info" element={<InfoPage />} />
           <Route path="/govdata" element={<GovDataPage />} />
           <Route path="/knowledge" element={<KnowledgeBase />} />
+          {/* AI Resources */}
+          <Route path="/knowledge/ai-tools-yale" element={<AIToolsYale />} />
+          <Route path="/knowledge/ai-tools-yale/generative" element={<AIGenerative />} />
+          <Route path="/knowledge/ai-tools-yale/analysis" element={<AIDataAnalysis />} />
+          {/* Data Engineering */}
+          <Route path="/knowledge/data-storage" element={<DataStorage />} />
+          <Route path="/knowledge/data-storage/databases" element={<DataDatabases />} />
+          <Route path="/knowledge/data-storage/pipelines" element={<DataPipelines />} />
+          {/* Professional Development */}
+          <Route path="/knowledge/trainings" element={<Trainings />} />
+          <Route path="/knowledge/trainings/workshops" element={<TrainingWorkshops />} />
+          <Route path="/knowledge/trainings/certifications" element={<TrainingCertifications />} />
+          {/* Yale Computing */}
+          <Route path="/knowledge/ycrc-clusters" element={<YCRCClusters />} />
+          <Route path="/knowledge/ycrc-clusters/grace" element={<YCRCGrace />} />
+          <Route path="/knowledge/ycrc-clusters/farnam" element={<YCRCFarnam />} />
         </Routes>
       </AnimatePresence>
     </div>

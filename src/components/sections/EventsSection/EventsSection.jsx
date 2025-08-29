@@ -105,7 +105,7 @@ export const EventsSection = () => {
         </div>
         
         <div className="bg-white rounded-lg shadow-sm border border-gray-200">
-          <div ref={eventsListRef} className="overflow-y-auto p-4 space-y-6 max-h-[80vh]">
+          <div ref={eventsListRef} className="overflow-y-auto p-4 space-y-6 max-h-[70vh]">
             {sortedEvents.map((event) => (
               <div
                 key={event.id}

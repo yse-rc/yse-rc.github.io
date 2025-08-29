@@ -4,11 +4,14 @@ import {
   HomeIcon, 
   InformationCircleIcon, 
   BookOpenIcon, 
-  GlobeAltIcon 
+  GlobeAltIcon,
+  ChevronDownIcon,
+  ChevronRightIcon
 } from '@heroicons/react/24/outline';
 
 export const SideNav = () => {
   const [activeSection, setActiveSection] = useState('');
+  const [expandedItems, setExpandedItems] = useState({});
   const location = useLocation();
 
   useEffect(() => {
@@ -77,6 +80,13 @@ export const SideNav = () => {
     }
   };
 
+  const toggleExpanded = (itemId) => {
+    setExpandedItems(prev => ({
+      ...prev,
+      [itemId]: !prev[itemId]
+    }));
+  };
+
   const sections = [
     { 
       id: 'home',
@@ -115,7 +125,48 @@ export const SideNav = () => {
       label: 'Knowledge Base',
       icon: BookOpenIcon,
       path: '/knowledge',
-      children: []
+      children: location.pathname.startsWith('/knowledge') ? [
+        { 
+          id: 'ai-resources',
+          label: 'AI Resources',
+          path: '/knowledge/ai-tools-yale',
+          nestedChildren: [
+            { id: 'ai-overview', label: 'Overview', path: '/knowledge/ai-tools-yale' },
+            { id: 'ai-generative', label: 'Generative AI', path: '/knowledge/ai-tools-yale/generative' },
+            { id: 'ai-data-analysis', label: 'Data Analysis', path: '/knowledge/ai-tools-yale/analysis' }
+          ]
+        },
+        { 
+          id: 'data-engineering',
+          label: 'Data Engineering',
+          path: '/knowledge/data-storage',
+          nestedChildren: [
+            { id: 'data-overview', label: 'Overview', path: '/knowledge/data-storage' },
+            { id: 'data-databases', label: 'Databases', path: '/knowledge/data-storage/databases' },
+            { id: 'data-pipelines', label: 'Pipelines', path: '/knowledge/data-storage/pipelines' }
+          ]
+        },
+        { 
+          id: 'professional-dev',
+          label: 'Professional Development',
+          path: '/knowledge/trainings',
+          nestedChildren: [
+            { id: 'training-overview', label: 'Overview', path: '/knowledge/trainings' },
+            { id: 'training-workshops', label: 'Workshops', path: '/knowledge/trainings/workshops' },
+            { id: 'training-certifications', label: 'Certifications', path: '/knowledge/trainings/certifications' }
+          ]
+        },
+        { 
+          id: 'yale-computing',
+          label: 'Yale Computing',
+          path: '/knowledge/ycrc-clusters',
+          nestedChildren: [
+            { id: 'ycrc-overview', label: 'Overview', path: '/knowledge/ycrc-clusters' },
+            { id: 'ycrc-grace', label: 'Grace Cluster', path: '/knowledge/ycrc-clusters/grace' },
+            { id: 'ycrc-farnam', label: 'Farnam Cluster', path: '/knowledge/ycrc-clusters/farnam' }
+          ]
+        }
+      ] : []
     }
   ];
 
@@ -139,17 +190,69 @@ export const SideNav = () => {
                 <ul className="pl-4 space-y-1 mt-1">
                   {section.children.map((child) => (
                     <li key={child.id}>
-                      <a
-                        href={`#${child.id}`}
-                        onClick={(e) => handleClick(e, child.id)}
-                        className={`block px-4 py-2 rounded-lg transition-colors ${
-                          activeSection === child.id
-                            ? 'bg-blue-100 text-blue-700'
-                            : 'text-gray-600 hover:bg-gray-100'
-                        }`}
-                      >
-                        {child.label}
-                      </a>
+                      {child.nestedChildren ? (
+                        // Expandable sub-item with nested children
+                        <div>
+                          <div
+                            className={`flex items-center justify-between px-4 py-2 rounded-lg transition-colors ${
+                              location.pathname === child.path
+                                ? 'bg-blue-100 text-blue-700'
+                                : 'text-gray-600 hover:bg-gray-100'
+                            }`}
+                          >
+                            <Link
+                              to={child.path}
+                              className="flex-1"
+                            >
+                              {child.label}
+                            </Link>
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                toggleExpanded(child.id);
+                              }}
+                              className="p-1 hover:bg-gray-200 rounded"
+                            >
+                              {expandedItems[child.id] ? (
+                                <ChevronDownIcon className="w-4 h-4" />
+                              ) : (
+                                <ChevronRightIcon className="w-4 h-4" />
+                              )}
+                            </button>
+                          </div>
+                          {expandedItems[child.id] && (
+                            <ul className="pl-6 mt-1 space-y-1">
+                              {child.nestedChildren.map((nested) => (
+                                <li key={nested.id}>
+                                  <Link
+                                    to={nested.path}
+                                    className={`block px-3 py-1.5 text-sm rounded-lg transition-colors ${
+                                      location.pathname === nested.path
+                                        ? 'bg-blue-100 text-blue-700'
+                                        : 'text-gray-600 hover:bg-gray-100'
+                                    }`}
+                                  >
+                                    {nested.label}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </div>
+                      ) : (
+                        // Regular sub-item without nested children
+                        <a
+                          href={`#${child.id}`}
+                          onClick={(e) => handleClick(e, child.id)}
+                          className={`block px-4 py-2 rounded-lg transition-colors ${
+                            activeSection === child.id
+                              ? 'bg-blue-100 text-blue-700'
+                              : 'text-gray-600 hover:bg-gray-100'
+                          }`}
+                        >
+                          {child.label}
+                        </a>
+                      )}
                     </li>
                   ))}
                 </ul>

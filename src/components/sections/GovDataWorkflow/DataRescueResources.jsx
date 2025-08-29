@@ -41,7 +41,7 @@ const DataRescueResources = () => {
   );
 
   return (
-    <section className="bg-white p-6 rounded-xl shadow-sm">
+    <div className="bg-white p-6 rounded-xl shadow-sm">
       <h2 className="text-2xl font-semibold mb-4 text-gray-800 border-b pb-2 text-center">
         Additional Data Rescue Resources
       </h2>
@@ -753,7 +753,7 @@ const DataRescueResources = () => {
           Inspired by: <a href="https://libguides.umn.edu/c.php?g=1449575&p=10778647" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">University of Minnesota Libraries</a>
         </span>
       </div>
-    </section>
+    </div>
   );
 };
 

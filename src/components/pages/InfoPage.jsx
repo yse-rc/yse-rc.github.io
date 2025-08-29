@@ -9,7 +9,7 @@ export const InfoPage = () => {
   return (
     <PageTransition>
       <div className="min-h-full flex flex-col">
-        <div className="flex-1 p-6 px-4 mx-auto">
+        <div className="flex-1 p-6 px-4 mx-auto w-full">
           {/* Mission Section */}
           <section id="mission">
             <div className="p-6">

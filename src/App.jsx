@@ -4,6 +4,7 @@ import { useMediaQuery } from 'react-responsive'
 import ProjectBoard from './components/pages/HomePage'
 import { InfoPage } from './components/pages/InfoPage'
 import GovDataPage from './components/pages/GovDataPage'
+import { KnowledgeBase } from './components/pages/KnowledgeBase'
 import { Header } from './components/layout/Header'
 import { SideNav } from './components/layout/SideNav'
 import './styles/index.css'
@@ -21,6 +22,7 @@ function AnimatedRoutes() {
           <Route path="/" element={<ProjectBoard />} />
           <Route path="/info" element={<InfoPage />} />
           <Route path="/govdata" element={<GovDataPage />} />
+          <Route path="/knowledge" element={<KnowledgeBase />} />
         </Routes>
       </AnimatePresence>
     </div>
@@ -39,7 +41,7 @@ function App() {
         <div className="flex flex-1">
           {!isMobile && <SideNav />}
           <main 
-            className={`flex-1 ${!isMobile ? 'pl-60' : ''} pt-0`} 
+            className={`flex-1 ${!isMobile ? 'pl-64' : ''} pt-0`} 
             style={{ minHeight: `calc(100vh - ${headerHeight})`, paddingTop: headerHeight }}
           >
             <AnimatedRoutes />

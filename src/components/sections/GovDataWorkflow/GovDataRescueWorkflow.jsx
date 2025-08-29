@@ -440,7 +440,7 @@ const GovDataRescueWorkflow = () => {
   }, []);
 
   return (
-    <section className="bg-white p-6 rounded-xl shadow-sm">
+    <div className="bg-white p-6 rounded-xl shadow-sm">
       {/* Custom styles for ReactFlow controls */}
       <style>
         {`
@@ -530,7 +530,7 @@ const GovDataRescueWorkflow = () => {
           )}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

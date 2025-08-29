@@ -128,7 +128,7 @@ export const SideNav = () => {
       children: location.pathname.startsWith('/knowledge') ? [
         { 
           id: 'ai-resources',
-          label: 'AI Resources',
+          label: 'AI',
           path: '/knowledge/ai-tools-yale',
           nestedChildren: [
             { id: 'ai-overview', label: 'Overview', path: '/knowledge/ai-tools-yale' },
@@ -138,7 +138,7 @@ export const SideNav = () => {
         },
         { 
           id: 'data-engineering',
-          label: 'Data Engineering',
+          label: 'Data',
           path: '/knowledge/data-storage',
           nestedChildren: [
             { id: 'data-overview', label: 'Overview', path: '/knowledge/data-storage' },
@@ -148,7 +148,7 @@ export const SideNav = () => {
         },
         { 
           id: 'professional-dev',
-          label: 'Professional Development',
+          label: 'Prof Dev',
           path: '/knowledge/trainings',
           nestedChildren: [
             { id: 'training-overview', label: 'Overview', path: '/knowledge/trainings' },
@@ -211,7 +211,11 @@ export const SideNav = () => {
                                 e.stopPropagation();
                                 toggleExpanded(child.id);
                               }}
-                              className="p-1 hover:bg-gray-200 rounded"
+                              className={`p-1 rounded transition-colors bg-transparent ${
+                                location.pathname === child.path
+                                  ? 'text-blue-700 hover:bg-blue-200'
+                                  : 'text-gray-600 hover:bg-gray-200'
+                              }`}
                             >
                               {expandedItems[child.id] ? (
                                 <ChevronDownIcon className="w-4 h-4" />

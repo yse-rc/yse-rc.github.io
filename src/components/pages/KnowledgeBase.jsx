@@ -13,7 +13,8 @@ export const KnowledgeBase = () => {
                 <h2 className="text-2xl font-semibold mb-8 text-gray-800 border-b pb-3 text-center">
                   Knowledge Base
                 </h2>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div className="overflow-y-auto max-h-[80vh] pr-2">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                   {/* AI Resources */}
                   <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
                     <div className="bg-purple-100 rounded-lg p-4 mb-4">
@@ -88,6 +89,7 @@ export const KnowledgeBase = () => {
                         </a>
                       </li>
                     </ul>
+                  </div>
                   </div>
                 </div>
               </div>

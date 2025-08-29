@@ -119,5 +119,13 @@ export const newsItems = [
       link: 'https://medicine.yale.edu/ybic/computational-resources/yale/',
       linkText: 'Hopper HPC Information and Access Page',
       date: '2025-08-26'
+    },
+    {
+      id: 15,
+      title: 'Esri License Renewal Announcement',
+      description: 'The Esri license has been extended until August 31, 2026. The Esri license renewal is seamless for Esri ArcGIS Pro Named Users and Esri web-based (SaaS) Users (e.g., ArcGIS Online, ArcGIS StoryMaps, Dashboard, etc.); therefore, no action is required on your part. A handful of users who have requested air-gapped (single-use) ArcGIS Pro licenses or single-use data licenses will need to submit a request for a new license to geospatialhelp@yale.edu.',
+      link: 'https://guides.library.yale.edu/onlinemapping/AGOL',
+      linkText: 'ArcGIS Online Resources at Yale',
+      date: '2025-08-29'
     }
 ];

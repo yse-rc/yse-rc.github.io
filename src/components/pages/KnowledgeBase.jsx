@@ -18,7 +18,7 @@ export const KnowledgeBase = () => {
                   {/* AI Resources */}
                   <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
                     <div className="bg-purple-100 rounded-lg p-4 mb-4">
-                      <div className="text-3xl mb-2 text-center">🤖</div>
+                      <div className="text-3xl mb-2 text-center">🧠</div>
                       <h3 className="text-lg font-semibold text-gray-800 text-center">AI Resources</h3>
                     </div>
                     <ul className="space-y-2">
@@ -37,7 +37,7 @@ export const KnowledgeBase = () => {
                   {/* Data Engineering and Management */}
                   <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
                     <div className="bg-blue-100 rounded-lg p-4 mb-4">
-                      <div className="text-3xl mb-2 text-center">💾</div>
+                      <div className="text-3xl mb-2 text-center">💿</div>
                       <h3 className="text-lg font-semibold text-gray-800 text-center">Data Engineering and Management</h3>
                     </div>
                     <ul className="space-y-2">

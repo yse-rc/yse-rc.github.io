@@ -43,7 +43,7 @@ export const Footer = () => {
       </div>
       <div className="text-white text-sm bg-blue-900/100 px-4 py-2 rounded">
         <a href="https://www.yale.edu" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-200 hover:underline">
-          © 2024 Yale University
+          © 2025 Yale University
         </a>
         . All rights reserved.
       </div>

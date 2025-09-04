@@ -14,6 +14,9 @@ import ProfDev from './components/pages/knowledge/ProfDev'
 import YaleComputing from './components/pages/knowledge/YaleComputing'
 // Knowledge Base sub-pages
 import AIToolsYale from './components/pages/knowledge/AIToolsYale'
+import ModelSelectionGuide from './components/pages/knowledge/ModelSelectionGuide'
+import AITaxonomy from './components/pages/knowledge/AITaxonomy'
+import Prompting from './components/pages/knowledge/Prompting'
 import DataStorage from './components/pages/knowledge/DataStorage'
 import Trainings from './components/pages/knowledge/Trainings'
 import YCRCClusters from './components/pages/knowledge/YCRCClusters'
@@ -40,6 +43,9 @@ function AnimatedRoutes() {
           <Route path="/knowledge/yale-computing" element={<YaleComputing />} />
           {/* Knowledge Base Sub-pages */}
           <Route path="/knowledge/ai/ai-tools-yale" element={<AIToolsYale />} />
+          <Route path="/knowledge/ai/model-selection" element={<ModelSelectionGuide />} />
+          <Route path="/knowledge/ai/ai-taxonomy" element={<AITaxonomy />} />
+          <Route path="/knowledge/ai/prompting" element={<Prompting />} />
           <Route path="/knowledge/data/data-storage" element={<DataStorage />} />
           <Route path="/knowledge/prof-dev/trainings" element={<Trainings />} />
           <Route path="/knowledge/yale-computing/ycrc-clusters" element={<YCRCClusters />} />

@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { NavDropdown } from './NavDropdown';
 import { getNavigationSections } from '../../data/navigationSections';
 import { ChevronDownIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
-import externalLinkIcon from '/src/assets/images/external-link.png';
 import commemorativeLogo from '/src/assets/images/YSE125_Logo_BlueType_RGB.png';
 
 export const Header = () => {
@@ -75,26 +73,7 @@ export const Header = () => {
         {/* Desktop Navigation items - only visible on lg screens and above */}
         <div className="hidden lg:flex flex-row gap-6 items-baseline text-lg" 
              style={{ fontFamily: 'YaleNew-Roman' }}>
-          <NavDropdown 
-            className="text-lg" 
-            title="Docs" 
-            options={[
-              {label: "Yale Center for Research Computing", href:"https://docs.ycrc.yale.edu/", external: true}, 
-              {label: "Yale Center for Geospatial Solutions", href: "https://geospatial.yale.edu/", external: true}, 
-              {label: "Yale Data-Intensive Social Science", href: "https://dissc.yale.edu/", external: true}, 
-              {label: "Yale Biomedical Informatics & Computing", href: "https://medicine.yale.edu/ybic/", external: true},
-              {label: "YSE IT", href: "https://resources.environment.yale.edu/resources/computing/", external: true}
-            ]} 
-          />
-          <a 
-            href="https://calendly.com/mitchell-horn-yale/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 text-black hover:text-gray-700 active:text-gray-900 font-normal text-lg bg-gray-50 border border-transparent rounded-lg hover:border-blue-700 active:border-black inline-flex items-center gap-2 whitespace-nowrap"
-          >
-            Let's Meet
-            <img src={externalLinkIcon} alt="External link" className="w-4 h-4" />
-          </a>
+          {/* Navigation items removed - now in side nav */}
         </div>
 
         {/* Mobile Navigation Menu - contains SideNav items */}
@@ -103,26 +82,61 @@ export const Header = () => {
             <nav className="mt-4 space-y-2">
               {sections.map((section) => (
                 <div key={section.id}>
-                  <Link
-                    to={section.path}
-                    onClick={() => {
-                      window.scrollTo({ top: 0, behavior: 'smooth' });
-                      setIsMenuOpen(false);
-                    }}
-                    className={`flex items-center gap-2 px-4 py-2 text-gray-600 font-semibold hover:text-gray-700 rounded-lg transition-colors ${
-                      location.pathname === section.path ? 'text-blue-700 bg-blue-50' : ''
-                    }`}
-                  >
-                    <section.icon className="w-5 h-5" />
-                    {section.label}
-                  </Link>
+                  {section.id === 'related-centers' ? (
+                    <button
+                      onClick={() => toggleExpanded(section.id)}
+                      className={`flex items-center justify-between px-4 py-2 font-semibold rounded-lg transition-colors cursor-pointer w-full text-left ${
+                        expandedItems[section.id] ? 'text-blue-700 bg-blue-50' : 'text-gray-600 hover:text-gray-700 bg-transparent hover:bg-gray-50'
+                      }`}
+                    >
+                      <div className="flex items-center gap-2">
+                        <section.icon className="w-5 h-5" />
+                        {section.label}
+                      </div>
+                      <div className="p-1">
+                        {expandedItems[section.id] ? (
+                          <ChevronDownIcon className="w-4 h-4" />
+                        ) : (
+                          <ChevronRightIcon className="w-4 h-4" />
+                        )}
+                      </div>
+                    </button>
+                  ) : (
+                    <Link
+                      to={section.path}
+                      onClick={() => {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                        setIsMenuOpen(false);
+                      }}
+                      className={`flex items-center gap-2 px-4 py-2 text-gray-600 font-semibold hover:text-gray-700 rounded-lg transition-colors ${
+                        location.pathname === section.path ? 'text-blue-700 bg-blue-50' : ''
+                      }`}
+                    >
+                      <section.icon className="w-5 h-5" />
+                      {section.label}
+                    </Link>
+                  )}
                   
                   {/* Render children if any */}
-                  {section.children.length > 0 && (
+                  {section.children && section.children.length > 0 && (section.id !== 'related-centers' || expandedItems[section.id]) && (
                     <ul className="pl-8 space-y-1 mt-1">
                       {section.children.map((child) => (
                         <li key={child.id}>
-                          {child.nestedChildren ? (
+                          {child.external ? (
+                            // External link
+                            <a
+                              href={child.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              onClick={() => setIsMenuOpen(false)}
+                              className="flex items-center justify-between px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-colors"
+                            >
+                              <span>{child.label}</span>
+                              <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                              </svg>
+                            </a>
+                          ) : child.nestedChildren ? (
                             // Expandable sub-item with nested children
                             <div>
                               <div

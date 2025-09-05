@@ -601,6 +601,438 @@ export const events = [
       location: 'Kline Tower',
       description: 'Discipline-spanning event inspired by the Yale Task Force on AI. Brings together faculty, staff, students, and guests to promote innovation, thought leadership, and interdisciplinary collaboration in AI through research, scholarship, and art.',
       registrationLink: 'https://web.cvent.com/event/4b9d5d33-9d25-44cb-892a-af1c5c5b48b6/summary'
+    },
+    {
+      id: 69,
+      title: 'Getting Started with Data Analysis & Visualization: Introduction to Python (Python 1)',
+      date: '2025-09-15',
+      time: '10:00 AM - 12:00 PM',
+      location: 'In-person [SHM L 111]',
+      description: '[Library] Hands-on training for first-time coders and Python beginners. Learn Python programming fundamentals, data analysis, and visualization using Google Colab. Requires Google/Gmail account.',
+      registrationLink: 'https://schedule.yale.edu/event/15204300'
+    },
+    {
+      id: 70,
+      title: 'Dipping Your Toes into Evidence Synthesis',
+      date: '2025-09-08',
+      time: '4:00 PM - 5:00 PM',
+      location: 'Zoom',
+      description: '[Library] Introductory session on evidence synthesis covering review types, research questions, and search strategies for researchers, students, and clinicians.',
+      registrationLink: 'https://schedule.yale.edu/event/15192371'
+    },
+    {
+      id: 71,
+      title: 'Design Basics: How to Create Better Visuals',
+      date: '2025-09-10',
+      time: '2:00 PM - 2:45 PM',
+      location: 'Zoom',
+      description: '[Library] Learn how to create more effective posters, flyers, slides, and graphics. Eligible for .75 CME credits.',
+      registrationLink: 'https://schedule.yale.edu/event/13224009'
+    },
+    {
+      id: 72,
+      title: 'Zotero in 30 minutes',
+      date: '2025-09-11',
+      time: '12:15 PM - 1:00 PM',
+      location: 'In-person [SHM L 111]',
+      description: '[Library] Learn to build and organize a Zotero library, locate article PDFs with Find Full Text, and integrate Zotero into Google Docs and Microsoft Word.',
+      registrationLink: 'https://schedule.yale.edu/event/15218902'
+    },
+    {
+      id: 73,
+      title: 'Zotero in 30 minutes',
+      date: '2025-10-01',
+      time: '1:00 PM - 1:45 PM',
+      location: 'Zoom',
+      description: '[Library] Learn to build and organize a Zotero library, locate article PDFs with Find Full Text, and integrate Zotero into Google Docs and Microsoft Word.',
+      registrationLink: 'https://schedule.yale.edu/event/15219804'
+    },
+    {
+      id: 74,
+      title: 'Zotero in 30 minutes',
+      date: '2025-10-09',
+      time: '12:15 PM - 1:00 PM',
+      location: 'In-person [SHM L 111]',
+      description: '[Library] Learn to build and organize a Zotero library, locate article PDFs with Find Full Text, and integrate Zotero into Google Docs and Microsoft Word.',
+      registrationLink: 'https://schedule.yale.edu/event/15218903'
+    },
+    {
+      id: 75,
+      title: 'Zotero for LaTeX Users',
+      date: '2025-09-09',
+      time: '4:00 PM - 5:00 PM',
+      location: 'Zoom',
+      description: '[Library] Workshop for LaTeX users to integrate Zotero into research workflow, covering tools, plugins, and reference management techniques. Requires basic LaTeX familiarity.',
+      registrationLink: 'https://schedule.yale.edu/event/15190804'
+    },
+    {
+      id: 76,
+      title: 'Introduction to Digital Humanities',
+      date: '2025-09-10',
+      time: '11:00 AM - 12:00 PM',
+      location: 'In-person [Bass L06-A/B]',
+      description: '[Library] Broad overview of digital humanities focusing on important concepts rather than specific tools. Attend 3+ workshops for a Yale Library tote bag.',
+      registrationLink: 'https://schedule.yale.edu/event/15262482'
+    },
+    {
+      id: 77,
+      title: 'First Steps with Zotero',
+      date: '2025-09-12',
+      time: '2:00 PM - 2:30 PM',
+      location: 'Zoom',
+      description: '[Library] Learn to manage research, take notes, and create bibliographies with Zotero. Covers setup, saving citations, generating bibliographies, and cloud storage.',
+      registrationLink: 'https://schedule.yale.edu/event/15184335'
+    },
+    {
+      id: 78,
+      title: 'What\'s in a Word? Introduction to Text Analysis',
+      date: '2025-09-16',
+      time: '11:00 AM - 12:00 PM',
+      location: 'In-person [Bass L01-A/B]',
+      description: '[Library] Introduction to text analysis covering key principles, various methods, and ethical questions. Attend 3+ workshops for a Yale Library tote bag.',
+      registrationLink: 'https://schedule.yale.edu/event/15269629'
+    },
+    {
+      id: 79,
+      title: 'Introduction to R For Applied Statistics and Data Analysis',
+      date: '2025-09-17',
+      time: '3:00 PM - 5:00 PM',
+      location: 'In-person [RKZ Library Classroom 01]',
+      description: '[Library] Workshop on statistical programming language R covering fundamentals, data types, and analysis techniques. Bring laptop with R and RStudio preinstalled.',
+      registrationLink: 'https://schedule.yale.edu/event/15293775'
+    },
+    {
+      id: 80,
+      title: 'Introduction to Digital Humanities',
+      date: '2025-09-23',
+      time: '11:00 AM - 12:00 PM',
+      location: 'Zoom',
+      description: '[Library] Broad overview of digital humanities focusing on important concepts rather than specific tools. Attend 3+ workshops for a Yale Library tote bag.',
+      registrationLink: 'https://schedule.yale.edu/event/15262993'
+    },
+    {
+      id: 81,
+      title: 'Introduction to Python for Applied Statistics and Data Analysis',
+      date: '2025-09-24',
+      time: '3:00 PM - 5:00 PM',
+      location: 'In-person [RKZ Library Classroom 01]',
+      description: '[Library] Workshop on analyzing statistical and quantitative data with Python. Bring laptop with Python 3 and Positron preinstalled (Anaconda recommended).',
+      registrationLink: 'https://schedule.yale.edu/event/15293878'
+    },
+    {
+      id: 82,
+      title: 'Finding Government Information and Data',
+      date: '2025-09-29',
+      time: '1:30 PM - 2:30 PM',
+      location: 'Zoom',
+      description: '[Library] Overview of resources for finding government information at local, state, federal, and international levels.',
+      registrationLink: 'https://schedule.yale.edu/event/15239505'
+    },
+    {
+      id: 83,
+      title: 'What\'s in a Word? Introduction to Text Analysis',
+      date: '2025-10-01',
+      time: '11:00 AM - 12:00 PM',
+      location: 'Zoom',
+      description: '[Library] Introduction to text analysis covering key principles, various methods, and ethical questions. Attend 3+ workshops for a Yale Library tote bag.',
+      registrationLink: 'https://schedule.yale.edu/event/15263282'
+    },
+    {
+      id: 84,
+      title: 'Advanced Data Collection',
+      date: '2025-10-28',
+      time: '1:00 PM - 2:00 PM',
+      location: 'Zoom',
+      description: '[Library] Learn about manual data collection and web scraping techniques for hard-to-find data. Led by Gavi Levy Haskell and Jess O\'Toole.',
+      registrationLink: 'https://schedule.yale.edu/event/15252018'
+    },
+    {
+      id: 85,
+      title: 'Introduction to HPC on Yale\'s Clusters',
+      date: '2025-09-11',
+      time: '9:00 AM - 12:00 PM',
+      location: 'In-person [YCRC, 160 St Ronan St]',
+      description: '[YCRC] Hands-on workshop introducing new users to HPC resources at Yale, covering cluster access, Linux interface, job management, and file handling.',
+      registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfrP2563J_S9Pgnmn6uFGYMIxyfyYVOwsgj2B5clNfkRIMI4Q/viewform'
+    },
+    {
+      id: 86,
+      title: 'Using Bouchet Information Session',
+      date: '2025-09-18',
+      time: '11:00 AM - 11:30 AM',
+      location: 'Zoom',
+      description: '[YCRC] Learn about Yale\'s newest cluster Bouchet with 11,000 CPUs and 128 GPUs. Encourages researchers to migrate workloads to this new resource.',
+      registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfj4uS7E3O5bww8YGhebLtLMjvUos2ie6P_cRN9mL_2TuXeWQ/viewform'
+    },
+    {
+      id: 87,
+      title: 'Intermediate HPC on Yale\'s Clusters',
+      date: '2025-09-25',
+      time: '9:00 AM - 11:00 AM',
+      location: 'In-person [YCRC, 160 St Ronan St]',
+      description: '[YCRC] Advanced concepts in HPC including job performance analysis and job arrays. Requires working knowledge of Yale HPC clusters.',
+      registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdj6ps8WHRnjML_j_1dEN9EUfWkmC7subrSNBZssOIIJ93XmA/viewform'
+    },
+    {
+      id: 88,
+      title: 'Introduction to HPC on Yale\'s Clusters',
+      date: '2025-09-29',
+      time: '1:00 PM - 4:00 PM',
+      location: 'In-person [Wu Tsai Institute, 100 College St]',
+      description: '[YCRC] Hands-on workshop introducing new users to HPC resources at Yale, covering cluster access, Linux interface, job management, and file handling.',
+      registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeC-fp6Xordk0tacO19nVQK40T0qF7VeNf1bfj41P8IqBAZEg/viewform'
+    },
+    {
+      id: 89,
+      title: 'Python Data Visualization',
+      date: '2025-09-05',
+      time: '1:00 PM - 2:00 PM',
+      location: 'Zoom',
+      description: '[ACCESS] Workshop covering compelling visualizations using Matplotlib and Seaborn. Learn chart selection, plot customization, and design principles.',
+      registrationLink: 'https://events.teams.microsoft.com/event/17e230db-e9d4-415b-b648-3a90ff836610@4130bd39-7c53-419c-b1e5-8758d6d63f21'
+    },
+    {
+      id: 90,
+      title: 'Advanced HPC-CI Webinar Series: Python for HPC',
+      date: '2025-09-09',
+      time: '2:00 PM - 3:30 PM',
+      location: 'Zoom',
+      description: '[SDSC] Explore Numba and Dask technologies that empower researchers to bridge the gap between Python flexibility and supercomputing performance demands.',
+      registrationLink: 'https://na.eventscloud.com/python-for-hpc-09-09'
+    },
+    {
+      id: 91,
+      title: 'ACES: Software for AI on HPC',
+      date: '2025-09-09',
+      time: '11:00 AM - 1:30 PM',
+      location: 'Zoom',
+      description: '[TAMU] Overview of resources available on the ACES cluster to support AI workflows and applications. Led by Dr. Zhenhua He and Richard Lawrence.',
+      registrationLink: 'https://hprc.tamu.edu/training/aces_ai_software.html'
+    },
+    {
+      id: 92,
+      title: 'National Research Platform Fall Training Series',
+      date: '2025-09-09',
+      time: '1:00 PM - 3:00 PM',
+      location: 'Zoom',
+      description: '[NRP] Month-long series of workshops designed to help you get started with the National Research Platform (NRP) and accelerate your research.',
+      registrationLink: 'https://nrp.ai/training/'
+    },
+    {
+      id: 93,
+      title: 'ACES: Applying for Allocations - ACCESS, NAIRR, TAMUS and TAMU',
+      date: '2025-09-09',
+      time: '2:30 PM - 5:00 PM',
+      location: 'Zoom',
+      description: '[TAMU] Process of applying for allocations on the ACES testbed high performance cluster. Led by Dr. Sandra Nite and Sheri Stebenne.',
+      registrationLink: 'https://hprc.tamu.edu/training/aces_applying.html'
+    },
+    {
+      id: 94,
+      title: 'Parallel Computing with MATLAB: Hands-on Workshop',
+      date: '2025-09-09',
+      time: '1:00 PM - 4:00 PM',
+      location: 'Zoom',
+      description: '[NERSC/MathWorks] Speeding up application codes through parallel and distributed computing, multithreading, GPU leveraging, and large data processing.',
+      registrationLink: 'https://www.mathworks.com/company/events/webinars/upcoming/parallel-computing-with-matlab-hands-on-workshop-4935750.html'
+    },
+    {
+      id: 95,
+      title: 'Intro to R: Tidyverse, ggplot2, dplyr',
+      date: '2025-09-12',
+      time: '1:00 PM - 2:00 PM',
+      location: 'Zoom',
+      description: '[ACCESS] Data manipulation with dplyr and visualization with ggplot2. Learn to filter, summarize, transform datasets, and create impactful plots.',
+      registrationLink: 'https://events.teams.microsoft.com/event/f3025554-8a39-40ed-93a2-d330da43ae71@4130bd39-7c53-419c-b1e5-8758d6d63f21'
+    },
+    {
+      id: 96,
+      title: 'CU-RMACC Webinars: Introduction to AI for All',
+      date: '2025-09-15',
+      time: '12:00 PM - 1:30 PM',
+      location: 'Zoom',
+      description: '[CU-RMACC] Non-technical overview of AI concepts including Machine Learning, Deep Learning, Generative AI, and Large Language Models. Led by Dr. Nabeel Alzahrani.',
+      registrationLink: 'https://forms.gle/K7DBZ4cCgqVY1wzt5'
+    },
+    {
+      id: 97,
+      title: 'National Research Platform Fall Training Series',
+      date: '2025-09-16',
+      time: '1:00 PM - 3:00 PM',
+      location: 'Zoom',
+      description: '[NRP] Continuation of month-long workshop series on National Research Platform, designed to accelerate research and connect with the community.',
+      registrationLink: 'https://nrp.ai/training/'
+    },
+    {
+      id: 98,
+      title: 'COMPLECS: Data Transfer',
+      date: '2025-09-18',
+      time: '2:00 PM - 3:30 PM',
+      location: 'Zoom',
+      description: '[SDSC] Essential concepts and command-line tools for data transfer, integrity checks, file compression, and storage systems. Led by Dr. Marty Kandes.',
+      registrationLink: 'https://na.eventscloud.com/data-transfer-09-18-25'
+    },
+    {
+      id: 99,
+      title: 'Open House at YCGS Hillhouse Location',
+      date: '2025-09-18',
+      time: '3:30 PM - 5:30 PM',
+      location: 'In-person [37 Hillhouse Ave, New Haven]',
+      description: '[Yale Geospatial] Open house to explore the new space, meet the team, and learn about advancing geospatial research across disciplines. Light refreshments served.',
+      registrationLink: ''
+    },
+    {
+      id: 100,
+      title: 'Introduction to UAVs + UAV Lidar Collection and Processing',
+      date: '2025-09-19',
+      time: '10:00 AM - 2:00 PM',
+      location: 'In-person [Earth Observation Lab & Marsh Hall]',
+      description: '[Yale Geospatial] Two-day hands-on workshop (Sept 19 & 26) on uncrewed aerial vehicles and their research applications, including UAV fundamentals and lidar workflows.',
+      registrationLink: 'https://forms.office.com/Pages/ResponsePage.aspx?id=u76M3Tkh-E20EU4-h6vrXKcfMiheK5JBtQvoAwfGsOpUMkc3TTVYWkNITEJIMVM1RFpBTVVaSjI5NS4u'
+    },
+    {
+      id: 101,
+      title: 'National Research Platform Fall Training Series',
+      date: '2025-09-23',
+      time: '1:00 PM - 3:00 PM',
+      location: 'Zoom',
+      description: '[NRP] Continuation of month-long workshop series on National Research Platform for research acceleration.',
+      registrationLink: 'https://nrp.ai/training/'
+    },
+    {
+      id: 102,
+      title: 'ACES: AI/ML Techlab in Jupyter Notebooks',
+      date: '2025-09-23',
+      time: '2:30 PM - 5:00 PM',
+      location: 'Zoom',
+      description: '[TAMU] Technology lab to learn AI fundamentals and begin an AI project on the ACES cluster. Led by Dr. Zhenhua He.',
+      registrationLink: 'https://hprc.tamu.edu/training/aces_ai_techlab.html'
+    },
+    {
+      id: 103,
+      title: 'Getting Started with Git & GitHub Workshop',
+      date: '2025-09-29',
+      time: '3:00 PM - 4:00 PM',
+      location: 'Zoom',
+      description: '[YSPH] Learn Git/GitHub configuration, security keys setup, and project contribution with RStudio examples.',
+      registrationLink: 'https://yale.zoom.us/meeting/register/Z-yi8dioShe78BLrXt_FAA'
+    },
+    {
+      id: 104,
+      title: 'National Research Platform Fall Training Series',
+      date: '2025-09-30',
+      time: '1:00 PM - 3:00 PM',
+      location: 'Zoom',
+      description: '[NRP] Final session of month-long workshop series on National Research Platform.',
+      registrationLink: 'https://nrp.ai/training/'
+    },
+    {
+      id: 105,
+      title: 'Applied Parallel Programming with TACC',
+      date: '2025-10-01',
+      time: '10:00 AM - 5:00 PM',
+      location: 'Zoom',
+      description: '[TACC] Two-day virtual training (Oct 1 & 8) on utilizing supercomputing with parallel computing, CUDA, MPI, and HPC tools.',
+      registrationLink: 'https://events.zoom.us/ev/Aid6Lsjwj7nFHSGuAMo3bohcUGzrD28oP_UV6Pn3eiHKvNnMkTla~Av4263x8TLWDLBVo8M1XBoXU8zibdSUMiy_vOjmHea21nYcXRQVr6-cYeA'
+    },
+    {
+      id: 106,
+      title: 'Interactive Computing',
+      date: '2025-10-09',
+      time: '2:00 PM - 3:30 PM',
+      location: 'Zoom',
+      description: '[SDSC] Working with interactive software, accessing resources, batch vs interactive computing, and job monitoring.',
+      registrationLink: 'https://na.eventscloud.com/interactive-computing-10-09-25'
+    },
+    {
+      id: 107,
+      title: 'Resilient Rivers Workshop',
+      date: '2025-10-23',
+      time: '4:00 PM',
+      location: 'In-person [Earth Observation Lab, 21 Sachem St]',
+      description: '[Yale Geospatial] Two-day interdisciplinary workshop (Oct 23-24) exploring how ancient riverine societies responded to extreme climate events in Nile, Tigris-Euphrates, and Indus regions.',
+      registrationLink: ''
+    },
+    {
+      id: 108,
+      title: 'COMPLECS: Linux Shell Scripting',
+      date: '2025-10-23',
+      time: '2:00 PM - 3:30 PM',
+      location: 'Zoom',
+      description: '[SDSC] Shell scripting for boosting productivity and reducing errors in HPC workflows.',
+      registrationLink: 'https://na.eventscloud.com/linux-shell-scripting-10-23-25'
+    },
+    {
+      id: 109,
+      title: 'Advanced HPC-CI: Portable Accelerator Programming with SYCL',
+      date: '2025-11-04',
+      time: '2:00 PM - 3:30 PM',
+      location: 'Zoom',
+      description: '[SDSC] High-level overview of SYCL programming language for heterogeneous architectures in ISO C++.',
+      registrationLink: 'https://na.eventscloud.com/portable-accelerator-programming-sycl-11-04'
+    },
+    {
+      id: 110,
+      title: 'COMPLECS: Using Regular Expressions with Linux Tools',
+      date: '2025-11-06',
+      time: '2:00 PM - 3:30 PM',
+      location: 'Zoom',
+      description: '[SDSC] Regular expressions for preprocessing text and extracting results from HPC and data science workloads.',
+      registrationLink: 'https://na.eventscloud.com/reg-expressions-linux-tools-11-06-25'
+    },
+    {
+      id: 111,
+      title: 'ChatGPT for Job-Seekers: The Right Way to Use AI to Accelerate Your Search',
+      date: '2025-09-10',
+      time: '6:00 PM - 7:00 PM',
+      location: 'Zoom',
+      description: '[YSE CPD] Learn the right and wrong ways to use ChatGPT in every stage of your job search with OpenAI\'s first education partner and former LinkedIn/Khan Academy hiring manager.',
+      registrationLink: 'https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_cBWqdcs5sf1t5zM'
+    },
+    {
+      id: 112,
+      title: 'BIOMES: Instructive surprises in the hydrological functioning of landscapes',
+      date: '2025-09-10',
+      time: '12:00 PM - 1:00 PM',
+      location: 'Zoom',
+      description: '[BIOMES] Jim Kirchner (ETH Zurich/WSL) presents on landscapes receiving water from rain and snow, releasing it as blue water (streams) and green water (vegetation). Food provided.',
+      registrationLink: 'https://yaleconnect.yale.edu/otp_signup?module=event&event_id=2300418'
+    },
+    {
+      id: 113,
+      title: 'Behind the Scenes of Venture Capital with Sophia Zhao',
+      date: '2025-09-11',
+      time: '1:15 PM - 2:15 PM',
+      location: 'In-person [Tsai Center, 17 Prospect St]',
+      description: '[Tsai City] Partner at Alumni Ventures offers insights into venture capital realities, investor evaluation criteria, and strategies for founders navigating today\'s funding landscape.',
+      registrationLink: 'https://luma.com/ynlamy3k'
+    },
+    {
+      id: 114,
+      title: 'Workshop: The Tri-Sector Business Model with Jens Molbak',
+      date: '2025-10-07',
+      time: '5:30 PM - 7:00 PM',
+      location: 'In-person [Tsai Center, 17 Prospect St]',
+      description: '[Tsai City] Interactive 90-minute workshop on integrating private, public, and social sectors to develop innovative solutions using tri-sector tools and partnerships.',
+      registrationLink: 'https://luma.com/vcgic2p7'
+    },
+    {
+      id: 115,
+      title: 'YCNCC Fall Research Showcase Event',
+      date: '2025-10-10',
+      time: '1:00 PM - 5:00 PM',
+      location: 'In-person',
+      description: '[YCNCC] Yale Center for Natural Carbon Capture fall research showcase event.',
+      registrationLink: 'https://naturalcarboncapture.yale.edu/events/2025-10-10-save-the-date-ycncc-fall-research-showcase-event'
+    },
+    {
+      id: 116,
+      title: 'Final Showcase: Pitching for The Planet',
+      date: '2025-11-05',
+      time: '5:30 PM - 7:30 PM',
+      location: 'In-person [Tsai Center]',
+      description: '[Tsai City] Grand finale of the Climate Innovation Intensive where passion meets purpose in the fight against climate change. Free general admission.',
+      registrationLink: 'https://luma.com/pbtpy725'
     }
   ];
 

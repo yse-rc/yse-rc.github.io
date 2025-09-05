@@ -36,20 +36,20 @@ export const KnowledgeBase = () => {
                       </li>
                       <li>
                         <Link 
-                          to="/knowledge/ai/model-selection" 
-                          className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
-                        >
-                          <span className="text-purple-500 mr-2">→</span>
-                          <span>Model Selection</span>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link 
                           to="/knowledge/ai/ai-taxonomy" 
                           className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
                         >
                           <span className="text-purple-500 mr-2">→</span>
                           <span>AI Taxonomy</span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link 
+                          to="/knowledge/ai/model-selection" 
+                          className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
+                        >
+                          <span className="text-purple-500 mr-2">→</span>
+                          <span>Model Selection</span>
                         </Link>
                       </li>
                       <li>

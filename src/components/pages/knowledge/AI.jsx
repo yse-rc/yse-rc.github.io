@@ -11,14 +11,14 @@ const AI = () => {
       description: "Yale's official AI resources, guidance, and the Clarity platform"
     },
     {
-      title: "Model Selection",
-      path: "/knowledge/ai/model-selection",
-      description: "Choosing the right AI model and tools for your specific use case"
-    },
-    {
       title: "AI Taxonomy",
       path: "/knowledge/ai/ai-taxonomy",
       description: "Understanding the hierarchy and types of artificial intelligence"
+    },
+    {
+      title: "Model Selection",
+      path: "/knowledge/ai/model-selection",
+      description: "Choosing the right AI model and tools for your specific use case"
     },
     {
       title: "Prompting Best Practices",
@@ -30,7 +30,7 @@ const AI = () => {
   return (
     <PageTransition>
       <div className="min-h-full flex flex-col">
-        <div className="flex-1 p-6 px-4 mx-auto w-full max-w-6xl">
+        <div className="flex-1 p-6 px-4 mx-auto w-full">
           
           {/* Header with Breadcrumb */}
           <div className="bg-white p-8 rounded shadow mb-8">

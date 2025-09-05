@@ -34,7 +34,7 @@ function AnimatedRoutes() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<ProjectBoard />} />
           <Route path="/info" element={<InfoPage />} />
-          <Route path="/govdata" element={<GovDataPage />} />
+          <Route path="/at-risk-data" element={<GovDataPage />} />
           <Route path="/knowledge" element={<KnowledgeBase />} />
           {/* Knowledge Base Main Categories */}
           <Route path="/knowledge/ai" element={<AI />} />
@@ -67,7 +67,7 @@ function App() {
         <div className="flex flex-1">
           {!isMobile && <SideNav />}
           <main 
-            className={`flex-1 ${!isMobile ? 'pl-64' : ''} pt-0`} 
+            className={`flex-1 ${!isMobile ? 'pl-72' : ''} pt-0`} 
             style={{ minHeight: `calc(100vh - ${headerHeight})`, paddingTop: headerHeight }}
           >
             <AnimatedRoutes />

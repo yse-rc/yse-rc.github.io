@@ -36,7 +36,7 @@ const PageTransition = ({ children }) => {
     duration: 0.6, // Slightly faster than the original vertical transition
   };
 
-  const sideNavWidth = '15rem'; // Equivalent to pl-60 (240px)
+  const sideNavWidth = '18rem'; // Equivalent to pl-72 (288px)
   const headerHeight = '80px'; // Match the header height from App.jsx
 
   return (

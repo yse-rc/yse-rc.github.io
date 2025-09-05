@@ -2,7 +2,8 @@ import {
   HomeIcon, 
   InformationCircleIcon, 
   BookOpenIcon, 
-  GlobeAltIcon
+  ExclamationTriangleIcon,
+  LinkIcon
 } from '@heroicons/react/24/outline';
 
 export const getNavigationSections = (pathname) => [
@@ -29,10 +30,10 @@ export const getNavigationSections = (pathname) => [
   },
   {
     id: 'govdata',
-    label: 'Federal Data',
-    icon: GlobeAltIcon,
-    path: '/govdata',
-    children: pathname.startsWith('/govdata') ? [
+    label: 'At-Risk Data',
+    icon: ExclamationTriangleIcon,
+    path: '/at-risk-data',
+    children: pathname.startsWith('/at-risk-data') ? [
       { id: 'rescue-workflow', label: 'Workflow' },
       { id: 'data-rescue-tracker', label: 'Tracker' },
       { id: 'additional-resources', label: 'Resources' }
@@ -50,8 +51,8 @@ export const getNavigationSections = (pathname) => [
         path: '/knowledge/ai',
         nestedChildren: [
           { id: 'ai-tools-yale', label: 'AI Tools @ Yale', path: '/knowledge/ai/ai-tools-yale' },
-          { id: 'model-selection', label: 'Model Selection', path: '/knowledge/ai/model-selection' },
           { id: 'ai-taxonomy', label: 'AI Taxonomy', path: '/knowledge/ai/ai-taxonomy' },
+          { id: 'model-selection', label: 'Model Selection', path: '/knowledge/ai/model-selection' },
           { id: 'prompting', label: 'Prompting', path: '/knowledge/ai/prompting' }
         ]
       },
@@ -80,5 +81,43 @@ export const getNavigationSections = (pathname) => [
         ]
       }
     ] : []
+  },
+  {
+    id: 'related-centers',
+    label: 'Related Centers',
+    icon: LinkIcon,
+    path: '#related-centers',
+    children: [
+      { 
+        id: 'ycrc', 
+        label: 'Yale Center for Research Computing', 
+        href: 'https://docs.ycrc.yale.edu/', 
+        external: true 
+      },
+      { 
+        id: 'ycgs', 
+        label: 'Yale Center for Geospatial Solutions', 
+        href: 'https://geospatial.yale.edu/', 
+        external: true 
+      },
+      { 
+        id: 'dissc', 
+        label: 'Yale Data-Intensive Social Science', 
+        href: 'https://dissc.yale.edu/', 
+        external: true 
+      },
+      { 
+        id: 'ybic', 
+        label: 'Yale Biomedical Informatics & Computing', 
+        href: 'https://medicine.yale.edu/ybic/', 
+        external: true 
+      },
+      { 
+        id: 'yse-it', 
+        label: 'YSE IT', 
+        href: 'https://resources.environment.yale.edu/resources/computing/', 
+        external: true 
+      }
+    ]
   }
 ];

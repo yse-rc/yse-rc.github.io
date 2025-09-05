@@ -7,7 +7,7 @@ const CodingAssistants = () => {
   return (
     <PageTransition>
       <div className="min-h-full flex flex-col">
-        <div className="flex-1 p-6 px-4 mx-auto w-full max-w-6xl">
+        <div className="flex-1 p-6 px-4 mx-auto w-full">
           
           {/* Header with Breadcrumb */}
           <div className="bg-white p-8 rounded shadow mb-8">

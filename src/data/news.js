@@ -1,5 +1,21 @@
 export const newsItems = [
     {
+      id: 12,
+      type: 'video',
+      title: 'Introduction to AI/ML on Yale Clusters',
+      description: 'First in a series covering foundational machine learning concepts and how to run AI workflows effectively on Yale YCRC systems. Learn the building blocks of modern AI with practical deployment on HPC infrastructure.',
+      link: 'https://www.youtube.com/watch?v=3bHYKMt9PD4',
+      linkText: 'Watch on YouTube',
+      src: 'https://www.youtube.com/embed/3bHYKMt9PD4',
+      width: '100%',
+      height: '100%',
+      frameBorder: '0',
+      scrolling: 'no',
+      allowFullScreen: true,
+      iframeTitle: 'Introduction to AI/ML on Yale Clusters',
+      date: '2025-09-01'
+    },
+    {
       id: 5,
       type: 'video',
       title: 'National Artificial Intelligence Research Resource Pilot',
@@ -82,10 +98,10 @@ export const newsItems = [
     },
     {
       id: 10,
-      title: 'Update: Navigating and Rescuing Federal Environmental Data',
-      description: 'We have published a new resource to help you locate, navigate, and rescue federal datasets. This page provides guidance, context, and links to at-risk or relocated data sources.',
-      link: 'https://yse-rc.github.io/govdata',
-      linkText: 'Federal Data Rescue Resource',
+      title: 'Update: Navigating and Rescuing At-Risk Environmental Data',
+      description: 'We have published a new resource to help you locate, navigate, and rescue at-risk datasets. This page provides guidance, context, and links to at-risk or relocated data sources.',
+      link: 'https://yse-rc.github.io/at-risk-data',
+      linkText: 'At-Risk Data Rescue Resource',
       date: '2025-05-14'
     },
     {

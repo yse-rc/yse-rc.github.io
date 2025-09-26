@@ -20,6 +20,12 @@ import Prompting from './components/pages/knowledge/Prompting'
 import DataStorage from './components/pages/knowledge/DataStorage'
 import Trainings from './components/pages/knowledge/Trainings'
 import YCRCClusters from './components/pages/knowledge/YCRCClusters'
+import IntroToHPC from './components/pages/knowledge/IntroToHPC'
+import IntermediateHPC from './components/pages/knowledge/IntermediateHPC'
+import ParallelProgramming from './components/pages/knowledge/ParallelProgramming'
+import AdvancedHPC from './components/pages/knowledge/AdvancedHPC'
+import ProfDevResources from './components/pages/knowledge/ProfDev2'
+
 import './styles/index.css'
 
 function AnimatedRoutes() {
@@ -48,7 +54,12 @@ function AnimatedRoutes() {
           <Route path="/knowledge/ai/prompting" element={<Prompting />} />
           <Route path="/knowledge/data/data-storage" element={<DataStorage />} />
           <Route path="/knowledge/prof-dev/trainings" element={<Trainings />} />
+          <Route path="/knowledge/prof-dev/professional-development2" element={<ProfDevResources />} />
           <Route path="/knowledge/yale-computing/ycrc-clusters" element={<YCRCClusters />} />
+          <Route path="/knowledge/yale-computing/intro-to-hpc" element={<IntroToHPC />} />
+          <Route path="/knowledge/yale-computing/intermediate-hpc" element={<IntermediateHPC />} />
+          <Route path="/knowledge/yale-computing/parallel-programming" element={<ParallelProgramming />} />
+          <Route path="/knowledge/yale-computing/advanced-hpc" element={<AdvancedHPC />} />
         </Routes>
       </AnimatePresence>
     </div>

@@ -112,6 +112,15 @@ export const KnowledgeBase = () => {
                           <span>Trainings</span>
                         </Link>
                       </li>
+                                            <li>
+                        <Link 
+                          to="/knowledge/prof-dev/professional-development2" 
+                          className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
+                        >
+                          <span className="text-green-500 mr-2">→</span>
+                          <span>Professional Development Resources</span>
+                        </Link>
+                      </li>
                     </ul>
                   </div>
 
@@ -131,6 +140,50 @@ export const KnowledgeBase = () => {
                         >
                           <span className="text-orange-500 mr-2">→</span>
                           <span>YCRC Clusters</span>
+                        </Link>
+                      </li>
+                    </ul>
+                    <ul className="space-y-2">
+                      <li>
+                        <Link 
+                          to="/knowledge/yale-computing/intro-to-hpc" 
+                          className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
+                        >
+                          <span className="text-orange-500 mr-2">→</span>
+                          <span>Introduction to HPC</span>
+                        </Link>
+                      </li>
+                    </ul>
+                    <ul className="space-y-2">
+                      <li>
+                        <Link 
+                          to="/knowledge/yale-computing/intermediate-hpc" 
+                          className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
+                        >
+                          <span className="text-orange-500 mr-2">→</span>
+                          <span>Intermediate HPC</span>
+                        </Link>
+                      </li>
+                    </ul>
+                    <ul className="space-y-2">
+                      <li>
+                        <Link 
+                          to="/knowledge/yale-computing/parallel-programming" 
+                          className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
+                        >
+                          <span className="text-orange-500 mr-2">→</span>
+                          <span>Parallel Programming in R</span>
+                        </Link>
+                      </li>
+                    </ul>
+                    <ul className="space-y-2">
+                      <li>
+                        <Link 
+                          to="/knowledge/yale-computing/advanced-hpc" 
+                          className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
+                        >
+                          <span className="text-orange-500 mr-2">→</span>
+                          <span>Advanced HPC</span>
                         </Link>
                       </li>
                     </ul>

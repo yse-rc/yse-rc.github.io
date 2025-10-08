@@ -196,9 +196,32 @@ const ProDev2 = () => {
             <div className="space-y-6">
               <div className="bg-gray-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-3 text-gray-900">Training Opportunities</h3>
-                <p className="text-gray-700 mb-3">
-                  Yale offers various training opportunities across campus to support professional development in different areas.
+                <p className="text-gray-700 mb-4">
+                  Yale offers various training resources across campus to support professional development in different areas.
                 </p>
+                
+                <div className="bg-white p-4 rounded-lg border border-gray-200 mb-4">
+                  <h4 className="font-semibold text-gray-900 mb-2">LinkedIn Learning</h4>
+                  <p className="text-gray-700 mb-3">
+                    Free access to thousands of courses on business, technology, and creative skills. 
+                    Yale provides free access to many of the resources on LinkedIn Learning, including courses on:
+                  </p>
+                  <ul className="list-disc list-inside text-gray-700 mb-3 space-y-1">
+                    <li>Analyzing geospatial data using ArcGIS</li>
+                    <li>Processing big data using Apache Spark</li>
+                    <li>Business and leadership skills</li>
+                    <li>Creative and design tools</li>
+                  </ul>
+                  <a 
+                    href="https://library.yale.edu/eresources/access/access-linkedin-learning" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                  >
+                    Access LinkedIn Learning →
+                  </a>
+                </div>
+
                 <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
                   <p className="text-yellow-800 text-sm">
                     <strong>Coming Soon:</strong> More detailed information about specific training offerings across campus.
@@ -226,20 +249,6 @@ const ProDev2 = () => {
               Explore Related Topics
             </h2>
             <div className="grid gap-4 md:grid-cols-3">
-              <Link 
-                to="/knowledge/professional-development"
-                className="flex items-center text-blue-600 hover:text-blue-800 font-medium"
-              >
-                <span className="mr-2">→</span>
-                Professional Development Guide
-              </Link>
-              <Link 
-                to="/knowledge/yale-computing"
-                className="flex items-center text-blue-600 hover:text-blue-800 font-medium"
-              >
-                <span className="mr-2">→</span>
-                Yale Computing Resources
-              </Link>
               <Link 
                 to="/knowledge"
                 className="flex items-center text-blue-600 hover:text-blue-800 font-medium"

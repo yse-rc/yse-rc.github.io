@@ -158,19 +158,19 @@ const ParallelProgramming = () => {
                 <h3 className="text-xl font-semibold mb-4 text-gray-900">Other Useful Functions</h3>
                 <div className="grid gap-3 md:grid-cols-2">
                   <div className="bg-white p-3 rounded border">
-                    <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">parSapply()</code>
+                    <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">parSapply()</code>
                     <p className="text-gray-700 text-sm mt-1">Parallel version of sapply()</p>
                   </div>
                   <div className="bg-white p-3 rounded border">
-                    <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">parApply()</code>
+                    <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">parApply()</code>
                     <p className="text-gray-700 text-sm mt-1">Parallel version of apply() for matrices</p>
                   </div>
                   <div className="bg-white p-3 rounded border">
-                    <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">clusterApply()</code>
+                    <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">clusterApply()</code>
                     <p className="text-gray-700 text-sm mt-1">More flexible, lower-level parallel loop</p>
                   </div>
                   <div className="bg-white p-3 rounded border">
-                    <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">clusterMap()</code>
+                    <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">clusterMap()</code>
                     <p className="text-gray-700 text-sm mt-1">Like Map() but parallel</p>
                   </div>
                 </div>
@@ -304,9 +304,9 @@ print(results)`}</pre>
                   <div className="mt-4">
                     <p className="text-gray-700 mb-4">
                       When dealing with loops, it helps to have a method to contain errors. Here's an example using 
-                      <code className="bg-gray-100 px-1 rounded mx-1">system.time()</code>, 
-                      <code className="bg-gray-100 px-1 rounded mx-1">message()</code>, and 
-                      <code className="bg-gray-100 px-1 rounded mx-1">tryCatch()</code>:
+                      <code className="bg-gray-500 px-1 rounded mx-1">system.time()</code>, 
+                      <code className="bg-gray-500 px-1 rounded mx-1">message()</code>, and 
+                      <code className="bg-gray-500 px-1 rounded mx-1">tryCatch()</code>:
                     </p>
                     <div className="bg-gray-800 text-green-400 p-4 rounded font-mono text-sm overflow-x-auto">
                       <pre>{`# Custom function that may throw an error

@@ -253,7 +253,7 @@ const IntroToHPC = () => {
                 <div className="space-y-4">
                   <div className="bg-white p-4 rounded border">
                     <div className="flex items-start space-x-3">
-                      <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">ls</code>
+                      <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">ls</code>
                       <div>
                         <p className="text-gray-700">List files and directories in current location</p>
                         <p className="text-sm text-gray-600 mt-1">
@@ -266,7 +266,7 @@ const IntroToHPC = () => {
 
                   <div className="bg-white p-4 rounded border">
                     <div className="flex items-start space-x-3">
-                      <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">getquota</code>
+                      <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">getquota</code>
                       <p className="text-gray-700">Check storage quotas for key directories</p>
                     </div>
                   </div>
@@ -274,8 +274,8 @@ const IntroToHPC = () => {
                   <div className="bg-white p-4 rounded border">
                     <div className="flex items-start space-x-3">
                       <div className="space-x-2">
-                        <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">cd</code>
-                        <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">pwd</code>
+                        <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">cd</code>
+                        <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">pwd</code>
                       </div>
                       <p className="text-gray-700">Navigate directories and print current path</p>
                     </div>
@@ -283,7 +283,7 @@ const IntroToHPC = () => {
 
                   <div className="bg-white p-4 rounded border">
                     <div className="flex items-start space-x-3">
-                      <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">nano</code>
+                      <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">nano</code>
                       <div>
                         <p className="text-gray-700">Create and edit files (e.g., <code>nano test.txt</code>)</p>
                         <p className="text-sm text-gray-600 mt-1">Exit with Ctrl+X</p>
@@ -293,7 +293,7 @@ const IntroToHPC = () => {
 
                   <div className="bg-white p-4 rounded border">
                     <div className="flex items-start space-x-3">
-                      <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">mkdir</code>
+                      <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">mkdir</code>
                       <p className="text-gray-700">Create directories (e.g., <code>mkdir new_directory</code>)</p>
                     </div>
                   </div>
@@ -301,8 +301,8 @@ const IntroToHPC = () => {
                   <div className="bg-white p-4 rounded border">
                     <div className="flex items-start space-x-3">
                       <div className="space-x-2">
-                        <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">cp</code>
-                        <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">mv</code>
+                        <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">cp</code>
+                        <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">mv</code>
                       </div>
                       <div>
                         <p className="text-gray-700">Copy and move files/directories</p>
@@ -324,8 +324,8 @@ const IntroToHPC = () => {
                   <div className="bg-white p-4 rounded border">
                     <div className="flex items-start space-x-3">
                       <div className="space-x-2">
-                        <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">cat</code>
-                        <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">less</code>
+                        <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">cat</code>
+                        <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">less</code>
                       </div>
                       <p className="text-gray-700">View file contents (cat for short files, less for larger files with search)</p>
                     </div>
@@ -333,7 +333,7 @@ const IntroToHPC = () => {
 
                   <div className="bg-white p-4 rounded border">
                     <div className="flex items-start space-x-3">
-                      <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">rm</code>
+                      <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">rm</code>
                       <div>
                         <p className="text-gray-700">Remove files and directories</p>
                         <p className="text-sm text-gray-600 mt-1">Use <code>rm -r DIRECTORY</code> to delete directory and contents</p>
@@ -343,7 +343,7 @@ const IntroToHPC = () => {
 
                   <div className="bg-white p-4 rounded border">
                     <div className="flex items-start space-x-3">
-                      <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">salloc</code>
+                      <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">salloc</code>
                       <div>
                         <p className="text-gray-700">Allocate compute resources for interactive work</p>
                         <div className="mt-2 text-sm text-gray-600">
@@ -403,7 +403,7 @@ const IntroToHPC = () => {
                   <span className="text-gray-400"></span>
                   <span className="bg-green-100 text-green-800 px-3 py-2 rounded-full font-medium">Running</span>
                   <span className="text-gray-400"></span>
-                  <span className="bg-gray-100 text-gray-800 px-3 py-2 rounded-full font-medium">Completed</span>
+                  <span className="bg-gray-500 text-gray-800 px-3 py-2 rounded-full font-medium">Completed</span>
                 </div>
               </div>
 
@@ -441,35 +441,35 @@ const IntroToHPC = () => {
               <div className="space-y-4">
                 <div className="bg-white p-4 rounded border">
                   <div className="flex items-start space-x-3">
-                    <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">module load miniconda</code>
+                    <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">module load miniconda</code>
                     <p className="text-gray-700 text-sm">Load default version of miniconda</p>
                   </div>
                 </div>
 
                 <div className="bg-white p-4 rounded border">
                   <div className="flex items-start space-x-3">
-                    <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">module load R/4.4.1-foss-2022b</code>
+                    <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">module load R/4.4.1-foss-2022b</code>
                     <p className="text-gray-700 text-sm">Load specific version of R software</p>
                   </div>
                 </div>
 
                 <div className="bg-white p-4 rounded border">
                   <div className="flex items-start space-x-3">
-                    <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">module list</code>
+                    <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">module list</code>
                     <p className="text-gray-700 text-sm">Show currently loaded modules</p>
                   </div>
                 </div>
 
                 <div className="bg-white p-4 rounded border">
                   <div className="flex items-start space-x-3">
-                    <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">module spider R</code>
+                    <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">module spider R</code>
                     <p className="text-gray-700 text-sm">List available R modules by version</p>
                   </div>
                 </div>
 
                 <div className="bg-white p-4 rounded border">
                   <div className="flex items-start space-x-3">
-                    <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">module reset</code>
+                    <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">module reset</code>
                     <p className="text-gray-700 text-sm">Unload all modules</p>
                   </div>
                 </div>
@@ -504,9 +504,9 @@ const IntroToHPC = () => {
                     <h4 className="font-semibold text-gray-900 mb-2">Method 2: Terminal</h4>
                     <div className="text-sm text-gray-700">
                       <p className="mb-2">After job completion, run:</p>
-                      <code className="bg-gray-100 px-2 py-1 rounded font-mono">jobstats JOBID</code>
+                      <code className="bg-gray-500 px-2 py-1 rounded font-mono">jobstats JOBID</code>
                       <p className="mt-2 mb-2">Check output file:</p>
-                      <code className="bg-gray-100 px-2 py-1 rounded font-mono">cat slurm-JOBID.out</code>
+                      <code className="bg-gray-500 px-2 py-1 rounded font-mono">cat slurm-JOBID.out</code>
                     </div>
                   </div>
                 </div>

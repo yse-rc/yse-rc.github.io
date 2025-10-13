@@ -91,6 +91,15 @@ export const KnowledgeBase = () => {
                           <span>Data Storage</span>
                         </Link>
                       </li>
+                      <li>
+                        <Link 
+                          to="/knowledge/data/data-sources" 
+                          className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
+                        >
+                          <span className="text-blue-500 mr-2">→</span>
+                          <span>Yale Data Sources</span>
+                        </Link>
+                      </li>
                     </ul>
                   </div>
 

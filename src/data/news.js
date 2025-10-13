@@ -147,7 +147,7 @@ export const newsItems = [
     {
       id: 16,
       title: 'Peter Salovey and Marta Moret Data Science Fellows Program',
-      description: 'The Peter Salovey and Marta Moret Data Science Fellows Program, beginning March 2026, supports PhD Students at Yale who use data science methods in interdisciplinary research. The program provides funding, mentorship, and access to resources to help fellows advance their research and professional development. Applications open on March 1, 2026. YSE-RC can provide support for students applying, do reach out if you are interested in applying!',
+      description: 'The Peter Salovey and Marta Moret Data Science Fellows Program, beginning March 2026, supports PhD Students at Yale who use data science methods in interdisciplinary research. The program provides funding, mentorship, and access to resources to help fellows advance their research and professional development. Applications open on March 1, 2026. YSE-RC can provide support for students applying, do reach out if you are interested in applying! Applications close on May 15, 2026.',
       link: 'https://fds.yale.edu/fellows/',
       linkText: 'Fellows Program Information Page',
       date: '2025-10-01'

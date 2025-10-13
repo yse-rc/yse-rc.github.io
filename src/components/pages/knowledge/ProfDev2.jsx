@@ -222,6 +222,27 @@ const ProDev2 = () => {
                   </a>
                 </div>
 
+                                <div className="bg-white p-4 rounded-lg border border-gray-200 mb-4">
+                  <h4 className="font-semibold text-gray-900 mb-2">LinkedIn Learning</h4>
+                  <p className="text-gray-700 mb-3">
+                    The Poorvu Center for Teaching and Learning offers workshops, consultations, and resources to support graduate students with support in 
+                    teaching, research, and professional development. Some of their resources include:
+                    </p>
+                  <ul className="list-disc list-inside text-gray-700 mb-3 space-y-1">
+                    <li>AI Guidance for Students and Teachers</li>
+                    <li>Accessible and Equitable Teaching</li>
+                    <li>Curriculum Mapping</li>
+                  </ul>
+                  <a 
+                    href="https://poorvucenter.yale.edu/get-help-with" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                  >
+                    Access Poorvu Center Resources →
+                  </a>
+                </div>
+
                 <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
                   <p className="text-yellow-800 text-sm">
                     <strong>Coming Soon:</strong> More detailed information about specific training offerings across campus.

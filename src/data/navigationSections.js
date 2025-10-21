@@ -64,20 +64,30 @@ export const getNavigationSections = (pathname) => [
           { id: 'data-storage', label: 'Data Storage', path: '/knowledge/data/data-storage' }
         ]
       },
-      { 
+      {
         id: 'prof-dev',
         label: 'Prof Dev',
         path: '/knowledge/prof-dev',
         nestedChildren: [
-          { id: 'trainings', label: 'Trainings', path: '/knowledge/prof-dev/trainings' }
+          { id: 'trainings', label: 'Trainings', path: '/knowledge/prof-dev/trainings' },
+          { id: 'parallel-programming', label: 'Parallel R', path: '/knowledge/prof-dev/parallel-programming' }
         ]
       },
-      { 
+      {
         id: 'yale-computing',
         label: 'Yale Computing',
         path: '/knowledge/yale-computing',
         nestedChildren: [
-          { id: 'ycrc-clusters', label: 'YCRC Clusters', path: '/knowledge/yale-computing/ycrc-clusters' }
+          {
+            id: 'ycrc-clusters',
+            label: 'YCRC Clusters',
+            path: '/knowledge/yale-computing/ycrc-clusters',
+            nestedChildren: [
+              { id: 'intro-to-hpc', label: 'Intro to HPC', path: '/knowledge/yale-computing/intro-to-hpc' },
+              { id: 'intermediate-hpc', label: 'Intermediate HPC', path: '/knowledge/yale-computing/intermediate-hpc' },
+              { id: 'advanced-hpc', label: 'Advanced HPC', path: '/knowledge/yale-computing/advanced-hpc' }
+            ]
+          }
         ]
       }
     ] : []

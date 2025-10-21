@@ -23,6 +23,22 @@ const IntermediateHPC = () => {
                 <li>
                   <ChevronRightIcon className="h-4 w-4 text-gray-400" />
                 </li>
+                <li>
+                  <Link to="/knowledge/yale-computing" className="hover:text-blue-600">
+                    Yale Computing
+                  </Link>
+                </li>
+                <li>
+                  <ChevronRightIcon className="h-4 w-4 text-gray-400" />
+                </li>
+                <li>
+                  <Link to="/knowledge/yale-computing/ycrc-clusters" className="hover:text-blue-600">
+                    YCRC Clusters
+                  </Link>
+                </li>
+                <li>
+                  <ChevronRightIcon className="h-4 w-4 text-gray-400" />
+                </li>
                 <li className="font-medium text-gray-900">Intermediate HPC</li>
               </ol>
             </nav>
@@ -57,12 +73,12 @@ const IntermediateHPC = () => {
                 <div className="grid gap-4 md:grid-cols-2">
                   <div className="bg-white p-4 rounded border-l-4 border-blue-500">
                     <h4 className="font-semibold text-gray-900 mb-2">Custom Memory per Node</h4>
-                    <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">--mem=6g</code>
+                    <code className="bg-gray-800 text-green-300 px-2 py-1 rounded text-sm font-mono">--mem=6g</code>
                     <p className="text-sm text-gray-600 mt-2">Specify total memory for the job</p>
                   </div>
                   <div className="bg-white p-4 rounded border-l-4 border-green-500">
                     <h4 className="font-semibold text-gray-900 mb-2">Memory per CPU</h4>
-                    <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">--mem-per-cpu=6g</code>
+                    <code className="bg-gray-800 text-green-300 px-2 py-1 rounded text-sm font-mono">--mem-per-cpu=6g</code>
                     <p className="text-sm text-gray-600 mt-2">Best if memory use scales with CPUs</p>
                   </div>
                 </div>
@@ -72,12 +88,12 @@ const IntermediateHPC = () => {
                 <h3 className="text-xl font-semibold mb-4 text-gray-900">Bigmem Nodes</h3>
                 <p className="text-gray-700 mb-4">
                   These are nodes with <strong>512GB-4TB of RAM</strong>, depending on cluster. They are available via the 
-                  <span className="bg-gray-500 px-2 py-1 rounded text-sm font-mono mx-1">bigmem</span> partition and reserved for applications with large memory needs.
+                  <span className="bg-gray-800 text-green-300 px-2 py-1 rounded text-sm font-mono mx-1">bigmem</span> partition and reserved for applications with large memory needs.
                 </p>
                 
                 <div className="bg-white p-4 rounded border">
                   <h4 className="font-semibold text-gray-900 mb-2">Usage Example</h4>
-                  <code className="bg-gray-800 text-green-400 px-3 py-2 rounded block text-sm font-mono">
+                  <code className="bg-gray-800 text-green-300 px-3 py-2 rounded block text-sm font-mono">
                     sbatch -p bigmem --mem=1500g script.R
                   </code>
                 </div>
@@ -95,7 +111,7 @@ const IntermediateHPC = () => {
                     <div className="space-y-2 text-sm">
                       <div className="flex items-start space-x-2">
                         <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-medium">1</span>
-                        <span className="text-gray-700">Request nodes from GPU partition: <code className="bg-gray-500 px-1 rounded">"gpu"</code>, <code className="bg-gray-500 px-1 rounded">"gpu_devel"</code>, <code className="bg-gray-500 px-1 rounded">"scavenge"</code></span>
+                        <span className="text-gray-700">Request nodes from GPU partition: <code className="bg-gray-800 text-green-300 px-1 rounded">gpu</code>, <code className="bg-gray-800 text-green-300 px-1 rounded">gpu_devel</code>, <code className="bg-gray-800 text-green-300 px-1 rounded">scavenge</code></span>
                       </div>
                       <div className="flex items-start space-x-2">
                         <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-medium">2</span>
@@ -127,13 +143,13 @@ const IntermediateHPC = () => {
                     <div className="space-y-3">
                       <div>
                         <p className="text-sm text-gray-600 mb-1">Interactive GPU session:</p>
-                        <code className="bg-gray-800 text-green-400 px-3 py-2 rounded block text-sm font-mono">
+                        <code className="bg-gray-800 text-green-300 px-3 py-2 rounded block text-sm font-mono">
                           salloc -p gpu -c 8 --gpus=1080ti:4 --mem=64g --time=02:00:00
                         </code>
                       </div>
                       <div>
                         <p className="text-sm text-gray-600 mb-1">Batch GPU job:</p>
-                        <code className="bg-gray-800 text-green-400 px-3 py-2 rounded block text-sm font-mono">
+                        <code className="bg-gray-800 text-green-300 px-3 py-2 rounded block text-sm font-mono">
                           sbatch -p gpu -c 8 --gpus=1080ti:4 --mem=64g --time=02:00:00 batch.sh
                         </code>
                       </div>
@@ -158,7 +174,7 @@ const IntermediateHPC = () => {
                     <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">Step 1</span>
                     <div>
                       <p className="text-gray-700">Check if job is running efficiently and using allocated resources</p>
-                      <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono mt-1 inline-block">squeue</code>
+                      <code className="bg-gray-800 text-green-300 px-2 py-1 rounded text-sm font-mono mt-1 inline-block">squeue</code>
                       <span className="text-sm text-gray-600 ml-2">to identify node where job is running</span>
                     </div>
                   </div>
@@ -167,11 +183,11 @@ const IntermediateHPC = () => {
                     <div>
                       <p className="text-gray-700">SSH to the node and run system monitoring tools</p>
                       <div className="mt-1 space-x-2">
-                        <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">ssh [node]</code>
+                        <code className="bg-gray-800 text-green-300 px-2 py-1 rounded text-sm font-mono">ssh [node]</code>
                         <span className="text-gray-500">then</span>
-                        <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">top</code>
+                        <code className="bg-gray-800 text-green-300 px-2 py-1 rounded text-sm font-mono">top</code>
                         <span className="text-gray-500">or</span>
-                        <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">htop</code>
+                        <code className="bg-gray-800 text-green-300 px-2 py-1 rounded text-sm font-mono">htop</code>
                       </div>
                     </div>
                   </div>
@@ -179,7 +195,7 @@ const IntermediateHPC = () => {
                     <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">Step 3</span>
                     <div>
                       <p className="text-gray-700">For GPU monitoring, check GPU utilization</p>
-                      <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono mt-1 inline-block">nvidia-smi</code>
+                      <code className="bg-gray-800 text-green-300 px-2 py-1 rounded text-sm font-mono mt-1 inline-block">nvidia-smi</code>
                     </div>
                   </div>
                 </div>
@@ -190,19 +206,19 @@ const IntermediateHPC = () => {
                 <div className="space-y-4">
                   <div className="bg-white p-4 rounded border-l-4 border-green-500">
                     <div className="flex items-start space-x-3">
-                      <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">seff jobid</code>
+                      <code className="bg-gray-800 text-green-300 px-2 py-1 rounded text-sm font-mono">seff jobid</code>
                       <p className="text-gray-700 text-sm">Job efficiency summary for single jobs</p>
                     </div>
                   </div>
                   <div className="bg-white p-4 rounded border-l-4 border-blue-500">
                     <div className="flex items-start space-x-3">
-                      <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">seff-array jobid</code>
+                      <code className="bg-gray-800 text-green-300 px-2 py-1 rounded text-sm font-mono">seff-array jobid</code>
                       <p className="text-gray-700 text-sm">Job efficiency summary for array jobs</p>
                     </div>
                   </div>
                   <div className="bg-white p-4 rounded border-l-4 border-purple-500">
                     <div className="flex items-start space-x-3">
-                      <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">sacct -j jobid</code>
+                      <code className="bg-gray-800 text-green-300 px-2 py-1 rounded text-sm font-mono">sacct -j jobid</code>
                       <p className="text-gray-700 text-sm">Detailed job accounting information</p>
                     </div>
                   </div>
@@ -292,31 +308,31 @@ const IntermediateHPC = () => {
                 <div className="space-y-3">
                   <div className="bg-white p-4 rounded border-l-4 border-green-500">
                     <div className="flex items-start space-x-3">
-                      <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">sbatch</code>
+                      <code className="bg-gray-800 text-green-300 px-2 py-1 rounded text-sm font-mono">sbatch</code>
                       <p className="text-gray-700 text-sm">Submit a batch job - job ID is returned</p>
                     </div>
                   </div>
                   <div className="bg-white p-4 rounded border-l-4 border-blue-500">
                     <div className="flex items-start space-x-3">
-                      <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">squeue --me</code>
+                      <code className="bg-gray-800 text-green-300 px-2 py-1 rounded text-sm font-mono">squeue --me</code>
                       <p className="text-gray-700 text-sm">List all your pending and running jobs</p>
                     </div>
                   </div>
                   <div className="bg-white p-4 rounded border-l-4 border-red-500">
                     <div className="flex items-start space-x-3">
-                      <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">scancel JOBID</code>
+                      <code className="bg-gray-800 text-green-300 px-2 py-1 rounded text-sm font-mono">scancel JOBID</code>
                       <p className="text-gray-700 text-sm">Cancel queued job or kill running job</p>
                     </div>
                   </div>
                   <div className="bg-white p-4 rounded border-l-4 border-purple-500">
                     <div className="flex items-start space-x-3">
-                      <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">nano slurm_script.sh</code>
+                      <code className="bg-gray-800 text-green-300 px-2 py-1 rounded text-sm font-mono">nano slurm_script.sh</code>
                       <p className="text-gray-700 text-sm">Create a slurm script</p>
                     </div>
                   </div>
                   <div className="bg-white p-4 rounded border-l-4 border-yellow-500">
                     <div className="flex items-start space-x-3">
-                      <code className="bg-gray-500 px-2 py-1 rounded text-sm font-mono">sbatch slurm_script.sh</code>
+                      <code className="bg-gray-800 text-green-300 px-2 py-1 rounded text-sm font-mono">sbatch slurm_script.sh</code>
                       <p className="text-gray-700 text-sm">Submit the job script</p>
                     </div>
                   </div>
@@ -325,7 +341,7 @@ const IntermediateHPC = () => {
 
               <div className="bg-gray-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-4 text-gray-900">Sample Batch Script</h3>
-                <div className="bg-gray-800 text-green-400 p-4 rounded font-mono text-sm overflow-x-auto">
+                <div className="bg-gray-800 text-green-300 p-4 rounded font-mono text-sm overflow-x-auto">
                   <pre>{`#!/bin/bash
 
 #SBATCH -J example_job
@@ -345,13 +361,13 @@ Rscript my_script.R # run R script`}</pre>
                 
                 <div className="mt-4 grid gap-3 md:grid-cols-2 text-sm">
                   <div className="space-y-2">
-                    <div><code className="bg-gray-500 px-1 rounded">#SBATCH -J</code> - Job name</div>
-                    <div><code className="bg-gray-500 px-1 rounded">#SBATCH -p</code> - Partition</div>
-                    <div><code className="bg-gray-500 px-1 rounded">#SBATCH -t</code> - Time limit</div>
+                    <div><code className="bg-gray-800 text-green-300 px-1 rounded">#SBATCH -J</code> - Job name</div>
+                    <div><code className="bg-gray-800 text-green-300 px-1 rounded">#SBATCH -p</code> - Partition</div>
+                    <div><code className="bg-gray-800 text-green-300 px-1 rounded">#SBATCH -t</code> - Time limit</div>
                   </div>
                   <div className="space-y-2">
-                    <div><code className="bg-gray-500 px-1 rounded">--mail-type=ALL</code> - Email notifications</div>
-                    <div><code className="bg-gray-500 px-1 rounded">--cpus-per-task</code> - CPU cores</div>
+                    <div><code className="bg-gray-800 text-green-300 px-1 rounded">--mail-type=ALL</code> - Email notifications</div>
+                    <div><code className="bg-gray-800 text-green-300 px-1 rounded">--cpus-per-task</code> - CPU cores</div>
                   </div>
                 </div>
               </div>
@@ -364,19 +380,19 @@ Rscript my_script.R # run R script`}</pre>
               Related Topics
             </h2>
             <div className="grid gap-4 md:grid-cols-3">
-              <Link 
+              <Link
                 to="/knowledge/yale-computing/intro-to-hpc"
                 className="flex items-center text-blue-600 hover:text-blue-800 font-medium"
               >
                 <span className="mr-2">←</span>
-                Back to Introduction to HPC
+                Introduction to HPC
               </Link>
-              <Link 
-                to="/knowledge/yale-computing/parallel-programming"
+              <Link
+                to="/knowledge/yale-computing/advanced-hpc"
                 className="flex items-center text-blue-600 hover:text-blue-800 font-medium"
               >
                 <span className="mr-2">→</span>
-                Head to Parallel Programming in R
+                Advanced HPC
               </Link>
               <Link 
                 to="/knowledge"

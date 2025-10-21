@@ -178,16 +178,72 @@ export const SideNav = () => {
                             <ul className="pl-6 mt-1 space-y-1">
                               {child.nestedChildren.map((nested) => (
                                 <li key={nested.id}>
-                                  <Link
-                                    to={nested.path}
-                                    className={`block px-3 py-1.5 text-sm rounded-lg transition-colors ${
-                                      location.pathname === nested.path
-                                        ? 'bg-blue-100 text-blue-700'
-                                        : 'text-gray-600 hover:bg-gray-100'
-                                    }`}
-                                  >
-                                    {nested.label}
-                                  </Link>
+                                  {nested.nestedChildren ? (
+                                    // Third-level expandable item
+                                    <div>
+                                      <div
+                                        className={`flex items-center justify-between px-3 py-1.5 text-sm rounded-lg transition-colors ${
+                                          location.pathname === nested.path
+                                            ? 'bg-blue-100 text-blue-700'
+                                            : 'text-gray-600 hover:bg-gray-100'
+                                        }`}
+                                      >
+                                        <Link
+                                          to={nested.path}
+                                          className="flex-1"
+                                        >
+                                          {nested.label}
+                                        </Link>
+                                        <button
+                                          onClick={(e) => {
+                                            e.stopPropagation();
+                                            toggleExpanded(nested.id);
+                                          }}
+                                          className={`p-1 rounded transition-colors bg-transparent ${
+                                            location.pathname === nested.path
+                                              ? 'text-blue-700 hover:bg-blue-200'
+                                              : 'text-gray-600 hover:bg-gray-200'
+                                          }`}
+                                        >
+                                          {expandedItems[nested.id] ? (
+                                            <ChevronDownIcon className="w-4 h-4" />
+                                          ) : (
+                                            <ChevronRightIcon className="w-4 h-4" />
+                                          )}
+                                        </button>
+                                      </div>
+                                      {expandedItems[nested.id] && (
+                                        <ul className="pl-6 mt-1 space-y-1">
+                                          {nested.nestedChildren.map((deepNested) => (
+                                            <li key={deepNested.id}>
+                                              <Link
+                                                to={deepNested.path}
+                                                className={`block px-3 py-1.5 text-sm rounded-lg transition-colors ${
+                                                  location.pathname === deepNested.path
+                                                    ? 'bg-blue-100 text-blue-700'
+                                                    : 'text-gray-600 hover:bg-gray-100'
+                                                }`}
+                                              >
+                                                {deepNested.label}
+                                              </Link>
+                                            </li>
+                                          ))}
+                                        </ul>
+                                      )}
+                                    </div>
+                                  ) : (
+                                    // Regular nested item
+                                    <Link
+                                      to={nested.path}
+                                      className={`block px-3 py-1.5 text-sm rounded-lg transition-colors ${
+                                        location.pathname === nested.path
+                                          ? 'bg-blue-100 text-blue-700'
+                                          : 'text-gray-600 hover:bg-gray-100'
+                                      }`}
+                                    >
+                                      {nested.label}
+                                    </Link>
+                                  )}
                                 </li>
                               ))}
                             </ul>

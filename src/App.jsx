@@ -59,10 +59,10 @@ function AnimatedRoutes() {
           <Route path="/knowledge/data/data-sources" element={<DataSources />} />
           <Route path="/knowledge/prof-dev/trainings" element={<Trainings />} />
           <Route path="/knowledge/prof-dev/professional-development2" element={<ProfDevResources />} />
+          <Route path="/knowledge/prof-dev/parallel-programming" element={<ParallelProgramming />} />
           <Route path="/knowledge/yale-computing/ycrc-clusters" element={<YCRCClusters />} />
           <Route path="/knowledge/yale-computing/intro-to-hpc" element={<IntroToHPC />} />
           <Route path="/knowledge/yale-computing/intermediate-hpc" element={<IntermediateHPC />} />
-          <Route path="/knowledge/yale-computing/parallel-programming" element={<ParallelProgramming />} />
           <Route path="/knowledge/yale-computing/advanced-hpc" element={<AdvancedHPC />} />
         </Routes>
       </AnimatePresence>

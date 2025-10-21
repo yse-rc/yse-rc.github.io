@@ -105,7 +105,7 @@ export const KnowledgeBase = () => {
 
                   {/* Professional Development */}
                   <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-                    <Link to="/knowledge/professional-development" className="block">
+                    <Link to="/knowledge/prof-dev" className="block">
                       <div className="bg-green-100 rounded-lg p-4 mb-4 cursor-pointer hover:bg-green-200 transition-colors">
                         <div className="text-3xl mb-2 text-center">📚</div>
                         <h3 className="text-lg font-semibold text-gray-800 text-center">Professional Development</h3>
@@ -113,21 +113,30 @@ export const KnowledgeBase = () => {
                     </Link>
                     <ul className="space-y-2">
                       <li>
-                        <Link 
-                          to="/knowledge/professional-development/trainings" 
+                        <Link
+                          to="/knowledge/prof-dev/trainings"
                           className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
                         >
                           <span className="text-green-500 mr-2">→</span>
                           <span>Trainings</span>
                         </Link>
                       </li>
-                                            <li>
-                        <Link 
-                          to="/knowledge/prof-dev/professional-development2" 
+                      <li>
+                        <Link
+                          to="/knowledge/prof-dev/parallel-programming"
                           className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
                         >
                           <span className="text-green-500 mr-2">→</span>
-                          <span>Professional Development Resources</span>
+                          <span>Parallel Programming in R</span>
+                        </Link>
+                      </li>
+                      <li className="pt-2 border-t border-gray-200">
+                        <Link
+                          to="/knowledge/prof-dev"
+                          className="flex items-center text-green-600 hover:text-green-800 font-medium"
+                        >
+                          <span className="mr-2">View all Professional Development</span>
+                          <span>→</span>
                         </Link>
                       </li>
                     </ul>
@@ -143,56 +152,27 @@ export const KnowledgeBase = () => {
                     </Link>
                     <ul className="space-y-2">
                       <li>
-                        <Link 
-                          to="/knowledge/yale-computing/ycrc-clusters" 
+                        <Link
+                          to="/knowledge/yale-computing/ycrc-clusters"
                           className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
                         >
                           <span className="text-orange-500 mr-2">→</span>
                           <span>YCRC Clusters</span>
                         </Link>
                       </li>
-                    </ul>
-                    <ul className="space-y-2">
                       <li>
-                        <Link 
-                          to="/knowledge/yale-computing/intro-to-hpc" 
-                          className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
-                        >
-                          <span className="text-orange-500 mr-2">→</span>
-                          <span>Introduction to HPC</span>
-                        </Link>
+                        <div className="flex items-start text-gray-400">
+                          <span className="text-orange-300 mr-2">→</span>
+                          <span>Cloud Computing <span className="text-xs">(Coming Soon)</span></span>
+                        </div>
                       </li>
-                    </ul>
-                    <ul className="space-y-2">
-                      <li>
-                        <Link 
-                          to="/knowledge/yale-computing/intermediate-hpc" 
-                          className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
+                      <li className="pt-2 border-t border-gray-200">
+                        <Link
+                          to="/knowledge/yale-computing"
+                          className="flex items-center text-orange-600 hover:text-orange-800 font-medium"
                         >
-                          <span className="text-orange-500 mr-2">→</span>
-                          <span>Intermediate HPC</span>
-                        </Link>
-                      </li>
-                    </ul>
-                    <ul className="space-y-2">
-                      <li>
-                        <Link 
-                          to="/knowledge/yale-computing/parallel-programming" 
-                          className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
-                        >
-                          <span className="text-orange-500 mr-2">→</span>
-                          <span>Parallel Programming in R</span>
-                        </Link>
-                      </li>
-                    </ul>
-                    <ul className="space-y-2">
-                      <li>
-                        <Link 
-                          to="/knowledge/yale-computing/advanced-hpc" 
-                          className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
-                        >
-                          <span className="text-orange-500 mr-2">→</span>
-                          <span>Advanced HPC</span>
+                          <span className="mr-2">View all Yale Computing Resources</span>
+                          <span>→</span>
                         </Link>
                       </li>
                     </ul>

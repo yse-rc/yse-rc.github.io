@@ -23,6 +23,22 @@ const AdvancedHPC = () => {
                 <li>
                   <ChevronRightIcon className="h-4 w-4 text-gray-400" />
                 </li>
+                <li>
+                  <Link to="/knowledge/yale-computing" className="hover:text-blue-600">
+                    Yale Computing
+                  </Link>
+                </li>
+                <li>
+                  <ChevronRightIcon className="h-4 w-4 text-gray-400" />
+                </li>
+                <li>
+                  <Link to="/knowledge/yale-computing/ycrc-clusters" className="hover:text-blue-600">
+                    YCRC Clusters
+                  </Link>
+                </li>
+                <li>
+                  <ChevronRightIcon className="h-4 w-4 text-gray-400" />
+                </li>
                 <li className="font-medium text-gray-900">Advanced HPC</li>
               </ol>
             </nav>
@@ -69,7 +85,7 @@ const AdvancedHPC = () => {
                 <h3 className="text-xl font-semibold mb-4 text-gray-900">Getting Started</h3>
                 <div className="bg-white p-4 rounded border-l-4 border-green-500">
                   <h4 className="font-semibold text-gray-900 mb-2">Start a Tmux Session</h4>
-                  <code className="bg-gray-800 text-green-400 px-3 py-2 rounded block text-sm font-mono">
+                  <code className="bg-gray-800 text-green-300 px-3 py-2 rounded block text-sm font-mono">
                     tmux new -s myproject
                   </code>
                   <p className="text-sm text-gray-600 mt-2">Creates a new tmux session named "myproject"</p>
@@ -85,14 +101,14 @@ const AdvancedHPC = () => {
                       <div className="flex items-start space-x-3">
                         <span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-medium">1</span>
                         <div>
-                          <code className="bg-gray-500 px-2 py-1 rounded font-mono">Ctrl + b</code>
+                          <code className="bg-gray-800 text-green-300 px-2 py-1 rounded font-mono">Ctrl + b</code>
                           <p className="text-gray-600 mt-1">Signal to tmux that the following keystroke is meant for it</p>
                         </div>
                       </div>
                       <div className="flex items-start space-x-3">
                         <span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-medium">2</span>
                         <div>
-                          <code className="bg-gray-500 px-2 py-1 rounded font-mono">d</code>
+                          <code className="bg-gray-800 text-green-300 px-2 py-1 rounded font-mono">d</code>
                           <p className="text-gray-600 mt-1">Detach from the session</p>
                         </div>
                       </div>
@@ -101,14 +117,14 @@ const AdvancedHPC = () => {
 
                   <div className="bg-white p-4 rounded border-l-4 border-green-500">
                     <h4 className="font-semibold text-gray-900 mb-2">To Reattach to Session</h4>
-                    <code className="bg-gray-800 text-green-400 px-3 py-2 rounded block text-sm font-mono">
+                    <code className="bg-gray-800 text-green-300 px-3 py-2 rounded block text-sm font-mono">
                       tmux attach -t myproject
                     </code>
                   </div>
 
                   <div className="bg-white p-4 rounded border-l-4 border-red-500">
                     <h4 className="font-semibold text-gray-900 mb-2">To Exit Session</h4>
-                    <code className="bg-gray-800 text-green-400 px-3 py-2 rounded block text-sm font-mono">
+                    <code className="bg-gray-800 text-green-300 px-3 py-2 rounded block text-sm font-mono">
                       Ctrl + d
                     </code>
                   </div>
@@ -156,11 +172,11 @@ const AdvancedHPC = () => {
                     </div>
                     <div className="flex items-start space-x-3">
                       <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">Step 5</span>
-                      <span className="text-gray-700">Detach from tmux by <code className="bg-gray-500 px-1 rounded">Ctrl + b</code>, then <code className="bg-gray-500 px-1 rounded">d</code></span>
+                      <span className="text-gray-700">Detach from tmux by <code className="bg-gray-800 text-green-300 px-1 rounded">Ctrl + b</code>, then <code className="bg-gray-800 text-green-300 px-1 rounded">d</code></span>
                     </div>
                     <div className="flex items-start space-x-3">
                       <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">Step 6</span>
-                      <span className="text-gray-700">Later, on the same login node, reattach by running <code className="bg-gray-500 px-1 rounded">tmux attach</code></span>
+                      <span className="text-gray-700">Later, on the same login node, reattach by running <code className="bg-gray-800 text-green-300 px-1 rounded">tmux attach</code></span>
                     </div>
                   </div>
                 </div>
@@ -182,7 +198,7 @@ const AdvancedHPC = () => {
 
                   <div className="bg-white p-4 rounded border">
                     <h4 className="font-semibold text-gray-900 mb-3">Example Workflow</h4>
-                    <div className="bg-gray-800 text-green-400 p-3 rounded font-mono text-sm">
+                    <div className="bg-gray-800 text-green-300 p-3 rounded font-mono text-sm">
                       <pre>{`[ms725@grace1 ~]$ tmux new -s analysis
 # I am in my tmux session now
 [ms725@grace1 ~]$ salloc
@@ -197,15 +213,15 @@ const AdvancedHPC = () => {
                       <div>
                         <p className="text-gray-700 mb-2"><strong>To split window:</strong></p>
                         <div className="flex items-center space-x-2">
-                          <code className="bg-gray-500 px-2 py-1 rounded font-mono">Ctrl + b</code>
+                          <code className="bg-gray-800 text-green-300 px-2 py-1 rounded font-mono">Ctrl + b</code>
                           <span className="text-gray-500">then</span>
-                          <code className="bg-gray-500 px-2 py-1 rounded font-mono">%</code>
+                          <code className="bg-gray-800 text-green-300 px-2 py-1 rounded font-mono">%</code>
                         </div>
                       </div>
 
                       <div>
                         <p className="text-gray-700 mb-2"><strong>Go to compute node and monitor:</strong></p>
-                        <div className="bg-gray-800 text-green-400 px-3 py-2 rounded font-mono">
+                        <div className="bg-gray-800 text-green-300 px-3 py-2 rounded font-mono">
                           ssh c14n02<br />
                           top
                         </div>
@@ -217,9 +233,9 @@ const AdvancedHPC = () => {
                       <div>
                         <p className="text-gray-700 mb-2"><strong>To switch between panes:</strong></p>
                         <div className="flex items-center space-x-2">
-                          <code className="bg-gray-500 px-2 py-1 rounded font-mono">Ctrl + b</code>
+                          <code className="bg-gray-800 text-green-300 px-2 py-1 rounded font-mono">Ctrl + b</code>
                           <span className="text-gray-500">then</span>
-                          <code className="bg-gray-500 px-2 py-1 rounded font-mono">o</code>
+                          <code className="bg-gray-800 text-green-300 px-2 py-1 rounded font-mono">o</code>
                         </div>
                       </div>
                     </div>
@@ -323,21 +339,21 @@ const AdvancedHPC = () => {
               Related Topics
             </h2>
             <div className="grid gap-4 md:grid-cols-3">
-              <Link 
+              <Link
                 to="/knowledge/yale-computing/intermediate-hpc"
                 className="flex items-center text-blue-600 hover:text-blue-800 font-medium"
               >
                 <span className="mr-2">←</span>
-                Back to Intermediate HPC
+                Intermediate HPC
               </Link>
-              <Link 
+              <Link
                 to="/knowledge/yale-computing/parallel-programming"
                 className="flex items-center text-blue-600 hover:text-blue-800 font-medium"
               >
                 <span className="mr-2">←</span>
-                Back to Parallel Programming
+                Parallel Programming in R
               </Link>
-              <Link 
+              <Link
                 to="/knowledge"
                 className="flex items-center text-blue-600 hover:text-blue-800 font-medium"
               >

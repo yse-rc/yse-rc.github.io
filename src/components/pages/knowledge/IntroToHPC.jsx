@@ -84,6 +84,60 @@ const IntroToHPC = () => {
             </div>
           </section>
 
+          {/* HPC at Yale Section */}
+          <section className="bg-white p-8 rounded shadow mb-8">
+            <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3">
+              HPC Clusters at Yale
+            </h2>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <p className="text-gray-700">
+                Yale currently offers several high-performance computing clusters:
+              </p>
+              <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3 mt-4">
+                <a 
+                  href="https://docs.ycrc.yale.edu/clusters/bouchet/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-white px-3 py-2 rounded text-center font-medium text-blue-600 hover:text-blue-800 hover:bg-blue-50 transition-colors"
+                >
+                  Bouchet
+                </a>                
+                <a 
+                  href="https://docs.ycrc.yale.edu/clusters/hopper/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-white px-3 py-2 rounded text-center font-medium text-blue-600 hover:text-blue-800 hover:bg-blue-50 transition-colors"
+                >
+                  Hopper
+                </a>   
+                                <a 
+                  href="https://docs.ycrc.yale.edu/clusters/mccleary/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-white px-3 py-2 rounded text-center font-medium text-blue-600 hover:text-blue-800 hover:bg-blue-50 transition-colors"
+                >
+                  McCleary
+                </a>
+                <a 
+                  href="https://docs.ycrc.yale.edu/clusters/milgram/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-white px-3 py-2 rounded text-center font-medium text-blue-600 hover:text-blue-800 hover:bg-blue-50 transition-colors"
+                >
+                  Milgram
+                </a>
+                <a 
+                  href="https://docs.ycrc.yale.edu/clusters/grace/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-white px-3 py-2 rounded text-center font-medium text-blue-600 hover:text-blue-800 hover:bg-blue-50 transition-colors"
+                >
+                  Grace
+                </a>   
+              </div>
+            </div>
+          </section>
+
           {/* Access Methods Section */}
           <section className="bg-white p-8 rounded shadow mb-8">
             <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-3">

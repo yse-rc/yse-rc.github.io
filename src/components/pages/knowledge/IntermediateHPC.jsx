@@ -62,7 +62,7 @@ const IntermediateHPC = () => {
                 <ExclamationTriangleIcon className="h-5 w-5 text-yellow-600 mt-0.5" />
                 <div className="text-yellow-800 text-sm">
                   <p className="font-medium mb-1">Resource Request Guidelines</p>
-                  <p>Only request GPU or bigmem nodes if you need them and your program will use them. Memory on compute nodes is shared between jobs and 5GB is allocated to each CPU. The limit is strictly enforced - jobs exceeding the limit are killed.</p>
+                  <p>Use default memory settings provided. Only request GPU or bigmem nodes if you need them and your program will use them. Memory on compute nodes is shared between jobs and 5GB is allocated to each CPU. The limit is strictly enforced - jobs exceeding the limit are killed.</p>
                 </div>
               </div>
             </div>
@@ -257,7 +257,7 @@ const IntermediateHPC = () => {
                   For detailed guidance on implementing parallel programming techniques in HPC environments:
                 </p>
                 <a 
-                  href="parallel_programming.md" 
+                  href="/knowledge/yale-computing/parallel-programming" 
                   className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
                 >
                   View Parallel Programming Guide →
@@ -336,6 +336,31 @@ const IntermediateHPC = () => {
                       <p className="text-gray-700 text-sm">Submit the job script</p>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              <div className="bg-blue-50 p-6 rounded-lg border border-blue-200 mb-6">
+                <h3 className="text-xl font-semibold mb-3 text-blue-900">Slurm Command References</h3>
+                <p className="text-blue-800 mb-4">
+                  For complete documentation on Slurm commands and resource requests:
+                </p>
+                <div className="grid gap-6 md:grid-cols-2">
+                  <a 
+                    href="https://docs.ycrc.yale.edu/clusters-at-yale/job-scheduling/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                  >
+                    CPU Commands for Slurm →
+                  </a>
+                  <a 
+                    href="https://docs.ycrc.yale.edu/clusters-at-yale/job-scheduling/resource-requests/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                  >
+                    GPU Commands for Slurm →
+                  </a>
                 </div>
               </div>
 

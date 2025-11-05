@@ -85,7 +85,7 @@ const DataSources = () => {
                 <div className="flex items-start space-x-4">
                   <MapIcon className="h-8 w-8 text-purple-600 mt-1" />
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-gray-900">Som Yale — International Center for Finance (Data)</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-gray-900">SOM Yale — International Center for Finance (Data)</h3>
                     <p className="text-gray-700 mb-3">
                       Data collections and resources maintained by Yale SOM's International Center for Finance,
                       useful for finance and economic research.

@@ -46,6 +46,11 @@ src/
 | `/knowledge` | `src/components/pages/KnowledgeBase.jsx` |
 | `/knowledge/ai` | `src/components/pages/knowledge/AI.jsx` |
 
+### External Redirects (Marketing Short Links)
+| URL Path | Redirects To | Purpose |
+|----------|--------------|---------|
+| `/register` | YaleConnect event registration | Workshop/event registration short link for flyers |
+
 ### File Extensions
 | Extension | Purpose | Edit With |
 |-----------|---------|-----------|
@@ -114,6 +119,23 @@ Use Tailwind CSS classes directly in components:
    ```jsx
    <img src={myImage} alt="Description" />
    ```
+
+### 6. Create URL Redirects (Marketing Short Links)
+For creating short, branded URLs that redirect to external sites (useful for flyers, social media, etc.):
+
+1. In `src/App.jsx`, add a new route in the External Redirects section:
+   ```jsx
+   <Route path="/register" element={<ExternalRedirect to="https://external-site.com/long-url" />} />
+   ```
+
+2. Update the redirect URL when needed by changing the `to` prop
+
+**Example Use Cases:**
+- Event registration: `/register` → YaleConnect event page
+- Workshop signup: `/workshop` → External registration form
+- Resource link: `/survey` → Qualtrics survey
+
+**Note:** The `ExternalRedirect` component (`src/components/ExternalRedirect.jsx`) handles the automatic redirect.
 
 ## Tailwind CSS Quick Reference
 | Class | Effect |

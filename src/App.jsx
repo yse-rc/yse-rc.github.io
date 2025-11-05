@@ -27,7 +27,7 @@ import ParallelProgramming from './components/pages/knowledge/ParallelProgrammin
 import AdvancedHPC from './components/pages/knowledge/AdvancedHPC'
 import ProfDevResources from './components/pages/knowledge/ProfDev2'
 // Data Sources
-
+import ExternalRedirect from './components/ExternalRedirect'
 
 import './styles/index.css'
 
@@ -64,6 +64,8 @@ function AnimatedRoutes() {
           <Route path="/knowledge/yale-computing/intro-to-hpc" element={<IntroToHPC />} />
           <Route path="/knowledge/yale-computing/intermediate-hpc" element={<IntermediateHPC />} />
           <Route path="/knowledge/yale-computing/advanced-hpc" element={<AdvancedHPC />} />
+          {/* External Redirects */}
+          <Route path="/register" element={<ExternalRedirect to="https://yaleconnect.yale.edu/yseresearch/rsvp_boot?id=2311362" />} />
         </Routes>
       </AnimatePresence>
     </div>

@@ -130,6 +130,15 @@ export const KnowledgeBase = () => {
                           <span>Parallel Programming in R</span>
                         </Link>
                       </li>
+                                            <li>
+                        <Link
+                          to="/knowledge/prof-dev/reproducibility"
+                          className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
+                        >
+                          <span className="text-green-500 mr-2">→</span>
+                          <span>Reproducibility</span>
+                        </Link>
+                      </li>
                       <li className="pt-2 border-t border-gray-200">
                         <Link
                           to="/knowledge/prof-dev"

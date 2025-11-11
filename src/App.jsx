@@ -26,6 +26,7 @@ import IntermediateHPC from './components/pages/knowledge/IntermediateHPC'
 import ParallelProgramming from './components/pages/knowledge/ParallelProgramming'
 import AdvancedHPC from './components/pages/knowledge/AdvancedHPC'
 import ProfDevResources from './components/pages/knowledge/ProfDev2'
+import Reproducibility from './components/pages/knowledge/ReproContainers'  
 // Data Sources
 
 
@@ -64,6 +65,7 @@ function AnimatedRoutes() {
           <Route path="/knowledge/yale-computing/intro-to-hpc" element={<IntroToHPC />} />
           <Route path="/knowledge/yale-computing/intermediate-hpc" element={<IntermediateHPC />} />
           <Route path="/knowledge/yale-computing/advanced-hpc" element={<AdvancedHPC />} />
+          <Route path="/knowledge/prof-dev/reproducibility" element={<Reproducibility />} />
         </Routes>
       </AnimatePresence>
     </div>

@@ -180,7 +180,7 @@ const ParallelProgramming = () => {
               <div className="bg-gray-50 p-6 rounded-lg">
                 <button
                   onClick={() => toggleSection('parallel-example')}
-                  className="flex items-center justify-between w-full text-left"
+                  className="flex items-center justify-between w-full text-left bg-white hover:bg-gray-100 p-2 rounded transition-colors"
                 >
                   <h3 className="text-xl font-semibold text-gray-900">Complete Example</h3>
                   {expandedSections['parallel-example'] ? (
@@ -290,7 +290,7 @@ print(results)`}</pre>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <button
                   onClick={() => toggleSection('error-handling')}
-                  className="flex items-center justify-between w-full text-left"
+                  className="flex items-center justify-between w-full text-left bg-white hover:bg-gray-100 p-2 rounded transition-colors"
                 >
                   <h3 className="text-xl font-semibold text-gray-900">Error Handling</h3>
                   {expandedSections['error-handling'] ? (
@@ -341,7 +341,7 @@ print(execution_time)`}</pre>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <button
                   onClick={() => toggleSection('platform-examples')}
-                  className="flex items-center justify-between w-full text-left"
+                  className="flex items-center justify-between w-full text-left bg-white hover:bg-gray-100 p-2 rounded transition-colors"
                 >
                   <h3 className="text-xl font-semibold text-gray-900">Platform-Specific Examples</h3>
                   {expandedSections['platform-examples'] ? (
@@ -423,7 +423,7 @@ stopCluster(cl)`}</pre>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <button
                   onClick={() => toggleSection('future-commands')}
-                  className="flex items-center justify-between w-full text-left"
+                  className="flex items-center justify-between w-full text-left bg-white hover:bg-gray-100 p-2 rounded transition-colors"
                 >
                   <h3 className="text-xl font-semibold text-gray-900">Key Commands for future</h3>
                   {expandedSections['future-commands'] ? (
@@ -470,7 +470,7 @@ value(f)`}</pre>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <button
                   onClick={() => toggleSection('furrr-commands')}
-                  className="flex items-center justify-between w-full text-left"
+                  className="flex items-center justify-between w-full text-left bg-white hover:bg-gray-100 p-2 rounded transition-colors"
                 >
                   <h3 className="text-xl font-semibold text-gray-900">Key Commands for furrr</h3>
                   {expandedSections['furrr-commands'] ? (
@@ -510,7 +510,7 @@ future_map_dfr(.x, .f)  # Combine results into a data frame; .f is your function
               <div className="bg-gray-50 p-6 rounded-lg">
                 <button
                   onClick={() => toggleSection('mtcars-example')}
-                  className="flex items-center justify-between w-full text-left"
+                  className="flex items-center justify-between w-full text-left bg-white hover:bg-gray-100 p-2 rounded transition-colors"
                 >
                   <h3 className="text-xl font-semibold text-gray-900">Complete Example with mtcars</h3>
                   {expandedSections['mtcars-example'] ? (

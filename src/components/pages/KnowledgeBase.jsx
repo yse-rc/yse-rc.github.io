@@ -170,10 +170,13 @@ export const KnowledgeBase = () => {
                         </Link>
                       </li>
                       <li>
-                        <div className="flex items-start text-gray-400">
-                          <span className="text-orange-300 mr-2">→</span>
-                          <span>Cloud Computing <span className="text-xs">(Coming Soon)</span></span>
-                        </div>
+                        <Link
+                          to="/knowledge/yale-computing/cloud-computing"
+                          className="flex items-start text-blue-600 hover:text-blue-800 hover:underline"
+                        >
+                          <span className="text-orange-500 mr-2">→</span>
+                          <span>Cloud Computing</span>
+                        </Link>
                       </li>
                       <li className="pt-2 border-t border-gray-200">
                         <Link

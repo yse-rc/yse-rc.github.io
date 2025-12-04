@@ -14,6 +14,7 @@ import ProfDev from './components/pages/knowledge/ProfDev'
 import YaleComputing from './components/pages/knowledge/YaleComputing'
 // Knowledge Base sub-pages
 import AIToolsYale from './components/pages/knowledge/AIToolsYale'
+import CloudComputing from './components/pages/knowledge/CloudComputing'
 import ModelSelectionGuide from './components/pages/knowledge/ModelSelectionGuide'
 import AITaxonomy from './components/pages/knowledge/AITaxonomy'
 import Prompting from './components/pages/knowledge/Prompting'
@@ -53,6 +54,7 @@ function AnimatedRoutes() {
           <Route path="/knowledge/yale-computing" element={<YaleComputing />} />
           {/* Knowledge Base Sub-pages */}
           <Route path="/knowledge/ai/ai-tools-yale" element={<AIToolsYale />} />
+          <Route path="/knowledge/yale-computing/cloud-computing" element={<CloudComputing />} />
           <Route path="/knowledge/ai/model-selection" element={<ModelSelectionGuide />} />
           <Route path="/knowledge/ai/ai-taxonomy" element={<AITaxonomy />} />
           <Route path="/knowledge/ai/prompting" element={<Prompting />} />

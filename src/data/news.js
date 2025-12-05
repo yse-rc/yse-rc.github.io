@@ -151,5 +151,13 @@ export const newsItems = [
       link: 'https://fds.yale.edu/fellows/',
       linkText: 'Fellows Program Information Page',
       date: '2025-10-01'
+    },
+    {
+      id: 17,
+      title: 'Schmidt Science Fellowship',
+      description: 'The Schmidt Science Fellowship, an initiative of the Schmidt Sciences and delivered in partnership with the Rhodes Trust, aims to support the next generation of science leaders. It builds a community of interdisciplinary scientists and funds graduating students in STEM fields who are interested in pivoting from their PhD discipline to pursue their goals in interdisciplinary research. Applications are expected to open early in Spring 2026 for 2027 Fellowships. Applicants must be nominated by Yale and are expected to complete all degree requirements between May 1, 2026 and June 30, 2027.',
+      link: 'https://schmidtsciencefellows.org/',
+      linkText: 'Schmidt Science Fellowship Program Information Page',
+      date: '2025-12-05'
     }
 ];

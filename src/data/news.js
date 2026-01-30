@@ -159,5 +159,13 @@ export const newsItems = [
       link: 'https://schmidtsciencefellows.org/',
       linkText: 'Schmidt Science Fellowship Program Information Page',
       date: '2025-12-05'
+    },
+    {
+      id: 18,
+      title: 'High-value Datasets Fund by Yale Institute for Social and Policy Studies',
+      description: 'Yale ISPS supports projects that make fundamental contributions to the scientific and public commons. ISPS invites proposals that will create or assemble unique, high-value shared datasets for social science research. Applications are due on March 30, 2026 (11:59PM).',
+      link: 'https://isps.yale.edu/high-value-datasets-fund',
+      linkText: 'High-value Datasets Fund Yale ISPS Information Page',
+      date: '2026-01-30'
     }
 ];

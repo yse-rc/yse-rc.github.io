@@ -69,7 +69,7 @@ function AnimatedRoutes() {
           <Route path="/knowledge/yale-computing/advanced-hpc" element={<AdvancedHPC />} />
           <Route path="/knowledge/prof-dev/reproducibility" element={<Reproducibility />} />
           {/* External Redirects */}
-          <Route path="/register" element={<ExternalRedirect to="https://yaleconnect.yale.edu/yseresearch/rsvp_boot?id=2311362" />} />
+          <Route path="/register" element={<ExternalRedirect to="https://cglink.me/2dA/r2319150" />} />
         </Routes>
       </AnimatePresence>
     </div>

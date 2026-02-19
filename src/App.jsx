@@ -26,6 +26,7 @@ import IntroToHPC from './components/pages/knowledge/IntroToHPC'
 import IntermediateHPC from './components/pages/knowledge/IntermediateHPC'
 import ParallelProgramming from './components/pages/knowledge/ParallelProgramming'
 import AdvancedHPC from './components/pages/knowledge/AdvancedHPC'
+import GitSSHSetup from './components/pages/knowledge/GitSSHSetup'
 import ProfDevResources from './components/pages/knowledge/ProfDev2'
 import Reproducibility from './components/pages/knowledge/ReproContainers'  
 // Data Sources
@@ -67,6 +68,7 @@ function AnimatedRoutes() {
           <Route path="/knowledge/yale-computing/intro-to-hpc" element={<IntroToHPC />} />
           <Route path="/knowledge/yale-computing/intermediate-hpc" element={<IntermediateHPC />} />
           <Route path="/knowledge/yale-computing/advanced-hpc" element={<AdvancedHPC />} />
+          <Route path="/knowledge/yale-computing/git-ssh-setup" element={<GitSSHSetup />} />
           <Route path="/knowledge/prof-dev/reproducibility" element={<Reproducibility />} />
           {/* External Redirects */}
           <Route path="/register" element={<ExternalRedirect to="https://cglink.me/2dA/r2319150" />} />

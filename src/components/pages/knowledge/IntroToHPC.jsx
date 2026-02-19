@@ -172,7 +172,11 @@ const IntroToHPC = () => {
                 </div>
                 <div className="mt-4 p-3 bg-blue-50 rounded border border-blue-200">
                   <p className="text-sm text-blue-800">
-                    <strong>Note:</strong> SSH methods require SSH keys. Access via login nodes, but computational work must happen on compute or interactive nodes.
+                    <strong>Note:</strong> SSH methods require SSH keys. See our{' '}
+                    <Link to="/knowledge/yale-computing/git-ssh-setup" className="text-blue-600 hover:text-blue-800 font-medium underline">
+                      Git &amp; SSH Setup guide
+                    </Link>{' '}
+                    for a quick walkthrough. Access via login nodes, but computational work must happen on compute or interactive nodes.
                   </p>
                 </div>
               </div>

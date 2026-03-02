@@ -167,5 +167,29 @@ export const newsItems = [
       link: 'https://isps.yale.edu/high-value-datasets-fund',
       linkText: 'High-value Datasets Fund Yale ISPS Information Page',
       date: '2026-01-30'
+    },
+    {
+      id: 19,
+      title: 'Apply for the YPS Stella M. Hammond Planetary Solutions Fellowship',
+      description: 'Yale Planetary Solutions is now accepting applications for the two-year fellowship. Application deadline is Friday, April 17. Program details and application form can be found on the fellowship website.',
+      link: 'https://planetarysolutions.yale.edu/programs/yps-doctoral-fellowship',
+      linkText: 'YPS Stella M. Hammond Planetary Solutions Fellowship Information Page',
+      date: '2026-03-01'
+    },
+    {
+      id: 20,
+      title: 'Schmidt Science Fellowship Program Announcement',
+      description: 'The nominating process for the 2027 Schmidt Science Fellowship is now open. Yale can nominate up to seven applicats to apply for this fellowship. See below for additional information about the opportunity.'
+      link: 'https://thisweek.environment.yale.edu/sites/default/files/webform/research_newsletter/3824/guidance-for-nominating-partners.pdf',
+      linkText: '2027 Guidance for Nominating Partners',
+      date: '2026-03-02'
+    },
+    {
+      id: 21,
+      title: 'Bormann Prize Call for Nominations',
+      description: 'Nominations are now open for the F. Herbert Bormann Prize, which honors outstanding doctoral research that reflects Herb Bormann’s legacy of interdisciplinary scholarship advancing new insights into ecosystem dynamics, including human–environment interactions. Eligible publications must be published or accepted in 2025, stem from doctoral research, and list a Yale institutional address. Nominations (a PDF of the publication plus a brief supporting statement) are due to Elisabeth Barsa by Friday, March 6.',
+      link: 'https://view.message.yale.edu/?vawpToken=4O24CMDMO55UXEGUE6PPZ75HLE.100219',
+      linkText: 'Bormann Prize Call for Nominations Information Page',
+      date: '2026-03-03'
     }
 ];

@@ -179,7 +179,7 @@ export const newsItems = [
     {
       id: 20,
       title: 'Schmidt Science Fellowship Program Announcement',
-      description: 'The nominating process for the 2027 Schmidt Science Fellowship is now open. Yale can nominate up to seven applicats to apply for this fellowship. See below for additional information about the opportunity.'
+      description: 'The nominating process for the 2027 Schmidt Science Fellowship is now open. Yale can nominate up to seven applicats to apply for this fellowship. See below for additional information about the opportunity.',
       link: 'https://thisweek.environment.yale.edu/sites/default/files/webform/research_newsletter/3824/guidance-for-nominating-partners.pdf',
       linkText: '2027 Guidance for Nominating Partners',
       date: '2026-03-02'

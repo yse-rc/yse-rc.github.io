@@ -18,10 +18,18 @@ const YaleComputing = () => {
       ]
     },
     {
+      title: "Git & SSH Setup",
+      path: "/knowledge/yale-computing/git-ssh-setup",
+      description: "Connect GitHub to your local machine or the cluster via SSH keys",
+      color: "blue",
+      icon: "🔑",
+      subPages: []
+    },
+    {
       title: "Cloud Computing",
       path: "#",
       description: "Cloud platforms and services for research",
-      color: "blue",
+      color: "sky",
       icon: "☁️",
       comingSoon: true,
       subPages: []

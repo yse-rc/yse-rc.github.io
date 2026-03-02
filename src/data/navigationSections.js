@@ -87,7 +87,8 @@ export const getNavigationSections = (pathname) => [
               { id: 'intermediate-hpc', label: 'Intermediate HPC', path: '/knowledge/yale-computing/intermediate-hpc' },
               { id: 'advanced-hpc', label: 'Advanced HPC', path: '/knowledge/yale-computing/advanced-hpc' }
             ]
-          }
+          },
+          { id: 'git-ssh-setup', label: 'Git & SSH Setup', path: '/knowledge/yale-computing/git-ssh-setup' }
         ]
       }
     ] : []

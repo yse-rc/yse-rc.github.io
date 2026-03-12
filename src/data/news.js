@@ -198,6 +198,6 @@ export const newsItems = [
       description: 'Applications are now open for the Climate Science Serving America Fellowship, which aims to support early-career scientists in applying their research to climate solutions. This Fellowship will support world-class Ph.D.-level scientists and engineers advancing climate solutions in the world through rigorous research, public outreach, and stakeholder engagement.',
       link: 'https://drawdown.org/careers/climate-science-serving-america-fellowship',
       linkText: 'Find out more about the fellowship and apply.',
-      date: '2026-03-03'
+      date: '2026-03-12'
     }
 ];

@@ -191,5 +191,13 @@ export const newsItems = [
       link: 'https://view.message.yale.edu/?vawpToken=4O24CMDMO55UXEGUE6PPZ75HLE.100219',
       linkText: 'Bormann Prize Call for Nominations Information Page',
       date: '2026-03-03'
+    },
+        {
+      id: 22,
+      title: 'Project Drawdown Launches New Fellowship',
+      description: 'Applications are now open for the Climate Science Serving America Fellowship, which aims to support early-career scientists in applying their research to climate solutions. This Fellowship will support world-class Ph.D.-level scientists and engineers advancing climate solutions in the world through rigorous research, public outreach, and stakeholder engagement.',
+      link: 'https://drawdown.org/careers/climate-science-serving-america-fellowship',
+      linkText: 'Find out more about the fellowship and apply.',
+      date: '2026-03-03'
     }
 ];

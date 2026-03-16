@@ -71,7 +71,7 @@ function AnimatedRoutes() {
           <Route path="/knowledge/yale-computing/git-ssh-setup" element={<GitSSHSetup />} />
           <Route path="/knowledge/prof-dev/reproducibility" element={<Reproducibility />} />
           {/* External Redirects */}
-          <Route path="/register" element={<ExternalRedirect to="https://cglink.me/2dA/r2319150" />} />
+          <Route path="/register" element={<ExternalRedirect to="https://cglink.me/2dA/r2321161" />} />
         </Routes>
       </AnimatePresence>
     </div>

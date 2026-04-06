@@ -72,6 +72,7 @@ function AnimatedRoutes() {
           <Route path="/knowledge/prof-dev/reproducibility" element={<Reproducibility />} />
           {/* External Redirects */}
           <Route path="/register" element={<ExternalRedirect to="https://cglink.me/2dA/r2321161" />} />
+          <Route path="/username" element={<ExternalRedirect to="https://docs.google.com/forms/d/e/1FAIpQLSd8vvoQ2b3U5WtsBIz3W2rm42aQ918qe9AEcQCzJjKaEIX0iw/viewform" />} />
         </Routes>
       </AnimatePresence>
     </div>
